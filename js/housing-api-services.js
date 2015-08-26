@@ -5,20 +5,20 @@ var authHeader = 'authorization';
 
 /**
  * @ngdoc overview
- * @name housingApiServices1
+ * @name housingApiServices
  * @module
  * @description
  *
- * The `housingApiServices1` module provides services for interacting with
+ * The `housingApiServices` module provides services for interacting with
  * the models exposed by the LoopBack server via the REST API.
  *
  */
-var module = angular.module("housingApiServices1", ['ngResource']);
+var module = angular.module("housingApiServices", ['ngResource']);
 
 /**
  * @ngdoc object
- * @name housingApiServices1.User
- * @header housingApiServices1.User
+ * @name housingApiServices.User
+ * @header housingApiServices.User
  * @object
  *
  * @description
@@ -42,8 +42,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__findById__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__findById__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -80,8 +80,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__destroyById__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__destroyById__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -115,8 +115,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__updateById__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__updateById__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -157,8 +157,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__get__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__get__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -193,8 +193,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__create__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__create__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -230,8 +230,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__delete__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__delete__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -260,8 +260,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$__count__accessTokens
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$__count__accessTokens
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -294,8 +294,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#create
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#create
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -332,8 +332,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#createMany
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#createMany
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -371,8 +371,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#upsert
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#upsert
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -409,8 +409,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#exists
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#exists
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -441,8 +441,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#findById
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#findById
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -476,8 +476,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#find
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#find
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -510,8 +510,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#findOne
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#findOne
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -543,8 +543,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#updateAll
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#updateAll
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -577,8 +577,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#deleteById
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#deleteById
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -607,8 +607,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#count
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#count
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -639,8 +639,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#prototype$updateAttributes
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#prototype$updateAttributes
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -676,8 +676,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#createChangeStream
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#createChangeStream
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -713,8 +713,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#login
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#login
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -769,8 +769,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#logout
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#logout
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -811,8 +811,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#confirm
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#confirm
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -845,8 +845,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#resetPassword
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#resetPassword
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -880,8 +880,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#getCurrent
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#getCurrent
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -923,8 +923,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#updateOrCreate
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#updateOrCreate
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -958,8 +958,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#update
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#update
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -989,8 +989,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#destroyById
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#destroyById
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -1016,8 +1016,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#removeById
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#removeById
+         * @methodOf housingApiServices.User
          *
          * @description
          *
@@ -1043,14 +1043,14 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#getCachedCurrent
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#getCachedCurrent
+         * @methodOf housingApiServices.User
          *
          * @description
          *
          * Get data of the currently logged user that was returned by the last
-         * call to {@link housingApiServices1.User#login} or
-         * {@link housingApiServices1.User#getCurrent}. Return null when there
+         * call to {@link housingApiServices.User#login} or
+         * {@link housingApiServices.User#getCurrent}. Return null when there
          * is no user logged in or the data of the current user were not fetched
          * yet.
          *
@@ -1063,8 +1063,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#isAuthenticated
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#isAuthenticated
+         * @methodOf housingApiServices.User
          *
          * @returns {boolean} True if the current user is authenticated (logged in).
          */
@@ -1074,8 +1074,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices1.User#getCurrentId
-         * @methodOf housingApiServices1.User
+         * @name housingApiServices.User#getCurrentId
+         * @methodOf housingApiServices.User
          *
          * @returns {Object} Id of the currently logged-in user or null.
          */
@@ -1085,8 +1085,8 @@ module.factory(
 
     /**
     * @ngdoc property
-    * @name housingApiServices1.User#modelName
-    * @propertyOf housingApiServices1.User
+    * @name housingApiServices.User#modelName
+    * @propertyOf housingApiServices.User
     * @description
     * The name of the model represented by this $resource,
     * i.e. `User`.
@@ -1187,8 +1187,8 @@ module
 
   /**
    * @ngdoc object
-   * @name housingApiServices1.LoopBackResourceProvider
-   * @header housingApiServices1.LoopBackResourceProvider
+   * @name housingApiServices.LoopBackResourceProvider
+   * @header housingApiServices.LoopBackResourceProvider
    * @description
    * Use `LoopBackResourceProvider` to change the global configuration
    * settings used by all models. Note that the provider is available
@@ -1208,8 +1208,8 @@ module
   .provider('LoopBackResource', function LoopBackResourceProvider() {
     /**
      * @ngdoc method
-     * @name housingApiServices1.LoopBackResourceProvider#setAuthHeader
-     * @methodOf housingApiServices1.LoopBackResourceProvider
+     * @name housingApiServices.LoopBackResourceProvider#setAuthHeader
+     * @methodOf housingApiServices.LoopBackResourceProvider
      * @param {string} header The header name to use, e.g. `X-Access-Token`
      * @description
      * Configure the REST transport to use a different header for sending
@@ -1222,8 +1222,8 @@ module
 
     /**
      * @ngdoc method
-     * @name housingApiServices1.LoopBackResourceProvider#setUrlBase
-     * @methodOf housingApiServices1.LoopBackResourceProvider
+     * @name housingApiServices.LoopBackResourceProvider#setUrlBase
+     * @methodOf housingApiServices.LoopBackResourceProvider
      * @param {string} url The URL to use, e.g. `/api` or `//example.com/api`.
      * @description
      * Change the URL of the REST API server. By default, the URL provided
