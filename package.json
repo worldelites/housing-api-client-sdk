@@ -12,8 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/worldelites/housing-api.git#client-sdk"
+    "url": "https://github.com/worldelites/housing-api-client-sdk.git"
   },
-  "description": "WE Housing API client SDK",
-  "files": ["client"]
+  "description": "WE Housing API client SDK"
 }

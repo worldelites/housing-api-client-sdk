@@ -1,2 +1,2 @@
-require('./client/js/housing-api-services');
+require('./js/housing-api-services');
 module.exports = 'housingApiServices';
