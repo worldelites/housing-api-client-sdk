@@ -1,0 +1,19 @@
+{
+  "name": "housing-api-client-sdk",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "optionalDependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/worldelites/housing-api.git#client-sdk"
+  },
+  "description": "WE Housing API client SDK",
+  "files": ["client"]
+}
