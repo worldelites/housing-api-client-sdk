@@ -880,7 +880,7 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.User#export_csv
+         * @name housingApiServices.User#export
          * @methodOf housingApiServices.User
          *
          * @description
@@ -909,8 +909,8 @@ module.factory(
          *
          *  - `` – `{undefined=}` - 
          */
-        "export_csv": {
-          url: urlBase + "/users/export_csv/:type",
+        "export": {
+          url: urlBase + "/users/export/:type",
           method: "GET"
         },
 
