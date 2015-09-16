@@ -880,6 +880,42 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.User#export_csv
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `type` – `{string}` - 
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `` – `{undefined=}` - 
+         */
+        "export_csv": {
+          url: urlBase + "/users/export_csv/:type",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.User#getCurrent
          * @methodOf housingApiServices.User
          *
@@ -1231,6 +1267,18 @@ module
      */
     this.setUrlBase = function(url) {
       urlBase = url;
+    };
+
+    /**
+     * @ngdoc method
+     * @name housingApiServices.LoopBackResourceProvider#getUrlBase
+     * @methodOf housingApiServices.LoopBackResourceProvider
+     * @description
+     * Get the URL of the REST API server. The URL provided
+     * to the code generator (`lb-ng` or `grunt-loopback-sdk-angular`) is used.
+     */
+    this.getUrlBase = function() {
+      return urlBase;
     };
 
     this.$get = ['$resource', function($resource) {
