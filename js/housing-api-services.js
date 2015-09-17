@@ -891,7 +891,9 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `type` – `{string}` - 
+         *  - `type` – `{string}` - the exported file type.
+         *
+         *  - `include` – `{*=}` - the list of ids that will be exported
          *
          *  - `res` – `{object=}` - 
          *
@@ -905,9 +907,7 @@ module.factory(
          *   populated with the actual data once the response is returned
          *   from the server.
          *
-         * Data properties:
-         *
-         *  - `` – `{undefined=}` - 
+         * This method returns no data.
          */
         "export": {
           url: urlBase + "/users/export/:type",
