@@ -916,6 +916,48 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.User#filter
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `firstName` – `{string=}` - search the first name of user
+         *
+         *  - `lastName` – `{string=}` - search the last name of user
+         *
+         *  - `email` – `{string=}` - search the email of user
+         *
+         *  - `regTimeFrom` – `{string=}` - registration time from
+         *
+         *  - `regTimeTo` – `{string=}` - registration time to
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "filter": {
+          url: urlBase + "/users/filter",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.User#getCurrent
          * @methodOf housingApiServices.User
          *
