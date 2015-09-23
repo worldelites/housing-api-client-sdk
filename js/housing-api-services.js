@@ -932,11 +932,13 @@ module.factory(
          *
          * @param {Object} postData Request data.
          *
+         *  - `id` – `{string}` - the user id
+         *
          *  - `current` – `{string}` - the current password
          *
          *  - `new` – `{string}` - the new password
          *
-         *  - `context` – `{object=}` - 
+         *  - `res` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -951,7 +953,7 @@ module.factory(
          * This method returns no data.
          */
         "changePassword": {
-          url: urlBase + "/users/change-password",
+          url: urlBase + "/users/:id/change-password",
           method: "POST"
         },
 
