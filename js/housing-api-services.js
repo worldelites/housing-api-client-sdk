@@ -916,7 +916,7 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.User#filter
+         * @name housingApiServices.User#changePassword
          * @methodOf housingApiServices.User
          *
          * @description
@@ -927,17 +927,16 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `firstName` – `{string=}` - search the first name of user
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
          *
-         *  - `lastName` – `{string=}` - search the last name of user
+         * @param {Object} postData Request data.
          *
-         *  - `email` – `{string=}` - search the email of user
+         *  - `current` – `{string}` - the current password
          *
-         *  - `regTimeFrom` – `{string=}` - registration time from
+         *  - `new` – `{string}` - the new password
          *
-         *  - `regTimeTo` – `{string=}` - registration time to
-         *
-         *  - `res` – `{object=}` - 
+         *  - `context` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -951,9 +950,9 @@ module.factory(
          *
          * This method returns no data.
          */
-        "filter": {
-          url: urlBase + "/users/filter",
-          method: "GET"
+        "changePassword": {
+          url: urlBase + "/users/change-password",
+          method: "POST"
         },
 
         /**
