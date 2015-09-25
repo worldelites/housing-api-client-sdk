@@ -1619,6 +1619,42 @@ module.factory(
           url: urlBase + "/apartments/change-stream",
           method: "POST"
         },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment#export
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `type` – `{string}` - the exported file type.
+         *
+         *  - `include` – `{*=}` - the list of ids that will be exported
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "export": {
+          url: urlBase + "/apartments/export/:type",
+          method: "GET"
+        },
       }
     );
 
