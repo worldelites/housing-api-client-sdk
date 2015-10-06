@@ -1873,6 +1873,12 @@ module.factory(
           method: "GET"
         },
 
+        // INTERNAL. Use FloorPlan.apartment() instead.
+        "::get::floorPlan::apartment": {
+          url: urlBase + "/floorPlans/:id/apartment",
+          method: "GET"
+        },
+
         // INTERNAL. Use ApartmentTag.apartment() instead.
         "::get::apartmentTag::apartment": {
           url: urlBase + "/apartmentTags/:id/apartment",
@@ -3918,6 +3924,12 @@ module.factory(
       { 'id': '@id' },
       {
 
+        // INTERNAL. Use FloorPlan.apartment() instead.
+        "prototype$__get__apartment": {
+          url: urlBase + "/floorPlans/:id/apartment",
+          method: "GET"
+        },
+
         /**
          * @ngdoc method
          * @name housingApiServices.FloorPlan#create
@@ -4531,6 +4543,42 @@ module.factory(
     */
     R.modelName = "FloorPlan";
 
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan#apartment
+         * @methodOf housingApiServices.FloorPlan
+         *
+         * @description
+         *
+         * Fetches belongsTo relation apartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.apartment = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::floorPlan::apartment"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
