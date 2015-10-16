@@ -959,6 +959,49 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.User#sendEmail
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `to` – `{*}` - the emails to send to
+         *
+         *  - `subject` – `{string=}` - the subject of email
+         *
+         *  - `body` – `{string=}` - the body of email
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "sendEmail": {
+          url: urlBase + "/users/sendEmail",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.User#getCurrent
          * @methodOf housingApiServices.User
          *
