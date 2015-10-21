@@ -1002,6 +1002,84 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.User#passwordReset
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `req` – `{object=}` - 
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "passwordReset": {
+          url: urlBase + "/users/reset-password",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User#activateUser
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `id` – `{string}` - the user id
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "activateUser": {
+          url: urlBase + "/users/activate",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.User#getCurrent
          * @methodOf housingApiServices.User
          *
@@ -6543,13 +6621,13 @@ module.factory(
 
 /**
  * @ngdoc object
- * @name housingApiServices.Email
- * @header housingApiServices.Email
+ * @name housingApiServices.EmailTemplate
+ * @header housingApiServices.EmailTemplate
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Email` model.
+ * A $resource object for interacting with the `EmailTemplate` model.
  *
  * ## Example
  *
@@ -6559,17 +6637,17 @@ module.factory(
  *
  */
 module.factory(
-  "Email",
+  "EmailTemplate",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/emails/:id",
+      urlBase + "/emailTemplates/:id",
       { 'id': '@id' },
       {
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#create
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#create
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6596,18 +6674,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "create": {
-          url: urlBase + "/emails",
+          url: urlBase + "/emailTemplates",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#createMany
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#createMany
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6634,19 +6712,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/emails",
+          url: urlBase + "/emailTemplates",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#upsert
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#upsert
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6673,18 +6751,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "upsert": {
-          url: urlBase + "/emails",
+          url: urlBase + "/emailTemplates",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#exists
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#exists
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6709,14 +6787,14 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/emails/:id/exists",
+          url: urlBase + "/emailTemplates/:id/exists",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#findById
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#findById
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6740,18 +6818,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "findById": {
-          url: urlBase + "/emails/:id",
+          url: urlBase + "/emailTemplates/:id",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#find
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#find
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6773,19 +6851,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "find": {
           isArray: true,
-          url: urlBase + "/emails",
+          url: urlBase + "/emailTemplates",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#findOne
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#findOne
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6807,18 +6885,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "findOne": {
-          url: urlBase + "/emails/findOne",
+          url: urlBase + "/emailTemplates/findOne",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#updateAll
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#updateAll
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6845,14 +6923,14 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/emails/update",
+          url: urlBase + "/emailTemplates/update",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#deleteById
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#deleteById
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6875,14 +6953,14 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/emails/:id",
+          url: urlBase + "/emailTemplates/:id",
           method: "DELETE"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#count
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#count
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6907,14 +6985,14 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/emails/count",
+          url: urlBase + "/emailTemplates/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#prototype$updateAttributes
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#prototype$updateAttributes
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6940,18 +7018,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/emails/:id",
+          url: urlBase + "/emailTemplates/:id",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#createChangeStream
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#createChangeStream
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -6981,7 +7059,7 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/emails/change-stream",
+          url: urlBase + "/emailTemplates/change-stream",
           method: "POST"
         },
       }
@@ -6991,8 +7069,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#updateOrCreate
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#updateOrCreate
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -7019,15 +7097,15 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Email` object.)
+         * This usually means the response is a `EmailTemplate` object.)
          * </em>
          */
         R["updateOrCreate"] = R["upsert"];
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#update
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#update
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -7057,8 +7135,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#destroyById
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#destroyById
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -7084,8 +7162,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Email#removeById
-         * @methodOf housingApiServices.Email
+         * @name housingApiServices.EmailTemplate#removeById
+         * @methodOf housingApiServices.EmailTemplate
          *
          * @description
          *
@@ -7112,13 +7190,13 @@ module.factory(
 
     /**
     * @ngdoc property
-    * @name housingApiServices.Email#modelName
-    * @propertyOf housingApiServices.Email
+    * @name housingApiServices.EmailTemplate#modelName
+    * @propertyOf housingApiServices.EmailTemplate
     * @description
     * The name of the model represented by this $resource,
-    * i.e. `Email`.
+    * i.e. `EmailTemplate`.
     */
-    R.modelName = "Email";
+    R.modelName = "EmailTemplate";
 
 
     return R;
@@ -8659,6 +8737,50 @@ module.factory(
     * i.e. `Container`.
     */
     R.modelName = "Container";
+
+
+    return R;
+  }]);
+
+/**
+ * @ngdoc object
+ * @name housingApiServices.Email
+ * @header housingApiServices.Email
+ * @object
+ *
+ * @description
+ *
+ * A $resource object for interacting with the `Email` model.
+ *
+ * ## Example
+ *
+ * See
+ * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
+ * for an example of using this object.
+ *
+ */
+module.factory(
+  "Email",
+  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
+    var R = Resource(
+      urlBase + "/Emails/:id",
+      { 'id': '@id' },
+      {
+      }
+    );
+
+
+
+
+    /**
+    * @ngdoc property
+    * @name housingApiServices.Email#modelName
+    * @propertyOf housingApiServices.Email
+    * @description
+    * The name of the model represented by this $resource,
+    * i.e. `Email`.
+    */
+    R.modelName = "Email";
 
 
     return R;
