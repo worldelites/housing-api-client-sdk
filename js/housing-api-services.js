@@ -4052,89 +4052,89 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.findById() instead.
-        "::findById::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.findById() instead.
+        "::findById::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.destroyById() instead.
-        "::destroyById::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.destroyById() instead.
+        "::destroyById::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.updateById() instead.
-        "::updateById::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.updateById() instead.
+        "::updateById::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.link() instead.
-        "::link::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.link() instead.
+        "::link::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.unlink() instead.
-        "::unlink::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.unlink() instead.
+        "::unlink::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.exists() instead.
-        "::exists::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.exists() instead.
+        "::exists::crawledApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags() instead.
-        "::get::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags() instead.
+        "::get::crawledApartment::tags": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/tags",
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.create() instead.
-        "::create::crawled_apartment::tags": {
-          url: urlBase + "/crawled_apartments/:id/tags",
+        // INTERNAL. Use CrawledApartment.tags.create() instead.
+        "::create::crawledApartment::tags": {
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.createMany() instead.
-        "::createMany::crawled_apartment::tags": {
+        // INTERNAL. Use CrawledApartment.tags.createMany() instead.
+        "::createMany::crawledApartment::tags": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/tags",
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.destroyAll() instead.
-        "::delete::crawled_apartment::tags": {
-          url: urlBase + "/crawled_apartments/:id/tags",
+        // INTERNAL. Use CrawledApartment.tags.destroyAll() instead.
+        "::delete::crawledApartment::tags": {
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.count() instead.
-        "::count::crawled_apartment::tags": {
-          url: urlBase + "/crawled_apartments/:id/tags/count",
+        // INTERNAL. Use CrawledApartment.tags.count() instead.
+        "::count::crawledApartment::tags": {
+          url: urlBase + "/crawledApartments/:id/tags/count",
           method: "GET"
         },
       }
@@ -5196,62 +5196,62 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.findById() instead.
-        "::findById::crawled_apartment::floorPlans": {
+        // INTERNAL. Use CrawledApartment.floorPlans.findById() instead.
+        "::findById::crawledApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.destroyById() instead.
-        "::destroyById::crawled_apartment::floorPlans": {
+        // INTERNAL. Use CrawledApartment.floorPlans.destroyById() instead.
+        "::destroyById::crawledApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.updateById() instead.
-        "::updateById::crawled_apartment::floorPlans": {
+        // INTERNAL. Use CrawledApartment.floorPlans.updateById() instead.
+        "::updateById::crawledApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans() instead.
-        "::get::crawled_apartment::floorPlans": {
+        // INTERNAL. Use CrawledApartment.floorPlans() instead.
+        "::get::crawledApartment::floorPlans": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.create() instead.
-        "::create::crawled_apartment::floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+        // INTERNAL. Use CrawledApartment.floorPlans.create() instead.
+        "::create::crawledApartment::floorPlans": {
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.createMany() instead.
-        "::createMany::crawled_apartment::floorPlans": {
+        // INTERNAL. Use CrawledApartment.floorPlans.createMany() instead.
+        "::createMany::crawledApartment::floorPlans": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.destroyAll() instead.
-        "::delete::crawled_apartment::floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+        // INTERNAL. Use CrawledApartment.floorPlans.destroyAll() instead.
+        "::delete::crawledApartment::floorPlans": {
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.count() instead.
-        "::count::crawled_apartment::floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans/count",
+        // INTERNAL. Use CrawledApartment.floorPlans.count() instead.
+        "::count::crawledApartment::floorPlans": {
+          url: urlBase + "/crawledApartments/:id/floorPlans/count",
           method: "GET"
         },
       }
@@ -7962,89 +7962,89 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.findById() instead.
-        "::findById::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.findById() instead.
+        "::findById::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.destroyById() instead.
-        "::destroyById::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.destroyById() instead.
+        "::destroyById::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.updateById() instead.
-        "::updateById::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.updateById() instead.
+        "::updateById::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.link() instead.
-        "::link::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.link() instead.
+        "::link::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.unlink() instead.
-        "::unlink::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.unlink() instead.
+        "::unlink::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.exists() instead.
-        "::exists::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.exists() instead.
+        "::exists::crawledApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities() instead.
-        "::get::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities() instead.
+        "::get::crawledApartment::universities": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/universities",
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.create() instead.
-        "::create::crawled_apartment::universities": {
-          url: urlBase + "/crawled_apartments/:id/universities",
+        // INTERNAL. Use CrawledApartment.universities.create() instead.
+        "::create::crawledApartment::universities": {
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.createMany() instead.
-        "::createMany::crawled_apartment::universities": {
+        // INTERNAL. Use CrawledApartment.universities.createMany() instead.
+        "::createMany::crawledApartment::universities": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/universities",
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.destroyAll() instead.
-        "::delete::crawled_apartment::universities": {
-          url: urlBase + "/crawled_apartments/:id/universities",
+        // INTERNAL. Use CrawledApartment.universities.destroyAll() instead.
+        "::delete::crawledApartment::universities": {
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.count() instead.
-        "::count::crawled_apartment::universities": {
-          url: urlBase + "/crawled_apartments/:id/universities/count",
+        // INTERNAL. Use CrawledApartment.universities.count() instead.
+        "::count::crawledApartment::universities": {
+          url: urlBase + "/crawledApartments/:id/universities/count",
           method: "GET"
         },
       }
@@ -8599,13 +8599,13 @@ module.factory(
 
 /**
  * @ngdoc object
- * @name housingApiServices.Crawled_apartment
- * @header housingApiServices.Crawled_apartment
+ * @name housingApiServices.CrawledApartment
+ * @header housingApiServices.CrawledApartment
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Crawled_apartment` model.
+ * A $resource object for interacting with the `CrawledApartment` model.
  *
  * ## Example
  *
@@ -8615,227 +8615,227 @@ module.factory(
  *
  */
 module.factory(
-  "Crawled_apartment",
+  "CrawledApartment",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/crawled_apartments/:id",
+      urlBase + "/crawledApartments/:id",
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use Crawled_apartment.tags.findById() instead.
+        // INTERNAL. Use CrawledApartment.tags.findById() instead.
         "prototype$__findById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.destroyById() instead.
+        // INTERNAL. Use CrawledApartment.tags.destroyById() instead.
         "prototype$__destroyById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.updateById() instead.
+        // INTERNAL. Use CrawledApartment.tags.updateById() instead.
         "prototype$__updateById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.link() instead.
+        // INTERNAL. Use CrawledApartment.tags.link() instead.
         "prototype$__link__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.unlink() instead.
+        // INTERNAL. Use CrawledApartment.tags.unlink() instead.
         "prototype$__unlink__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.exists() instead.
+        // INTERNAL. Use CrawledApartment.tags.exists() instead.
         "prototype$__exists__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/tags/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/tags/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.findById() instead.
+        // INTERNAL. Use CrawledApartment.universities.findById() instead.
         "prototype$__findById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.destroyById() instead.
+        // INTERNAL. Use CrawledApartment.universities.destroyById() instead.
         "prototype$__destroyById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.updateById() instead.
+        // INTERNAL. Use CrawledApartment.universities.updateById() instead.
         "prototype$__updateById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.link() instead.
+        // INTERNAL. Use CrawledApartment.universities.link() instead.
         "prototype$__link__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.unlink() instead.
+        // INTERNAL. Use CrawledApartment.universities.unlink() instead.
         "prototype$__unlink__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.exists() instead.
+        // INTERNAL. Use CrawledApartment.universities.exists() instead.
         "prototype$__exists__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/universities/rel/:fk",
+          url: urlBase + "/crawledApartments/:id/universities/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.findById() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.findById() instead.
         "prototype$__findById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.destroyById() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.destroyById() instead.
         "prototype$__destroyById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.updateById() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.updateById() instead.
         "prototype$__updateById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/crawled_apartments/:id/floorPlans/:fk",
+          url: urlBase + "/crawledApartments/:id/floorPlans/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags() instead.
+        // INTERNAL. Use CrawledApartment.tags() instead.
         "prototype$__get__tags": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/tags",
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.create() instead.
+        // INTERNAL. Use CrawledApartment.tags.create() instead.
         "prototype$__create__tags": {
-          url: urlBase + "/crawled_apartments/:id/tags",
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.destroyAll() instead.
+        // INTERNAL. Use CrawledApartment.tags.destroyAll() instead.
         "prototype$__delete__tags": {
-          url: urlBase + "/crawled_apartments/:id/tags",
+          url: urlBase + "/crawledApartments/:id/tags",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.tags.count() instead.
+        // INTERNAL. Use CrawledApartment.tags.count() instead.
         "prototype$__count__tags": {
-          url: urlBase + "/crawled_apartments/:id/tags/count",
+          url: urlBase + "/crawledApartments/:id/tags/count",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities() instead.
+        // INTERNAL. Use CrawledApartment.universities() instead.
         "prototype$__get__universities": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/universities",
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.create() instead.
+        // INTERNAL. Use CrawledApartment.universities.create() instead.
         "prototype$__create__universities": {
-          url: urlBase + "/crawled_apartments/:id/universities",
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.destroyAll() instead.
+        // INTERNAL. Use CrawledApartment.universities.destroyAll() instead.
         "prototype$__delete__universities": {
-          url: urlBase + "/crawled_apartments/:id/universities",
+          url: urlBase + "/crawledApartments/:id/universities",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.universities.count() instead.
+        // INTERNAL. Use CrawledApartment.universities.count() instead.
         "prototype$__count__universities": {
-          url: urlBase + "/crawled_apartments/:id/universities/count",
+          url: urlBase + "/crawledApartments/:id/universities/count",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "GET"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.create() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.create() instead.
         "prototype$__create__floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.destroyAll() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.destroyAll() instead.
         "prototype$__delete__floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans",
+          url: urlBase + "/crawledApartments/:id/floorPlans",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Crawled_apartment.floorPlans.count() instead.
+        // INTERNAL. Use CrawledApartment.floorPlans.count() instead.
         "prototype$__count__floorPlans": {
-          url: urlBase + "/crawled_apartments/:id/floorPlans/count",
+          url: urlBase + "/crawledApartments/:id/floorPlans/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#create
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#create
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -8862,18 +8862,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "create": {
-          url: urlBase + "/crawled_apartments",
+          url: urlBase + "/crawledApartments",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#createMany
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#createMany
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -8900,19 +8900,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/crawled_apartments",
+          url: urlBase + "/crawledApartments",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#upsert
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#upsert
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -8939,18 +8939,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "upsert": {
-          url: urlBase + "/crawled_apartments",
+          url: urlBase + "/crawledApartments",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#exists
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#exists
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -8975,14 +8975,14 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/crawled_apartments/:id/exists",
+          url: urlBase + "/crawledApartments/:id/exists",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#findById
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#findById
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9006,18 +9006,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "findById": {
-          url: urlBase + "/crawled_apartments/:id",
+          url: urlBase + "/crawledApartments/:id",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#find
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#find
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9039,19 +9039,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "find": {
           isArray: true,
-          url: urlBase + "/crawled_apartments",
+          url: urlBase + "/crawledApartments",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#findOne
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#findOne
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9073,18 +9073,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "findOne": {
-          url: urlBase + "/crawled_apartments/findOne",
+          url: urlBase + "/crawledApartments/findOne",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#updateAll
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#updateAll
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9111,14 +9111,14 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/crawled_apartments/update",
+          url: urlBase + "/crawledApartments/update",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#deleteById
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#deleteById
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9141,14 +9141,14 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/crawled_apartments/:id",
+          url: urlBase + "/crawledApartments/:id",
           method: "DELETE"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#count
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#count
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9173,14 +9173,14 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/crawled_apartments/count",
+          url: urlBase + "/crawledApartments/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#prototype$updateAttributes
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#prototype$updateAttributes
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9206,18 +9206,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/crawled_apartments/:id",
+          url: urlBase + "/crawledApartments/:id",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#createChangeStream
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#createChangeStream
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9247,7 +9247,7 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/crawled_apartments/change-stream",
+          url: urlBase + "/crawledApartments/change-stream",
           method: "POST"
         },
       }
@@ -9257,8 +9257,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#updateOrCreate
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#updateOrCreate
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9285,15 +9285,15 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Crawled_apartment` object.)
+         * This usually means the response is a `CrawledApartment` object.)
          * </em>
          */
         R["updateOrCreate"] = R["upsert"];
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#update
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#update
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9323,8 +9323,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#destroyById
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#destroyById
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9350,8 +9350,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#removeById
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#removeById
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
@@ -9378,37 +9378,37 @@ module.factory(
 
     /**
     * @ngdoc property
-    * @name housingApiServices.Crawled_apartment#modelName
-    * @propertyOf housingApiServices.Crawled_apartment
+    * @name housingApiServices.CrawledApartment#modelName
+    * @propertyOf housingApiServices.CrawledApartment
     * @description
     * The name of the model represented by this $resource,
-    * i.e. `Crawled_apartment`.
+    * i.e. `CrawledApartment`.
     */
-    R.modelName = "Crawled_apartment";
+    R.modelName = "CrawledApartment";
 
     /**
      * @ngdoc object
-     * @name housingApiServices.Crawled_apartment.tags
-     * @header housingApiServices.Crawled_apartment.tags
+     * @name housingApiServices.CrawledApartment.tags
+     * @header housingApiServices.CrawledApartment.tags
      * @object
      * @description
      *
-     * The object `Crawled_apartment.tags` groups methods
-     * manipulating `Tag` instances related to `Crawled_apartment`.
+     * The object `CrawledApartment.tags` groups methods
+     * manipulating `Tag` instances related to `CrawledApartment`.
      *
-     * Call {@link housingApiServices.Crawled_apartment#tags Crawled_apartment.tags()}
+     * Call {@link housingApiServices.CrawledApartment#tags CrawledApartment.tags()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#tags
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#tags
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
-         * Queries tags of crawled_apartment.
+         * Queries tags of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -9433,18 +9433,18 @@ module.factory(
          */
         R.tags = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::get::crawled_apartment::tags"];
+          var action = TargetResource["::get::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#count
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#count
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
-         * Counts tags of crawled_apartment.
+         * Counts tags of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -9468,14 +9468,14 @@ module.factory(
          */
         R.tags.count = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::count::crawled_apartment::tags"];
+          var action = TargetResource["::count::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#create
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#create
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9506,14 +9506,14 @@ module.factory(
          */
         R.tags.create = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::create::crawled_apartment::tags"];
+          var action = TargetResource["::create::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#createMany
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#createMany
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9544,14 +9544,14 @@ module.factory(
          */
         R.tags.createMany = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::createMany::crawled_apartment::tags"];
+          var action = TargetResource["::createMany::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#destroyAll
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#destroyAll
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9575,14 +9575,14 @@ module.factory(
          */
         R.tags.destroyAll = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::delete::crawled_apartment::tags"];
+          var action = TargetResource["::delete::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#destroyById
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#destroyById
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9608,14 +9608,14 @@ module.factory(
          */
         R.tags.destroyById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::destroyById::crawled_apartment::tags"];
+          var action = TargetResource["::destroyById::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#exists
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#exists
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9644,14 +9644,14 @@ module.factory(
          */
         R.tags.exists = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::exists::crawled_apartment::tags"];
+          var action = TargetResource["::exists::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#findById
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#findById
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9680,14 +9680,14 @@ module.factory(
          */
         R.tags.findById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::findById::crawled_apartment::tags"];
+          var action = TargetResource["::findById::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#link
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#link
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9720,14 +9720,14 @@ module.factory(
          */
         R.tags.link = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::link::crawled_apartment::tags"];
+          var action = TargetResource["::link::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#unlink
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#unlink
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9753,14 +9753,14 @@ module.factory(
          */
         R.tags.unlink = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::unlink::crawled_apartment::tags"];
+          var action = TargetResource["::unlink::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.tags#updateById
-         * @methodOf housingApiServices.Crawled_apartment.tags
+         * @name housingApiServices.CrawledApartment.tags#updateById
+         * @methodOf housingApiServices.CrawledApartment.tags
          *
          * @description
          *
@@ -9793,32 +9793,32 @@ module.factory(
          */
         R.tags.updateById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::updateById::crawled_apartment::tags"];
+          var action = TargetResource["::updateById::crawledApartment::tags"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.Crawled_apartment.universities
-     * @header housingApiServices.Crawled_apartment.universities
+     * @name housingApiServices.CrawledApartment.universities
+     * @header housingApiServices.CrawledApartment.universities
      * @object
      * @description
      *
-     * The object `Crawled_apartment.universities` groups methods
-     * manipulating `University` instances related to `Crawled_apartment`.
+     * The object `CrawledApartment.universities` groups methods
+     * manipulating `University` instances related to `CrawledApartment`.
      *
-     * Call {@link housingApiServices.Crawled_apartment#universities Crawled_apartment.universities()}
+     * Call {@link housingApiServices.CrawledApartment#universities CrawledApartment.universities()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#universities
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#universities
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
-         * Queries universities of crawled_apartment.
+         * Queries universities of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -9843,18 +9843,18 @@ module.factory(
          */
         R.universities = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::get::crawled_apartment::universities"];
+          var action = TargetResource["::get::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#count
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#count
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
-         * Counts universities of crawled_apartment.
+         * Counts universities of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -9878,14 +9878,14 @@ module.factory(
          */
         R.universities.count = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::count::crawled_apartment::universities"];
+          var action = TargetResource["::count::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#create
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#create
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -9916,14 +9916,14 @@ module.factory(
          */
         R.universities.create = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::create::crawled_apartment::universities"];
+          var action = TargetResource["::create::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#createMany
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#createMany
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -9954,14 +9954,14 @@ module.factory(
          */
         R.universities.createMany = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::createMany::crawled_apartment::universities"];
+          var action = TargetResource["::createMany::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#destroyAll
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#destroyAll
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -9985,14 +9985,14 @@ module.factory(
          */
         R.universities.destroyAll = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::delete::crawled_apartment::universities"];
+          var action = TargetResource["::delete::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#destroyById
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#destroyById
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10018,14 +10018,14 @@ module.factory(
          */
         R.universities.destroyById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::destroyById::crawled_apartment::universities"];
+          var action = TargetResource["::destroyById::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#exists
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#exists
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10054,14 +10054,14 @@ module.factory(
          */
         R.universities.exists = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::exists::crawled_apartment::universities"];
+          var action = TargetResource["::exists::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#findById
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#findById
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10090,14 +10090,14 @@ module.factory(
          */
         R.universities.findById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::findById::crawled_apartment::universities"];
+          var action = TargetResource["::findById::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#link
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#link
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10130,14 +10130,14 @@ module.factory(
          */
         R.universities.link = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::link::crawled_apartment::universities"];
+          var action = TargetResource["::link::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#unlink
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#unlink
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10163,14 +10163,14 @@ module.factory(
          */
         R.universities.unlink = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::unlink::crawled_apartment::universities"];
+          var action = TargetResource["::unlink::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.universities#updateById
-         * @methodOf housingApiServices.Crawled_apartment.universities
+         * @name housingApiServices.CrawledApartment.universities#updateById
+         * @methodOf housingApiServices.CrawledApartment.universities
          *
          * @description
          *
@@ -10203,32 +10203,32 @@ module.factory(
          */
         R.universities.updateById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::updateById::crawled_apartment::universities"];
+          var action = TargetResource["::updateById::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.Crawled_apartment.floorPlans
-     * @header housingApiServices.Crawled_apartment.floorPlans
+     * @name housingApiServices.CrawledApartment.floorPlans
+     * @header housingApiServices.CrawledApartment.floorPlans
      * @object
      * @description
      *
-     * The object `Crawled_apartment.floorPlans` groups methods
-     * manipulating `FloorPlan` instances related to `Crawled_apartment`.
+     * The object `CrawledApartment.floorPlans` groups methods
+     * manipulating `FloorPlan` instances related to `CrawledApartment`.
      *
-     * Call {@link housingApiServices.Crawled_apartment#floorPlans Crawled_apartment.floorPlans()}
+     * Call {@link housingApiServices.CrawledApartment#floorPlans CrawledApartment.floorPlans()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment#floorPlans
-         * @methodOf housingApiServices.Crawled_apartment
+         * @name housingApiServices.CrawledApartment#floorPlans
+         * @methodOf housingApiServices.CrawledApartment
          *
          * @description
          *
-         * Queries floorPlans of crawled_apartment.
+         * Queries floorPlans of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -10253,18 +10253,18 @@ module.factory(
          */
         R.floorPlans = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::get::crawled_apartment::floorPlans"];
+          var action = TargetResource["::get::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#count
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#count
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
-         * Counts floorPlans of crawled_apartment.
+         * Counts floorPlans of crawledApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -10288,14 +10288,14 @@ module.factory(
          */
         R.floorPlans.count = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::count::crawled_apartment::floorPlans"];
+          var action = TargetResource["::count::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#create
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#create
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10326,14 +10326,14 @@ module.factory(
          */
         R.floorPlans.create = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::create::crawled_apartment::floorPlans"];
+          var action = TargetResource["::create::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#createMany
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#createMany
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10364,14 +10364,14 @@ module.factory(
          */
         R.floorPlans.createMany = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::createMany::crawled_apartment::floorPlans"];
+          var action = TargetResource["::createMany::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#destroyAll
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#destroyAll
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10395,14 +10395,14 @@ module.factory(
          */
         R.floorPlans.destroyAll = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::delete::crawled_apartment::floorPlans"];
+          var action = TargetResource["::delete::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#destroyById
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#destroyById
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10428,14 +10428,14 @@ module.factory(
          */
         R.floorPlans.destroyById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::destroyById::crawled_apartment::floorPlans"];
+          var action = TargetResource["::destroyById::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#findById
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#findById
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10464,14 +10464,14 @@ module.factory(
          */
         R.floorPlans.findById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::findById::crawled_apartment::floorPlans"];
+          var action = TargetResource["::findById::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Crawled_apartment.floorPlans#updateById
-         * @methodOf housingApiServices.Crawled_apartment.floorPlans
+         * @name housingApiServices.CrawledApartment.floorPlans#updateById
+         * @methodOf housingApiServices.CrawledApartment.floorPlans
          *
          * @description
          *
@@ -10504,7 +10504,7 @@ module.factory(
          */
         R.floorPlans.updateById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::updateById::crawled_apartment::floorPlans"];
+          var action = TargetResource["::updateById::crawledApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
