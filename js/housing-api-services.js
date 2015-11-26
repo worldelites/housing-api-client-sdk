@@ -5003,7 +5003,41 @@ module.factory(
          * This method returns no data.
          */
         "exportUsers": {
-          url: urlBase + "/apartments/export/:type",
+          url: urlBase + "/apartments/exportUsers/:type",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment#generateCoupon
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `info` – `{object}` - the information needed to write
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "generateCoupon": {
+          url: urlBase + "/apartments/generateCoupon/:info",
           method: "GET"
         },
 
