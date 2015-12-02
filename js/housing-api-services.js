@@ -1394,6 +1394,49 @@ module.factory(
           method: "POST"
         },
 
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User#track
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `type` – `{string}` - the type of user action
+         *
+         *  - `userId` – `{string}` - the user id
+         *
+         *  - `apartmentId` – `{string}` - the apartment id
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "track": {
+          url: urlBase + "/users/track",
+          method: "POST"
+        },
+
         // INTERNAL. Use Apartment.likeUsers.findById() instead.
         "::findById::apartment::likeUsers": {
           params: {
@@ -5020,7 +5063,9 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `info` – `{object}` - the information needed to write
+         *  - `apartmentId` – `{string}` - the id of apartment
+         *
+         *  - `userName` – `{string}` - the name of user
          *
          *  - `res` – `{object=}` - 
          *
@@ -5037,7 +5082,7 @@ module.factory(
          * This method returns no data.
          */
         "generateCoupon": {
-          url: urlBase + "/apartments/generateCoupon/:info",
+          url: urlBase + "/apartments/generateCoupon/:apartmentId",
           method: "GET"
         },
 
