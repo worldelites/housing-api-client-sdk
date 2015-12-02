@@ -5052,7 +5052,7 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Apartment#generateCoupon
+         * @name housingApiServices.Apartment#coupon
          * @methodOf housingApiServices.Apartment
          *
          * @description
@@ -5063,9 +5063,9 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `apartmentId` – `{string}` - the id of apartment
+         *  - `id` – `{string}` - the id of apartment
          *
-         *  - `userName` – `{string}` - the name of user
+         *  - `userId` – `{string}` - the user id
          *
          *  - `res` – `{object=}` - 
          *
@@ -5081,8 +5081,8 @@ module.factory(
          *
          * This method returns no data.
          */
-        "generateCoupon": {
-          url: urlBase + "/apartments/generateCoupon/:apartmentId",
+        "coupon": {
+          url: urlBase + "/apartments/:id/coupon",
           method: "GET"
         },
 
