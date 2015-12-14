@@ -3,6 +3,13 @@
 var urlBase = "/api";
 var authHeader = 'authorization';
 
+function getHost(url) {
+  var m = url.match(/^(?:https?:)?\/\/([^\/]+)/);
+  return m ? m[1] : null;
+}
+
+var urlBaseHost = getHost(urlBase) || location.host;
+
 /**
  * @ngdoc overview
  * @name housingApiServices
@@ -1273,6 +1280,45 @@ module.factory(
          */
         "changePassword": {
           url: urlBase + "/users/:id/change-password",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User#reVerify
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `req` – `{object=}` - 
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "reVerify": {
+          url: urlBase + "/users/reVerify",
           method: "POST"
         },
 
@@ -20784,7 +20830,7 @@ module.factory(
 
 module
   .factory('LoopBackAuth', function() {
-    var props = ['accessTokenId', 'currentUserId'];
+    var props = ['accessTokenId', 'currentUserId', 'rememberMe'];
     var propsPrefix = '$LoopBack$';
 
     function LoopBackAuth() {
@@ -20792,7 +20838,6 @@ module
       props.forEach(function(name) {
         self[name] = load(name);
       });
-      this.rememberMe = undefined;
       this.currentUserData = null;
     }
 
@@ -20846,8 +20891,9 @@ module
       return {
         'request': function(config) {
 
-          // filter out non urlBase requests
-          if (config.url.substr(0, urlBase.length) !== urlBase) {
+          // filter out external requests
+          var host = getHost(config.url);
+          if (host && host !== urlBaseHost) {
             return config;
           }
 
@@ -20915,6 +20961,7 @@ module
      */
     this.setUrlBase = function(url) {
       urlBase = url;
+      urlBaseHost = getHost(urlBase) || location.host;
     };
 
     /**
