@@ -1318,7 +1318,7 @@ module.factory(
          * This method returns no data.
          */
         "reVerify": {
-          url: urlBase + "/users/reVerify",
+          url: urlBase + "/users/re-verify",
           method: "POST"
         },
 
