@@ -1301,6 +1301,8 @@ module.factory(
          *
          * @param {Object} postData Request data.
          *
+         *  - `userId` – `{string}` - the user id
+         *
          *  - `req` – `{object=}` - 
          *
          *  - `res` – `{object=}` - 
