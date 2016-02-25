@@ -29171,6 +29171,46 @@ module.factory(
           method: "POST"
         },
 
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#sendEmail
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `from` – `{string}` - email from
+         *
+         *  - `to` – `{string}` - email to
+         *
+         *  - `subject` – `{string}` - email subject
+         *
+         *  - `html` – `{string}` - email html
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "sendEmail": {
+          url: urlBase + "/prospectiveApartments/send-email",
+          method: "GET"
+        },
+
         // INTERNAL. Use ProspectiveApartmentTag.apartment() instead.
         "::get::prospectiveApartmentTag::apartment": {
           url: urlBase + "/prospectiveApartmentTags/:id/apartment",
