@@ -29184,6 +29184,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
          *  - `html` – `{string}` - email html
          *
          *  - `res` – `{object=}` - 
@@ -29202,7 +29207,7 @@ module.factory(
          */
         "sendEmail": {
           url: urlBase + "/prospectiveApartments/send-email",
-          method: "GET"
+          method: "POST"
         },
 
         // INTERNAL. Use ProspectiveApartmentTag.apartment() instead.
