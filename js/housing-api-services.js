@@ -29184,12 +29184,6 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `from` – `{string}` - email from
-         *
-         *  - `to` – `{string}` - email to
-         *
-         *  - `subject` – `{string}` - email subject
-         *
          *  - `html` – `{string}` - email html
          *
          *  - `res` – `{object=}` - 
