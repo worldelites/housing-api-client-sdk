@@ -29474,6 +29474,8 @@ module.factory(
          *
          * @param {Object} postData Request data.
          *
+         *  - `to` – `{string}` - email to
+         *
          *  - `html` – `{string}` - email html
          *
          *  - `res` – `{object=}` - 
