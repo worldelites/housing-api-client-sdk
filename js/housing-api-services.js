@@ -5968,9 +5968,9 @@ module.factory(
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.manager() instead.
-        "::get::pendingApartment::manager": {
-          url: urlBase + "/pendingApartments/:id/manager",
+        // INTERNAL. Use ProspectiveApartment.manager() instead.
+        "::get::prospectiveApartment::manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
           method: "GET"
         },
 
@@ -26850,12 +26850,6 @@ module.factory(
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.manager() instead.
-        "prototype$__get__manager": {
-          url: urlBase + "/pendingApartments/:id/manager",
-          method: "GET"
-        },
-
         // INTERNAL. Use PendingApartment.tags.findById() instead.
         "prototype$__findById__tags": {
           params: {
@@ -29655,42 +29649,6 @@ module.factory(
           var action = TargetResource["::updateById::pendingApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.PendingApartment#manager
-         * @methodOf housingApiServices.PendingApartment
-         *
-         * @description
-         *
-         * Fetches belongsTo relation manager.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         *  - `refresh` – `{boolean=}` - 
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Manager` object.)
-         * </em>
-         */
-        R.manager = function() {
-          var TargetResource = $injector.get("Manager");
-          var action = TargetResource["::get::pendingApartment::manager"];
-          return action.apply(R, arguments);
-        };
     /**
      * @ngdoc object
      * @name housingApiServices.PendingApartment.tags
@@ -32133,6 +32091,12 @@ module.factory(
           },
           url: urlBase + "/prospectiveApartments/:id/redirectUsers/rel/:fk",
           method: "HEAD"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager() instead.
+        "prototype$__get__manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "GET"
         },
 
         // INTERNAL. Use ProspectiveApartment.tags.findById() instead.
@@ -35002,6 +34966,42 @@ module.factory(
         R.redirectUsers.updateById = function() {
           var TargetResource = $injector.get("User");
           var action = TargetResource["::updateById::prospectiveApartment::redirectUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#manager
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Fetches belongsTo relation manager.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Manager` object.)
+         * </em>
+         */
+        R.manager = function() {
+          var TargetResource = $injector.get("Manager");
+          var action = TargetResource["::get::prospectiveApartment::manager"];
           return action.apply(R, arguments);
         };
     /**
