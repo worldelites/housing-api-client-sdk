@@ -5974,6 +5974,31 @@ module.factory(
           method: "GET"
         },
 
+        // INTERNAL. Use ProspectiveApartment.manager.create() instead.
+        "::create::prospectiveApartment::manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager.createMany() instead.
+        "::createMany::prospectiveApartment::manager": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager.update() instead.
+        "::update::prospectiveApartment::manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager.destroy() instead.
+        "::destroy::prospectiveApartment::manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "DELETE"
+        },
+
         /**
          * @ngdoc method
          * @name housingApiServices.Manager#getCurrent
@@ -32099,6 +32124,24 @@ module.factory(
           method: "GET"
         },
 
+        // INTERNAL. Use ProspectiveApartment.manager.create() instead.
+        "prototype$__create__manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager.update() instead.
+        "prototype$__update__manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.manager.destroy() instead.
+        "prototype$__destroy__manager": {
+          url: urlBase + "/prospectiveApartments/:id/manager",
+          method: "DELETE"
+        },
+
         // INTERNAL. Use ProspectiveApartment.tags.findById() instead.
         "prototype$__findById__tags": {
           params: {
@@ -34968,6 +35011,20 @@ module.factory(
           var action = TargetResource["::updateById::prospectiveApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.ProspectiveApartment.manager
+     * @header housingApiServices.ProspectiveApartment.manager
+     * @object
+     * @description
+     *
+     * The object `ProspectiveApartment.manager` groups methods
+     * manipulating `Manager` instances related to `ProspectiveApartment`.
+     *
+     * Call {@link housingApiServices.ProspectiveApartment#manager ProspectiveApartment.manager()}
+     * to query all related instances.
+     */
+
 
         /**
          * @ngdoc method
@@ -34976,7 +35033,7 @@ module.factory(
          *
          * @description
          *
-         * Fetches belongsTo relation manager.
+         * Fetches hasOne relation manager.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35002,6 +35059,151 @@ module.factory(
         R.manager = function() {
           var TargetResource = $injector.get("Manager");
           var action = TargetResource["::get::prospectiveApartment::manager"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.manager#create
+         * @methodOf housingApiServices.ProspectiveApartment.manager
+         *
+         * @description
+         *
+         * Creates a new instance in manager of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Manager` object.)
+         * </em>
+         */
+        R.manager.create = function() {
+          var TargetResource = $injector.get("Manager");
+          var action = TargetResource["::create::prospectiveApartment::manager"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.manager#createMany
+         * @methodOf housingApiServices.ProspectiveApartment.manager
+         *
+         * @description
+         *
+         * Creates a new instance in manager of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Manager` object.)
+         * </em>
+         */
+        R.manager.createMany = function() {
+          var TargetResource = $injector.get("Manager");
+          var action = TargetResource["::createMany::prospectiveApartment::manager"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.manager#destroy
+         * @methodOf housingApiServices.ProspectiveApartment.manager
+         *
+         * @description
+         *
+         * Deletes manager of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.manager.destroy = function() {
+          var TargetResource = $injector.get("Manager");
+          var action = TargetResource["::destroy::prospectiveApartment::manager"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.manager#update
+         * @methodOf housingApiServices.ProspectiveApartment.manager
+         *
+         * @description
+         *
+         * Update manager of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Manager` object.)
+         * </em>
+         */
+        R.manager.update = function() {
+          var TargetResource = $injector.get("Manager");
+          var action = TargetResource["::update::prospectiveApartment::manager"];
           return action.apply(R, arguments);
         };
     /**
