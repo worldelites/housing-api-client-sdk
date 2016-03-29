@@ -6138,7 +6138,7 @@ module.factory(
          * This method returns no data.
          */
         "gaExtract": {
-          url: urlBase + "/apartments/gaExtract",
+          url: urlBase + "/apartments/gaExtract/:category",
           method: "GET"
         },
 
