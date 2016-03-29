@@ -1252,6 +1252,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
          *  - `type` – `{string}` - the exported file type.
          *
          *  - `include` – `{*=}` - the list of ids that will be exported
@@ -1271,8 +1276,8 @@ module.factory(
          * This method returns no data.
          */
         "export": {
-          url: urlBase + "/users/export/:type",
-          method: "GET"
+          url: urlBase + "/users/export",
+          method: "POST"
         },
 
         /**
@@ -5998,6 +6003,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
          *  - `type` – `{string}` - the exported file type.
          *
          *  - `include` – `{*=}` - the list of ids that will be exported
@@ -6017,8 +6027,8 @@ module.factory(
          * This method returns no data.
          */
         "export": {
-          url: urlBase + "/apartments/export/:type",
-          method: "GET"
+          url: urlBase + "/apartments/export",
+          method: "POST"
         },
 
         /**
@@ -6033,6 +6043,11 @@ module.factory(
          * </em>
          *
          * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
          *
          *  - `type` – `{string}` - the exported file type.
          *
@@ -6053,8 +6068,8 @@ module.factory(
          * This method returns no data.
          */
         "exportUsers": {
-          url: urlBase + "/apartments/exportUsers/:type",
-          method: "GET"
+          url: urlBase + "/apartments/exportUsers",
+          method: "POST"
         },
 
         /**
@@ -6090,6 +6105,40 @@ module.factory(
          */
         "coupon": {
           url: urlBase + "/apartments/:id/coupon",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment#gaExtract
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `apartmentId` – `{string}` - the apartment id
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "gaExtract": {
+          url: urlBase + "/apartments/gaExtract",
           method: "GET"
         },
 
