@@ -6121,7 +6121,7 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `apartmentId` – `{string}` - the apartment id
+         *  - `category` – `{string}` - the category
          *
          *  - `res` – `{object=}` - 
          *
