@@ -6087,6 +6087,10 @@ module.factory(
          *
          *  - `category` – `{string}` - the category
          *
+         *  - `startDate` – `{string}` - the start date to query google analytics
+         *
+         *  - `endDate` – `{string}` - the end date to query google analytics
+         *
          *  - `res` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
@@ -6102,7 +6106,7 @@ module.factory(
          * This method returns no data.
          */
         "gaExtract": {
-          url: urlBase + "/apartments/gaExtract/:category",
+          url: urlBase + "/apartments/gaExtract",
           method: "GET"
         },
 
