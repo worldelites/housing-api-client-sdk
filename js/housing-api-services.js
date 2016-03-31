@@ -6074,6 +6074,72 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.Apartment#gaExtract
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `category` – `{string}` - the category
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "gaExtract": {
+          url: urlBase + "/apartments/gaExtract/:category",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment#exportGaData
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "exportGaData": {
+          url: urlBase + "/apartments/exportGaData",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.Apartment#coupon
          * @methodOf housingApiServices.Apartment
          *
@@ -6105,40 +6171,6 @@ module.factory(
          */
         "coupon": {
           url: urlBase + "/apartments/:id/coupon",
-          method: "GET"
-        },
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.Apartment#gaExtract
-         * @methodOf housingApiServices.Apartment
-         *
-         * @description
-         *
-         * <em>
-         * (The remote method definition does not provide any description.)
-         * </em>
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `category` – `{string}` - the category
-         *
-         *  - `res` – `{object=}` - 
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        "gaExtract": {
-          url: urlBase + "/apartments/gaExtract/:category",
           method: "GET"
         },
 
