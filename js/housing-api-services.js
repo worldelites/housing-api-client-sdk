@@ -6112,7 +6112,7 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Apartment#exportGaData
+         * @name housingApiServices.Apartment#exportGaImpression
          * @methodOf housingApiServices.Apartment
          *
          * @description
@@ -6137,8 +6137,8 @@ module.factory(
          *
          * This method returns no data.
          */
-        "exportGaData": {
-          url: urlBase + "/apartments/exportGaData",
+        "exportGaImpression": {
+          url: urlBase + "/apartments/exportGaImpression",
           method: "GET"
         },
 
