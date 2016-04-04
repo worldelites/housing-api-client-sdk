@@ -6112,7 +6112,7 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.Apartment#exportGaImpression
+         * @name housingApiServices.Apartment#gaExtractImpression
          * @methodOf housingApiServices.Apartment
          *
          * @description
@@ -6122,6 +6122,12 @@ module.factory(
          * </em>
          *
          * @param {Object=} parameters Request parameters.
+         *
+         *  - `category` – `{string}` - the category
+         *
+         *  - `startDate` – `{string}` - the start date to query google analytics
+         *
+         *  - `endDate` – `{string}` - the end date to query google analytics
          *
          *  - `res` – `{object=}` - 
          *
@@ -6137,8 +6143,8 @@ module.factory(
          *
          * This method returns no data.
          */
-        "exportGaImpression": {
-          url: urlBase + "/apartments/exportGaImpression",
+        "gaExtractImpression": {
+          url: urlBase + "/apartments/gaExtractImpression",
           method: "GET"
         },
 
