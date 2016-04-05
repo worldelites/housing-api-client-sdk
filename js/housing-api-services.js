@@ -6161,6 +6161,8 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
+         *  - `category` – `{string}` - the category
+         *
          *  - `res` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
