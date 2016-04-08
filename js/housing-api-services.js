@@ -29603,6 +29603,8 @@ module.factory(
          *
          *  - `html` – `{string}` - email html
          *
+         *  - `subject` – `{string}` - email subject
+         *
          *  - `res` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
