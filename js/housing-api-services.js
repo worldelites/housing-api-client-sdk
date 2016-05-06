@@ -497,6 +497,114 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use User.roommateApartments.findById() instead.
+        "prototype$__findById__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments.destroyById() instead.
+        "prototype$__destroyById__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.updateById() instead.
+        "prototype$__updateById__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.roommateApartments.link() instead.
+        "prototype$__link__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.roommateApartments.unlink() instead.
+        "prototype$__unlink__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.exists() instead.
+        "prototype$__exists__roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.findById() instead.
+        "prototype$__findById__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.destroyById() instead.
+        "prototype$__destroyById__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.updateById() instead.
+        "prototype$__updateById__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.link() instead.
+        "prototype$__link__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.unlink() instead.
+        "prototype$__unlink__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.exists() instead.
+        "prototype$__exists__applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "HEAD"
+        },
+
         /**
          * @ngdoc method
          * @name housingApiServices.User#prototype$__get__accessTokens
@@ -781,6 +889,56 @@ module.factory(
         // INTERNAL. Use User.managePendingApartments.count() instead.
         "prototype$__count__managePendingApartments": {
           url: urlBase + "/users/:id/managePendingApartments/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments() instead.
+        "prototype$__get__roommateApartments": {
+          isArray: true,
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments.create() instead.
+        "prototype$__create__roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.roommateApartments.destroyAll() instead.
+        "prototype$__delete__roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.count() instead.
+        "prototype$__count__roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans() instead.
+        "prototype$__get__applyFloorPlans": {
+          isArray: true,
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.create() instead.
+        "prototype$__create__applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.destroyAll() instead.
+        "prototype$__delete__applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.count() instead.
+        "prototype$__count__applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans/count",
           method: "GET"
         },
 
@@ -1876,6 +2034,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use Apartment.roommateUsers.findById() instead.
+        "::findById::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.destroyById() instead.
+        "::destroyById::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.updateById() instead.
+        "::updateById::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.link() instead.
+        "::link::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.unlink() instead.
+        "::unlink::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.exists() instead.
+        "::exists::apartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use Apartment.likeUsers() instead.
         "::get::apartment::likeUsers": {
           isArray: true,
@@ -2001,6 +2213,124 @@ module.factory(
         // INTERNAL. Use Apartment.redirectUsers.count() instead.
         "::count::apartment::redirectUsers": {
           url: urlBase + "/apartments/:id/redirectUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers() instead.
+        "::get::apartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.create() instead.
+        "::create::apartment::roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.createMany() instead.
+        "::createMany::apartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.destroyAll() instead.
+        "::delete::apartment::roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.count() instead.
+        "::count::apartment::roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.findById() instead.
+        "::findById::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.destroyById() instead.
+        "::destroyById::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.updateById() instead.
+        "::updateById::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.link() instead.
+        "::link::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.unlink() instead.
+        "::unlink::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.exists() instead.
+        "::exists::floorPlan::floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants() instead.
+        "::get::floorPlan::floorPlanApplicants": {
+          isArray: true,
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "GET"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.create() instead.
+        "::create::floorPlan::floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "POST"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.createMany() instead.
+        "::createMany::floorPlan::floorPlanApplicants": {
+          isArray: true,
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "POST"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.destroyAll() instead.
+        "::delete::floorPlan::floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.count() instead.
+        "::count::floorPlan::floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/count",
           method: "GET"
         },
 
@@ -2232,6 +2562,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use CrawledApartment.roommateUsers.findById() instead.
+        "::findById::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.destroyById() instead.
+        "::destroyById::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.updateById() instead.
+        "::updateById::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.link() instead.
+        "::link::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.unlink() instead.
+        "::unlink::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.exists() instead.
+        "::exists::crawledApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use CrawledApartment.likeUsers() instead.
         "::get::crawledApartment::likeUsers": {
           isArray: true,
@@ -2357,6 +2741,38 @@ module.factory(
         // INTERNAL. Use CrawledApartment.redirectUsers.count() instead.
         "::count::crawledApartment::redirectUsers": {
           url: urlBase + "/crawledApartments/:id/redirectUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers() instead.
+        "::get::crawledApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.create() instead.
+        "::create::crawledApartment::roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.createMany() instead.
+        "::createMany::crawledApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.destroyAll() instead.
+        "::delete::crawledApartment::roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.count() instead.
+        "::count::crawledApartment::roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -2630,6 +3046,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use PendingApartment.roommateUsers.findById() instead.
+        "::findById::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.destroyById() instead.
+        "::destroyById::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.updateById() instead.
+        "::updateById::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.link() instead.
+        "::link::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.unlink() instead.
+        "::unlink::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.exists() instead.
+        "::exists::pendingApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use PendingApartment.likeUsers() instead.
         "::get::pendingApartment::likeUsers": {
           isArray: true,
@@ -2787,6 +3257,38 @@ module.factory(
         // INTERNAL. Use PendingApartment.manageUsers.count() instead.
         "::count::pendingApartment::manageUsers": {
           url: urlBase + "/pendingApartments/:id/manageUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers() instead.
+        "::get::pendingApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.create() instead.
+        "::create::pendingApartment::roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.createMany() instead.
+        "::createMany::pendingApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.destroyAll() instead.
+        "::delete::pendingApartment::roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.count() instead.
+        "::count::pendingApartment::roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -3060,6 +3562,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.findById() instead.
+        "::findById::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.destroyById() instead.
+        "::destroyById::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.updateById() instead.
+        "::updateById::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.link() instead.
+        "::link::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.unlink() instead.
+        "::unlink::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.exists() instead.
+        "::exists::prospectiveApartment::roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use ProspectiveApartment.likeUsers() instead.
         "::get::prospectiveApartment::likeUsers": {
           isArray: true,
@@ -3217,6 +3773,44 @@ module.factory(
         // INTERNAL. Use ProspectiveApartment.manageUsers.count() instead.
         "::count::prospectiveApartment::manageUsers": {
           url: urlBase + "/prospectiveApartments/:id/manageUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers() instead.
+        "::get::prospectiveApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.create() instead.
+        "::create::prospectiveApartment::roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.createMany() instead.
+        "::createMany::prospectiveApartment::roommateUsers": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.destroyAll() instead.
+        "::delete::prospectiveApartment::roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.count() instead.
+        "::count::prospectiveApartment::roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.user() instead.
+        "::get::applyForFloorPlan::user": {
+          url: urlBase + "/applyForFloorPlans/:id/user",
           method: "GET"
         },
 
@@ -5901,6 +6495,826 @@ module.factory(
           var action = TargetResource["::updateById::user::managePendingApartments"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.User.roommateApartments
+     * @header housingApiServices.User.roommateApartments
+     * @object
+     * @description
+     *
+     * The object `User.roommateApartments` groups methods
+     * manipulating `Apartment` instances related to `User`.
+     *
+     * Call {@link housingApiServices.User#roommateApartments User.roommateApartments()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User#roommateApartments
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * Queries roommateApartments of user.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#count
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Counts roommateApartments of user.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.roommateApartments.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#create
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Creates a new instance in roommateApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#createMany
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Creates a new instance in roommateApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#destroyAll
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Deletes all roommateApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateApartments.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#destroyById
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Delete a related item by id for roommateApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateApartments.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#exists
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Check the existence of roommateApartments relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#findById
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Find a related item by id for roommateApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#link
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Add a related item by id for roommateApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#unlink
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Remove the roommateApartments relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateApartments.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.roommateApartments#updateById
+         * @methodOf housingApiServices.User.roommateApartments
+         *
+         * @description
+         *
+         * Update a related item by id for roommateApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateApartments
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Apartment` object.)
+         * </em>
+         */
+        R.roommateApartments.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::user::roommateApartments"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.User.applyFloorPlans
+     * @header housingApiServices.User.applyFloorPlans
+     * @object
+     * @description
+     *
+     * The object `User.applyFloorPlans` groups methods
+     * manipulating `FloorPlan` instances related to `User`.
+     *
+     * Call {@link housingApiServices.User#applyFloorPlans User.applyFloorPlans()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User#applyFloorPlans
+         * @methodOf housingApiServices.User
+         *
+         * @description
+         *
+         * Queries applyFloorPlans of user.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::get::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#count
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Counts applyFloorPlans of user.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.applyFloorPlans.count = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::count::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#create
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Creates a new instance in applyFloorPlans of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.create = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::create::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#createMany
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Creates a new instance in applyFloorPlans of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.createMany = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::createMany::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#destroyAll
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Deletes all applyFloorPlans of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.applyFloorPlans.destroyAll = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::delete::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#destroyById
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Delete a related item by id for applyFloorPlans.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.applyFloorPlans.destroyById = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::destroyById::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#exists
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Check the existence of applyFloorPlans relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.exists = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::exists::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#findById
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Find a related item by id for applyFloorPlans.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.findById = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::findById::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#link
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Add a related item by id for applyFloorPlans.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.link = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::link::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#unlink
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Remove the applyFloorPlans relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.applyFloorPlans.unlink = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::unlink::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.User.applyFloorPlans#updateById
+         * @methodOf housingApiServices.User.applyFloorPlans
+         *
+         * @description
+         *
+         * Update a related item by id for applyFloorPlans.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         *  - `fk` – `{*}` - Foreign key for applyFloorPlans
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.applyFloorPlans.updateById = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::updateById::user::applyFloorPlans"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -6281,6 +7695,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use Apartment.roommateUsers.findById() instead.
+        "prototype$__findById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.destroyById() instead.
+        "prototype$__destroyById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.updateById() instead.
+        "prototype$__updateById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.link() instead.
+        "prototype$__link__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.unlink() instead.
+        "prototype$__unlink__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.exists() instead.
+        "prototype$__exists__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/apartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use Apartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
@@ -6453,6 +7921,31 @@ module.factory(
         // INTERNAL. Use Apartment.universities.count() instead.
         "prototype$__count__universities": {
           url: urlBase + "/apartments/:id/universities/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers() instead.
+        "prototype$__get__roommateUsers": {
+          isArray: true,
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.create() instead.
+        "prototype$__create__roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.destroyAll() instead.
+        "prototype$__delete__roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Apartment.roommateUsers.count() instead.
+        "prototype$__count__roommateUsers": {
+          url: urlBase + "/apartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -7322,6 +8815,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use User.roommateApartments.findById() instead.
+        "::findById::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments.destroyById() instead.
+        "::destroyById::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.updateById() instead.
+        "::updateById::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.roommateApartments.link() instead.
+        "::link::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.roommateApartments.unlink() instead.
+        "::unlink::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.exists() instead.
+        "::exists::user::roommateApartments": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/roommateApartments/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use User.likeApartments() instead.
         "::get::user::likeApartments": {
           isArray: true,
@@ -7447,6 +8994,38 @@ module.factory(
         // INTERNAL. Use User.redirectApartments.count() instead.
         "::count::user::redirectApartments": {
           url: urlBase + "/users/:id/redirectApartments/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments() instead.
+        "::get::user::roommateApartments": {
+          isArray: true,
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.roommateApartments.create() instead.
+        "::create::user::roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.roommateApartments.createMany() instead.
+        "::createMany::user::roommateApartments": {
+          isArray: true,
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.roommateApartments.destroyAll() instead.
+        "::delete::user::roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.roommateApartments.count() instead.
+        "::count::user::roommateApartments": {
+          url: urlBase + "/users/:id/roommateApartments/count",
           method: "GET"
         },
 
@@ -10542,6 +12121,416 @@ module.factory(
           var action = TargetResource["::updateById::apartment::universities"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.Apartment.roommateUsers
+     * @header housingApiServices.Apartment.roommateUsers
+     * @object
+     * @description
+     *
+     * The object `Apartment.roommateUsers` groups methods
+     * manipulating `User` instances related to `Apartment`.
+     *
+     * Call {@link housingApiServices.Apartment#roommateUsers Apartment.roommateUsers()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment#roommateUsers
+         * @methodOf housingApiServices.Apartment
+         *
+         * @description
+         *
+         * Queries roommateUsers of apartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#count
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Counts roommateUsers of apartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.roommateUsers.count = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::count::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#create
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.create = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::create::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#createMany
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.createMany = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::createMany::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#destroyAll
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Deletes all roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyAll = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::delete::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#destroyById
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Delete a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::destroyById::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#exists
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Check the existence of roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.exists = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::exists::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#findById
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Find a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.findById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::findById::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#link
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Add a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.link = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::link::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#unlink
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Remove the roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.unlink = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::unlink::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Apartment.roommateUsers#updateById
+         * @methodOf housingApiServices.Apartment.roommateUsers
+         *
+         * @description
+         *
+         * Update a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.updateById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::updateById::apartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -12002,6 +13991,85 @@ module.factory(
           method: "GET"
         },
 
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.findById() instead.
+        "prototype$__findById__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.destroyById() instead.
+        "prototype$__destroyById__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.updateById() instead.
+        "prototype$__updateById__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.link() instead.
+        "prototype$__link__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.unlink() instead.
+        "prototype$__unlink__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.exists() instead.
+        "prototype$__exists__floorPlanApplicants": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants() instead.
+        "prototype$__get__floorPlanApplicants": {
+          isArray: true,
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "GET"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.create() instead.
+        "prototype$__create__floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "POST"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.destroyAll() instead.
+        "prototype$__delete__floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use FloorPlan.floorPlanApplicants.count() instead.
+        "prototype$__count__floorPlanApplicants": {
+          url: urlBase + "/floorPlans/:id/floorPlanApplicants/count",
+          method: "GET"
+        },
+
         /**
          * @ngdoc method
          * @name housingApiServices.FloorPlan#create
@@ -12424,6 +14492,92 @@ module.factory(
           method: "POST"
         },
 
+        // INTERNAL. Use User.applyFloorPlans.findById() instead.
+        "::findById::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.destroyById() instead.
+        "::destroyById::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.updateById() instead.
+        "::updateById::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.link() instead.
+        "::link::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.unlink() instead.
+        "::unlink::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.exists() instead.
+        "::exists::user::applyFloorPlans": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/users/:id/applyFloorPlans/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans() instead.
+        "::get::user::applyFloorPlans": {
+          isArray: true,
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "GET"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.create() instead.
+        "::create::user::applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.createMany() instead.
+        "::createMany::user::applyFloorPlans": {
+          isArray: true,
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "POST"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.destroyAll() instead.
+        "::delete::user::applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use User.applyFloorPlans.count() instead.
+        "::count::user::applyFloorPlans": {
+          url: urlBase + "/users/:id/applyFloorPlans/count",
+          method: "GET"
+        },
+
         // INTERNAL. Use Apartment.floorPlans.findById() instead.
         "::findById::apartment::floorPlans": {
           params: {
@@ -12659,6 +14813,12 @@ module.factory(
           url: urlBase + "/prospectiveApartments/:id/floorPlans/count",
           method: "GET"
         },
+
+        // INTERNAL. Use ApplyForFloorPlan.floorPlan() instead.
+        "::get::applyForFloorPlan::floorPlan": {
+          url: urlBase + "/applyForFloorPlans/:id/floorPlan",
+          method: "GET"
+        },
       }
     );
 
@@ -12835,6 +14995,416 @@ module.factory(
         R.apartment = function() {
           var TargetResource = $injector.get("Apartment");
           var action = TargetResource["::get::floorPlan::apartment"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.FloorPlan.floorPlanApplicants
+     * @header housingApiServices.FloorPlan.floorPlanApplicants
+     * @object
+     * @description
+     *
+     * The object `FloorPlan.floorPlanApplicants` groups methods
+     * manipulating `User` instances related to `FloorPlan`.
+     *
+     * Call {@link housingApiServices.FloorPlan#floorPlanApplicants FloorPlan.floorPlanApplicants()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan#floorPlanApplicants
+         * @methodOf housingApiServices.FloorPlan
+         *
+         * @description
+         *
+         * Queries floorPlanApplicants of floorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#count
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Counts floorPlanApplicants of floorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.floorPlanApplicants.count = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::count::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#create
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Creates a new instance in floorPlanApplicants of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.create = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::create::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#createMany
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Creates a new instance in floorPlanApplicants of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.createMany = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::createMany::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#destroyAll
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Deletes all floorPlanApplicants of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.floorPlanApplicants.destroyAll = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::delete::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#destroyById
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Delete a related item by id for floorPlanApplicants.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.floorPlanApplicants.destroyById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::destroyById::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#exists
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Check the existence of floorPlanApplicants relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.exists = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::exists::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#findById
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Find a related item by id for floorPlanApplicants.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.findById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::findById::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#link
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Add a related item by id for floorPlanApplicants.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.link = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::link::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#unlink
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Remove the floorPlanApplicants relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.floorPlanApplicants.unlink = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::unlink::floorPlan::floorPlanApplicants"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.FloorPlan.floorPlanApplicants#updateById
+         * @methodOf housingApiServices.FloorPlan.floorPlanApplicants
+         *
+         * @description
+         *
+         * Update a related item by id for floorPlanApplicants.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.floorPlanApplicants.updateById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::updateById::floorPlan::floorPlanApplicants"];
           return action.apply(R, arguments);
         };
 
@@ -16586,6 +19156,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use CrawledApartment.roommateUsers.findById() instead.
+        "prototype$__findById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.destroyById() instead.
+        "prototype$__destroyById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.updateById() instead.
+        "prototype$__updateById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.link() instead.
+        "prototype$__link__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.unlink() instead.
+        "prototype$__unlink__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.exists() instead.
+        "prototype$__exists__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/crawledApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use CrawledApartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
@@ -16758,6 +19382,31 @@ module.factory(
         // INTERNAL. Use CrawledApartment.universities.count() instead.
         "prototype$__count__universities": {
           url: urlBase + "/crawledApartments/:id/universities/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers() instead.
+        "prototype$__get__roommateUsers": {
+          isArray: true,
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.create() instead.
+        "prototype$__create__roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.destroyAll() instead.
+        "prototype$__delete__roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use CrawledApartment.roommateUsers.count() instead.
+        "prototype$__count__roommateUsers": {
+          url: urlBase + "/crawledApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -20085,6 +22734,416 @@ module.factory(
           var action = TargetResource["::updateById::crawledApartment::universities"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.CrawledApartment.roommateUsers
+     * @header housingApiServices.CrawledApartment.roommateUsers
+     * @object
+     * @description
+     *
+     * The object `CrawledApartment.roommateUsers` groups methods
+     * manipulating `User` instances related to `CrawledApartment`.
+     *
+     * Call {@link housingApiServices.CrawledApartment#roommateUsers CrawledApartment.roommateUsers()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment#roommateUsers
+         * @methodOf housingApiServices.CrawledApartment
+         *
+         * @description
+         *
+         * Queries roommateUsers of crawledApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#count
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Counts roommateUsers of crawledApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.roommateUsers.count = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::count::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#create
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.create = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::create::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#createMany
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.createMany = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::createMany::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#destroyAll
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Deletes all roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyAll = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::delete::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#destroyById
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Delete a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::destroyById::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#exists
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Check the existence of roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.exists = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::exists::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#findById
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Find a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.findById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::findById::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#link
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Add a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.link = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::link::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#unlink
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Remove the roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.unlink = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::unlink::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.CrawledApartment.roommateUsers#updateById
+         * @methodOf housingApiServices.CrawledApartment.roommateUsers
+         *
+         * @description
+         *
+         * Update a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.updateById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::updateById::crawledApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -20519,6 +23578,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use PendingApartment.roommateUsers.findById() instead.
+        "prototype$__findById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.destroyById() instead.
+        "prototype$__destroyById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.updateById() instead.
+        "prototype$__updateById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.link() instead.
+        "prototype$__link__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.unlink() instead.
+        "prototype$__unlink__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.exists() instead.
+        "prototype$__exists__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use PendingApartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
@@ -20716,6 +23829,31 @@ module.factory(
         // INTERNAL. Use PendingApartment.manageUsers.count() instead.
         "prototype$__count__manageUsers": {
           url: urlBase + "/pendingApartments/:id/manageUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers() instead.
+        "prototype$__get__roommateUsers": {
+          isArray: true,
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.create() instead.
+        "prototype$__create__roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.destroyAll() instead.
+        "prototype$__delete__roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PendingApartment.roommateUsers.count() instead.
+        "prototype$__count__roommateUsers": {
+          url: urlBase + "/pendingApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -24539,6 +27677,416 @@ module.factory(
           var action = TargetResource["::updateById::pendingApartment::manageUsers"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.PendingApartment.roommateUsers
+     * @header housingApiServices.PendingApartment.roommateUsers
+     * @object
+     * @description
+     *
+     * The object `PendingApartment.roommateUsers` groups methods
+     * manipulating `User` instances related to `PendingApartment`.
+     *
+     * Call {@link housingApiServices.PendingApartment#roommateUsers PendingApartment.roommateUsers()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment#roommateUsers
+         * @methodOf housingApiServices.PendingApartment
+         *
+         * @description
+         *
+         * Queries roommateUsers of pendingApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#count
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Counts roommateUsers of pendingApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.roommateUsers.count = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::count::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#create
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.create = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::create::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#createMany
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.createMany = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::createMany::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#destroyAll
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Deletes all roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyAll = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::delete::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#destroyById
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Delete a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::destroyById::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#exists
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Check the existence of roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.exists = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::exists::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#findById
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Find a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.findById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::findById::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#link
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Add a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.link = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::link::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#unlink
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Remove the roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.unlink = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::unlink::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment.roommateUsers#updateById
+         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         *
+         * @description
+         *
+         * Update a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.updateById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::updateById::pendingApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -24973,6 +28521,60 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.findById() instead.
+        "prototype$__findById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.destroyById() instead.
+        "prototype$__destroyById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.updateById() instead.
+        "prototype$__updateById__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.link() instead.
+        "prototype$__link__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.unlink() instead.
+        "prototype$__unlink__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.exists() instead.
+        "prototype$__exists__roommateUsers": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/rel/:fk",
+          method: "HEAD"
+        },
+
         // INTERNAL. Use ProspectiveApartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
@@ -25170,6 +28772,31 @@ module.factory(
         // INTERNAL. Use ProspectiveApartment.manageUsers.count() instead.
         "prototype$__count__manageUsers": {
           url: urlBase + "/prospectiveApartments/:id/manageUsers/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers() instead.
+        "prototype$__get__roommateUsers": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.create() instead.
+        "prototype$__create__roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.destroyAll() instead.
+        "prototype$__delete__roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.roommateUsers.count() instead.
+        "prototype$__count__roommateUsers": {
+          url: urlBase + "/prospectiveApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -29036,6 +32663,416 @@ module.factory(
           var action = TargetResource["::updateById::prospectiveApartment::manageUsers"];
           return action.apply(R, arguments);
         };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.ProspectiveApartment.roommateUsers
+     * @header housingApiServices.ProspectiveApartment.roommateUsers
+     * @object
+     * @description
+     *
+     * The object `ProspectiveApartment.roommateUsers` groups methods
+     * manipulating `User` instances related to `ProspectiveApartment`.
+     *
+     * Call {@link housingApiServices.ProspectiveApartment#roommateUsers ProspectiveApartment.roommateUsers()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#roommateUsers
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Queries roommateUsers of prospectiveApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#count
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Counts roommateUsers of prospectiveApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.roommateUsers.count = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::count::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#create
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.create = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::create::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#createMany
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Creates a new instance in roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.createMany = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::createMany::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#destroyAll
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Deletes all roommateUsers of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyAll = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::delete::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#destroyById
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Delete a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.destroyById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::destroyById::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#exists
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Check the existence of roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.exists = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::exists::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#findById
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Find a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.findById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::findById::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#link
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Add a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.link = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::link::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#unlink
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Remove the roommateUsers relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.roommateUsers.unlink = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::unlink::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.roommateUsers#updateById
+         * @methodOf housingApiServices.ProspectiveApartment.roommateUsers
+         *
+         * @description
+         *
+         * Update a related item by id for roommateUsers.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `fk` – `{*}` - Foreign key for roommateUsers
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.roommateUsers.updateById = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::updateById::prospectiveApartment::roommateUsers"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -29458,6 +33495,1322 @@ module.factory(
     */
     R.modelName = "Email";
 
+
+    return R;
+  }]);
+
+/**
+ * @ngdoc object
+ * @name housingApiServices.ApplyForFloorPlan
+ * @header housingApiServices.ApplyForFloorPlan
+ * @object
+ *
+ * @description
+ *
+ * A $resource object for interacting with the `ApplyForFloorPlan` model.
+ *
+ * ## Example
+ *
+ * See
+ * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
+ * for an example of using this object.
+ *
+ */
+module.factory(
+  "ApplyForFloorPlan",
+  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
+    var R = Resource(
+      urlBase + "/applyForFloorPlans/:id",
+      { 'id': '@id' },
+      {
+
+        // INTERNAL. Use ApplyForFloorPlan.floorPlan() instead.
+        "prototype$__get__floorPlan": {
+          url: urlBase + "/applyForFloorPlans/:id/floorPlan",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.user() instead.
+        "prototype$__get__user": {
+          url: urlBase + "/applyForFloorPlans/:id/user",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#create
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "create": {
+          url: urlBase + "/applyForFloorPlans",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#createMany
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "createMany": {
+          isArray: true,
+          url: urlBase + "/applyForFloorPlans",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#upsert
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "upsert": {
+          url: urlBase + "/applyForFloorPlans",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#exists
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Check whether a model instance exists in the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `exists` – `{boolean=}` - 
+         */
+        "exists": {
+          url: urlBase + "/applyForFloorPlans/:id/exists",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#findById
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Find a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         *  - `filter` – `{object=}` - Filter defining fields and include
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "findById": {
+          url: urlBase + "/applyForFloorPlans/:id",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#find
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Find all instances of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "find": {
+          isArray: true,
+          url: urlBase + "/applyForFloorPlans",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#findOne
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Find first instance of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "findOne": {
+          url: urlBase + "/applyForFloorPlans/findOne",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#updateAll
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        "updateAll": {
+          url: urlBase + "/applyForFloorPlans/update",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#deleteById
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "deleteById": {
+          url: urlBase + "/applyForFloorPlans/:id",
+          method: "DELETE"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#count
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Count instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        "count": {
+          url: urlBase + "/applyForFloorPlans/count",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#prototype$updateAttributes
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Update attributes for a model instance and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        "prototype$updateAttributes": {
+          url: urlBase + "/applyForFloorPlans/:id",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#createChangeStream
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Create a change stream.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `options` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `changes` – `{ReadableStream=}` - 
+         */
+        "createChangeStream": {
+          url: urlBase + "/applyForFloorPlans/change-stream",
+          method: "POST"
+        },
+
+        // INTERNAL. Use InvitedRoommate.applyForFloorPlan() instead.
+        "::get::invitedRoommate::applyForFloorPlan": {
+          url: urlBase + "/invitedRoommates/:id/applyForFloorPlan",
+          method: "GET"
+        },
+      }
+    );
+
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#updateOrCreate
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        R["updateOrCreate"] = R["upsert"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#update
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        R["update"] = R["updateAll"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#destroyById
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        R["destroyById"] = R["deleteById"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#removeById
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        R["removeById"] = R["deleteById"];
+
+
+    /**
+    * @ngdoc property
+    * @name housingApiServices.ApplyForFloorPlan#modelName
+    * @propertyOf housingApiServices.ApplyForFloorPlan
+    * @description
+    * The name of the model represented by this $resource,
+    * i.e. `ApplyForFloorPlan`.
+    */
+    R.modelName = "ApplyForFloorPlan";
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#floorPlan
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Fetches belongsTo relation floorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `FloorPlan` object.)
+         * </em>
+         */
+        R.floorPlan = function() {
+          var TargetResource = $injector.get("FloorPlan");
+          var action = TargetResource["::get::applyForFloorPlan::floorPlan"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#user
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Fetches belongsTo relation user.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `User` object.)
+         * </em>
+         */
+        R.user = function() {
+          var TargetResource = $injector.get("User");
+          var action = TargetResource["::get::applyForFloorPlan::user"];
+          return action.apply(R, arguments);
+        };
+
+    return R;
+  }]);
+
+/**
+ * @ngdoc object
+ * @name housingApiServices.InvitedRoommate
+ * @header housingApiServices.InvitedRoommate
+ * @object
+ *
+ * @description
+ *
+ * A $resource object for interacting with the `InvitedRoommate` model.
+ *
+ * ## Example
+ *
+ * See
+ * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
+ * for an example of using this object.
+ *
+ */
+module.factory(
+  "InvitedRoommate",
+  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
+    var R = Resource(
+      urlBase + "/invitedRoommates/:id",
+      { 'id': '@id' },
+      {
+
+        // INTERNAL. Use InvitedRoommate.applyForFloorPlan() instead.
+        "prototype$__get__applyForFloorPlan": {
+          url: urlBase + "/invitedRoommates/:id/applyForFloorPlan",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#create
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "create": {
+          url: urlBase + "/invitedRoommates",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#createMany
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "createMany": {
+          isArray: true,
+          url: urlBase + "/invitedRoommates",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#upsert
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "upsert": {
+          url: urlBase + "/invitedRoommates",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#exists
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Check whether a model instance exists in the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `exists` – `{boolean=}` - 
+         */
+        "exists": {
+          url: urlBase + "/invitedRoommates/:id/exists",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#findById
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Find a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         *  - `filter` – `{object=}` - Filter defining fields and include
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "findById": {
+          url: urlBase + "/invitedRoommates/:id",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#find
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Find all instances of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "find": {
+          isArray: true,
+          url: urlBase + "/invitedRoommates",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#findOne
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Find first instance of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "findOne": {
+          url: urlBase + "/invitedRoommates/findOne",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#updateAll
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        "updateAll": {
+          url: urlBase + "/invitedRoommates/update",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#deleteById
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "deleteById": {
+          url: urlBase + "/invitedRoommates/:id",
+          method: "DELETE"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#count
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Count instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        "count": {
+          url: urlBase + "/invitedRoommates/count",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#prototype$updateAttributes
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Update attributes for a model instance and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        "prototype$updateAttributes": {
+          url: urlBase + "/invitedRoommates/:id",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#createChangeStream
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Create a change stream.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `options` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `changes` – `{ReadableStream=}` - 
+         */
+        "createChangeStream": {
+          url: urlBase + "/invitedRoommates/change-stream",
+          method: "POST"
+        },
+      }
+    );
+
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#updateOrCreate
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        R["updateOrCreate"] = R["upsert"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#update
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        R["update"] = R["updateAll"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#destroyById
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        R["destroyById"] = R["deleteById"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#removeById
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `InvitedRoommate` object.)
+         * </em>
+         */
+        R["removeById"] = R["deleteById"];
+
+
+    /**
+    * @ngdoc property
+    * @name housingApiServices.InvitedRoommate#modelName
+    * @propertyOf housingApiServices.InvitedRoommate
+    * @description
+    * The name of the model represented by this $resource,
+    * i.e. `InvitedRoommate`.
+    */
+    R.modelName = "InvitedRoommate";
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.InvitedRoommate#applyForFloorPlan
+         * @methodOf housingApiServices.InvitedRoommate
+         *
+         * @description
+         *
+         * Fetches belongsTo relation applyForFloorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        R.applyForFloorPlan = function() {
+          var TargetResource = $injector.get("ApplyForFloorPlan");
+          var action = TargetResource["::get::invitedRoommate::applyForFloorPlan"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
