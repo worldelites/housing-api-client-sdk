@@ -23524,6 +23524,12 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use PendingApartment.prospectiveApartment() instead.
+        "prototype$__get__prospectiveApartment": {
+          url: urlBase + "/pendingApartments/:id/prospectiveApartment",
+          method: "GET"
+        },
+
         // INTERNAL. Use PendingApartment.manageUsers.findById() instead.
         "prototype$__findById__manageUsers": {
           params: {
@@ -24363,6 +24369,37 @@ module.factory(
         "::count::user::managePendingApartments": {
           url: urlBase + "/users/:id/managePendingApartments/count",
           method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
+        "::get::prospectiveApartment::pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
+        "::create::prospectiveApartment::pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.createMany() instead.
+        "::createMany::prospectiveApartment::pendingApartments": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
+        "::update::prospectiveApartment::pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
+        "::destroy::prospectiveApartment::pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "DELETE"
         },
       }
     );
@@ -27267,6 +27304,42 @@ module.factory(
           var action = TargetResource["::updateById::pendingApartment::universities"];
           return action.apply(R, arguments);
         };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment#prospectiveApartment
+         * @methodOf housingApiServices.PendingApartment
+         *
+         * @description
+         *
+         * Fetches belongsTo relation prospectiveApartment.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ProspectiveApartment` object.)
+         * </em>
+         */
+        R.prospectiveApartment = function() {
+          var TargetResource = $injector.get("ProspectiveApartment");
+          var action = TargetResource["::get::pendingApartment::prospectiveApartment"];
+          return action.apply(R, arguments);
+        };
     /**
      * @ngdoc object
      * @name housingApiServices.PendingApartment.manageUsers
@@ -28359,6 +28432,30 @@ module.factory(
           method: "HEAD"
         },
 
+        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
+        "prototype$__get__pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
+        "prototype$__create__pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
+        "prototype$__update__pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
+        "prototype$__destroy__pendingApartments": {
+          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+          method: "DELETE"
+        },
+
         // INTERNAL. Use ProspectiveApartment.tags.findById() instead.
         "prototype$__findById__tags": {
           params: {
@@ -29348,6 +29445,12 @@ module.factory(
         // INTERNAL. Use User.manageProspectiveApartments.count() instead.
         "::count::user::manageProspectiveApartments": {
           url: urlBase + "/users/:id/manageProspectiveApartments/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PendingApartment.prospectiveApartment() instead.
+        "::get::pendingApartment::prospectiveApartment": {
+          url: urlBase + "/pendingApartments/:id/prospectiveApartment",
           method: "GET"
         },
       }
@@ -31431,6 +31534,201 @@ module.factory(
         R.redirectUsers.updateById = function() {
           var TargetResource = $injector.get("User");
           var action = TargetResource["::updateById::prospectiveApartment::redirectUsers"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.ProspectiveApartment.pendingApartments
+     * @header housingApiServices.ProspectiveApartment.pendingApartments
+     * @object
+     * @description
+     *
+     * The object `ProspectiveApartment.pendingApartments` groups methods
+     * manipulating `PendingApartment` instances related to `ProspectiveApartment`.
+     *
+     * Call {@link housingApiServices.ProspectiveApartment#pendingApartments ProspectiveApartment.pendingApartments()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#pendingApartments
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Fetches hasOne relation pendingApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PendingApartment` object.)
+         * </em>
+         */
+        R.pendingApartments = function() {
+          var TargetResource = $injector.get("PendingApartment");
+          var action = TargetResource["::get::prospectiveApartment::pendingApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.pendingApartments#create
+         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         *
+         * @description
+         *
+         * Creates a new instance in pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PendingApartment` object.)
+         * </em>
+         */
+        R.pendingApartments.create = function() {
+          var TargetResource = $injector.get("PendingApartment");
+          var action = TargetResource["::create::prospectiveApartment::pendingApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.pendingApartments#createMany
+         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         *
+         * @description
+         *
+         * Creates a new instance in pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PendingApartment` object.)
+         * </em>
+         */
+        R.pendingApartments.createMany = function() {
+          var TargetResource = $injector.get("PendingApartment");
+          var action = TargetResource["::createMany::prospectiveApartment::pendingApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.pendingApartments#destroy
+         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         *
+         * @description
+         *
+         * Deletes pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.pendingApartments.destroy = function() {
+          var TargetResource = $injector.get("PendingApartment");
+          var action = TargetResource["::destroy::prospectiveApartment::pendingApartments"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment.pendingApartments#update
+         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         *
+         * @description
+         *
+         * Update pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PendingApartment` object.)
+         * </em>
+         */
+        R.pendingApartments.update = function() {
+          var TargetResource = $injector.get("PendingApartment");
+          var action = TargetResource["::update::prospectiveApartment::pendingApartments"];
           return action.apply(R, arguments);
         };
     /**
