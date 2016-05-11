@@ -23667,6 +23667,47 @@ module.factory(
           method: "GET"
         },
 
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PendingApartment#updatePendingApartmentByUser
+         * @methodOf housingApiServices.PendingApartment
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `userId` – `{string}` - 
+         *
+         *  - `prospectiveApartmentId` – `{string}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `pendingApartment` – `{object=}` - 
+         */
+        "updatePendingApartmentByUser": {
+          url: urlBase + "/pendingApartments/updatePendingApartmentByUser",
+          method: "POST"
+        },
+
         // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
         "::get::prospectiveApartment::pendingApartments": {
           url: urlBase + "/prospectiveApartments/:id/pendingApartments",
