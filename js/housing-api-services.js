@@ -24285,37 +24285,6 @@ module.factory(
           url: urlBase + "/pendingApartments/change-stream",
           method: "POST"
         },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
-        "::get::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
-        "::create::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.createMany() instead.
-        "::createMany::prospectiveApartment::pendingApartments": {
-          isArray: true,
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
-        "::update::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "PUT"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
-        "::destroy::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "DELETE"
-        },
       }
     );
 
@@ -28767,6 +28736,37 @@ module.factory(
           url: urlBase + "/submittedApartments/updateSubmittedApartmentByUser",
           method: "POST"
         },
+
+        // INTERNAL. Use ProspectiveApartment.submittedApartments() instead.
+        "::get::prospectiveApartment::submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.create() instead.
+        "::create::prospectiveApartment::submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.createMany() instead.
+        "::createMany::prospectiveApartment::submittedApartments": {
+          isArray: true,
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.update() instead.
+        "::update::prospectiveApartment::submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.destroy() instead.
+        "::destroy::prospectiveApartment::submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
+          method: "DELETE"
+        },
       }
     );
 
@@ -32388,27 +32388,27 @@ module.factory(
           method: "HEAD"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
-        "prototype$__get__pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+        // INTERNAL. Use ProspectiveApartment.submittedApartments() instead.
+        "prototype$__get__submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
           method: "GET"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
-        "prototype$__create__pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.create() instead.
+        "prototype$__create__submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
           method: "POST"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
-        "prototype$__update__pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.update() instead.
+        "prototype$__update__submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
           method: "PUT"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
-        "prototype$__destroy__pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
+        // INTERNAL. Use ProspectiveApartment.submittedApartments.destroy() instead.
+        "prototype$__destroy__submittedApartments": {
+          url: urlBase + "/prospectiveApartments/:id/submittedApartments",
           method: "DELETE"
         },
 
@@ -35494,27 +35494,27 @@ module.factory(
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.ProspectiveApartment.pendingApartments
-     * @header housingApiServices.ProspectiveApartment.pendingApartments
+     * @name housingApiServices.ProspectiveApartment.submittedApartments
+     * @header housingApiServices.ProspectiveApartment.submittedApartments
      * @object
      * @description
      *
-     * The object `ProspectiveApartment.pendingApartments` groups methods
-     * manipulating `PendingApartment` instances related to `ProspectiveApartment`.
+     * The object `ProspectiveApartment.submittedApartments` groups methods
+     * manipulating `SubmittedApartment` instances related to `ProspectiveApartment`.
      *
-     * Call {@link housingApiServices.ProspectiveApartment#pendingApartments ProspectiveApartment.pendingApartments()}
+     * Call {@link housingApiServices.ProspectiveApartment#submittedApartments ProspectiveApartment.submittedApartments()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment#pendingApartments
+         * @name housingApiServices.ProspectiveApartment#submittedApartments
          * @methodOf housingApiServices.ProspectiveApartment
          *
          * @description
          *
-         * Fetches hasOne relation pendingApartments.
+         * Fetches hasOne relation submittedApartments.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35534,23 +35534,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
-        R.pendingApartments = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::get::prospectiveApartment::pendingApartments"];
+        R.submittedApartments = function() {
+          var TargetResource = $injector.get("SubmittedApartment");
+          var action = TargetResource["::get::prospectiveApartment::submittedApartments"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#create
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         * @name housingApiServices.ProspectiveApartment.submittedApartments#create
+         * @methodOf housingApiServices.ProspectiveApartment.submittedApartments
          *
          * @description
          *
-         * Creates a new instance in pendingApartments of this model.
+         * Creates a new instance in submittedApartments of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35572,23 +35572,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
-        R.pendingApartments.create = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::create::prospectiveApartment::pendingApartments"];
+        R.submittedApartments.create = function() {
+          var TargetResource = $injector.get("SubmittedApartment");
+          var action = TargetResource["::create::prospectiveApartment::submittedApartments"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#createMany
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         * @name housingApiServices.ProspectiveApartment.submittedApartments#createMany
+         * @methodOf housingApiServices.ProspectiveApartment.submittedApartments
          *
          * @description
          *
-         * Creates a new instance in pendingApartments of this model.
+         * Creates a new instance in submittedApartments of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35610,23 +35610,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
-        R.pendingApartments.createMany = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::createMany::prospectiveApartment::pendingApartments"];
+        R.submittedApartments.createMany = function() {
+          var TargetResource = $injector.get("SubmittedApartment");
+          var action = TargetResource["::createMany::prospectiveApartment::submittedApartments"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#destroy
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         * @name housingApiServices.ProspectiveApartment.submittedApartments#destroy
+         * @methodOf housingApiServices.ProspectiveApartment.submittedApartments
          *
          * @description
          *
-         * Deletes pendingApartments of this model.
+         * Deletes submittedApartments of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35644,20 +35644,20 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.pendingApartments.destroy = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::destroy::prospectiveApartment::pendingApartments"];
+        R.submittedApartments.destroy = function() {
+          var TargetResource = $injector.get("SubmittedApartment");
+          var action = TargetResource["::destroy::prospectiveApartment::submittedApartments"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#update
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
+         * @name housingApiServices.ProspectiveApartment.submittedApartments#update
+         * @methodOf housingApiServices.ProspectiveApartment.submittedApartments
          *
          * @description
          *
-         * Update pendingApartments of this model.
+         * Update submittedApartments of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -35679,12 +35679,12 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
-        R.pendingApartments.update = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::update::prospectiveApartment::pendingApartments"];
+        R.submittedApartments.update = function() {
+          var TargetResource = $injector.get("SubmittedApartment");
+          var action = TargetResource["::update::prospectiveApartment::submittedApartments"];
           return action.apply(R, arguments);
         };
     /**
