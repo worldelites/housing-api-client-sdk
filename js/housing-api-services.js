@@ -28720,7 +28720,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `pendingApartment` – `{object=}` - 
+         *  - `submittedApartment` – `{object=}` - 
          */
         "getSubmittedApartmentByUser": {
           url: urlBase + "/submittedApartments/getSubmittedApartmentByUser",
