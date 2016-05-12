@@ -2697,433 +2697,433 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.findById() instead.
-        "::findById::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.findById() instead.
+        "::findById::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.destroyById() instead.
-        "::destroyById::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.destroyById() instead.
+        "::destroyById::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.updateById() instead.
-        "::updateById::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.updateById() instead.
+        "::updateById::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.link() instead.
-        "::link::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.link() instead.
+        "::link::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.unlink() instead.
-        "::unlink::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.unlink() instead.
+        "::unlink::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.exists() instead.
-        "::exists::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.exists() instead.
+        "::exists::submittedApartment::likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.findById() instead.
-        "::findById::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.findById() instead.
+        "::findById::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.destroyById() instead.
-        "::destroyById::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.destroyById() instead.
+        "::destroyById::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.updateById() instead.
-        "::updateById::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.updateById() instead.
+        "::updateById::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.link() instead.
-        "::link::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.link() instead.
+        "::link::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.unlink() instead.
-        "::unlink::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.unlink() instead.
+        "::unlink::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.exists() instead.
-        "::exists::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.exists() instead.
+        "::exists::submittedApartment::couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.findById() instead.
-        "::findById::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.findById() instead.
+        "::findById::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.destroyById() instead.
-        "::destroyById::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.destroyById() instead.
+        "::destroyById::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.updateById() instead.
-        "::updateById::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.updateById() instead.
+        "::updateById::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.link() instead.
-        "::link::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.link() instead.
+        "::link::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.unlink() instead.
-        "::unlink::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.unlink() instead.
+        "::unlink::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.exists() instead.
-        "::exists::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.exists() instead.
+        "::exists::submittedApartment::visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.findById() instead.
-        "::findById::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.findById() instead.
+        "::findById::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.destroyById() instead.
-        "::destroyById::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.destroyById() instead.
+        "::destroyById::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.updateById() instead.
-        "::updateById::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.updateById() instead.
+        "::updateById::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.link() instead.
-        "::link::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.link() instead.
+        "::link::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.unlink() instead.
-        "::unlink::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.unlink() instead.
+        "::unlink::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.exists() instead.
-        "::exists::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.exists() instead.
+        "::exists::submittedApartment::redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.findById() instead.
-        "::findById::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.findById() instead.
+        "::findById::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.destroyById() instead.
-        "::destroyById::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.destroyById() instead.
+        "::destroyById::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.updateById() instead.
-        "::updateById::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.updateById() instead.
+        "::updateById::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.link() instead.
-        "::link::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.link() instead.
+        "::link::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.unlink() instead.
-        "::unlink::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.unlink() instead.
+        "::unlink::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.exists() instead.
-        "::exists::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.exists() instead.
+        "::exists::submittedApartment::roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers() instead.
-        "::get::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers() instead.
+        "::get::submittedApartment::likeUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.create() instead.
-        "::create::pendingApartment::likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+        // INTERNAL. Use SubmittedApartment.likeUsers.create() instead.
+        "::create::submittedApartment::likeUsers": {
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.createMany() instead.
-        "::createMany::pendingApartment::likeUsers": {
+        // INTERNAL. Use SubmittedApartment.likeUsers.createMany() instead.
+        "::createMany::submittedApartment::likeUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.destroyAll() instead.
-        "::delete::pendingApartment::likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+        // INTERNAL. Use SubmittedApartment.likeUsers.destroyAll() instead.
+        "::delete::submittedApartment::likeUsers": {
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.count() instead.
-        "::count::pendingApartment::likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers/count",
+        // INTERNAL. Use SubmittedApartment.likeUsers.count() instead.
+        "::count::submittedApartment::likeUsers": {
+          url: urlBase + "/submittedApartments/:id/likeUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers() instead.
-        "::get::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers() instead.
+        "::get::submittedApartment::couponUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.create() instead.
-        "::create::pendingApartment::couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+        // INTERNAL. Use SubmittedApartment.couponUsers.create() instead.
+        "::create::submittedApartment::couponUsers": {
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.createMany() instead.
-        "::createMany::pendingApartment::couponUsers": {
+        // INTERNAL. Use SubmittedApartment.couponUsers.createMany() instead.
+        "::createMany::submittedApartment::couponUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.destroyAll() instead.
-        "::delete::pendingApartment::couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+        // INTERNAL. Use SubmittedApartment.couponUsers.destroyAll() instead.
+        "::delete::submittedApartment::couponUsers": {
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.count() instead.
-        "::count::pendingApartment::couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers/count",
+        // INTERNAL. Use SubmittedApartment.couponUsers.count() instead.
+        "::count::submittedApartment::couponUsers": {
+          url: urlBase + "/submittedApartments/:id/couponUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers() instead.
-        "::get::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers() instead.
+        "::get::submittedApartment::visitUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.create() instead.
-        "::create::pendingApartment::visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+        // INTERNAL. Use SubmittedApartment.visitUsers.create() instead.
+        "::create::submittedApartment::visitUsers": {
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.createMany() instead.
-        "::createMany::pendingApartment::visitUsers": {
+        // INTERNAL. Use SubmittedApartment.visitUsers.createMany() instead.
+        "::createMany::submittedApartment::visitUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.destroyAll() instead.
-        "::delete::pendingApartment::visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+        // INTERNAL. Use SubmittedApartment.visitUsers.destroyAll() instead.
+        "::delete::submittedApartment::visitUsers": {
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.count() instead.
-        "::count::pendingApartment::visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers/count",
+        // INTERNAL. Use SubmittedApartment.visitUsers.count() instead.
+        "::count::submittedApartment::visitUsers": {
+          url: urlBase + "/submittedApartments/:id/visitUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers() instead.
-        "::get::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers() instead.
+        "::get::submittedApartment::redirectUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.create() instead.
-        "::create::pendingApartment::redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+        // INTERNAL. Use SubmittedApartment.redirectUsers.create() instead.
+        "::create::submittedApartment::redirectUsers": {
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.createMany() instead.
-        "::createMany::pendingApartment::redirectUsers": {
+        // INTERNAL. Use SubmittedApartment.redirectUsers.createMany() instead.
+        "::createMany::submittedApartment::redirectUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.destroyAll() instead.
-        "::delete::pendingApartment::redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+        // INTERNAL. Use SubmittedApartment.redirectUsers.destroyAll() instead.
+        "::delete::submittedApartment::redirectUsers": {
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.count() instead.
-        "::count::pendingApartment::redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers/count",
+        // INTERNAL. Use SubmittedApartment.redirectUsers.count() instead.
+        "::count::submittedApartment::redirectUsers": {
+          url: urlBase + "/submittedApartments/:id/redirectUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers() instead.
-        "::get::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers() instead.
+        "::get::submittedApartment::roommateUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.create() instead.
-        "::create::pendingApartment::roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+        // INTERNAL. Use SubmittedApartment.roommateUsers.create() instead.
+        "::create::submittedApartment::roommateUsers": {
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.createMany() instead.
-        "::createMany::pendingApartment::roommateUsers": {
+        // INTERNAL. Use SubmittedApartment.roommateUsers.createMany() instead.
+        "::createMany::submittedApartment::roommateUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.destroyAll() instead.
-        "::delete::pendingApartment::roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+        // INTERNAL. Use SubmittedApartment.roommateUsers.destroyAll() instead.
+        "::delete::submittedApartment::roommateUsers": {
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.count() instead.
-        "::count::pendingApartment::roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers/count",
+        // INTERNAL. Use SubmittedApartment.roommateUsers.count() instead.
+        "::count::submittedApartment::roommateUsers": {
+          url: urlBase + "/submittedApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
@@ -12658,89 +12658,89 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags.findById() instead.
-        "::findById::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.findById() instead.
+        "::findById::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags.destroyById() instead.
-        "::destroyById::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.destroyById() instead.
+        "::destroyById::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.updateById() instead.
-        "::updateById::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.updateById() instead.
+        "::updateById::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.tags.link() instead.
-        "::link::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.link() instead.
+        "::link::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.tags.unlink() instead.
-        "::unlink::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.unlink() instead.
+        "::unlink::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.exists() instead.
-        "::exists::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.exists() instead.
+        "::exists::submittedApartment::tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.tags() instead.
-        "::get::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags() instead.
+        "::get::submittedApartment::tags": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/tags",
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags.create() instead.
-        "::create::pendingApartment::tags": {
-          url: urlBase + "/pendingApartments/:id/tags",
+        // INTERNAL. Use SubmittedApartment.tags.create() instead.
+        "::create::submittedApartment::tags": {
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.tags.createMany() instead.
-        "::createMany::pendingApartment::tags": {
+        // INTERNAL. Use SubmittedApartment.tags.createMany() instead.
+        "::createMany::submittedApartment::tags": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/tags",
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.tags.destroyAll() instead.
-        "::delete::pendingApartment::tags": {
-          url: urlBase + "/pendingApartments/:id/tags",
+        // INTERNAL. Use SubmittedApartment.tags.destroyAll() instead.
+        "::delete::submittedApartment::tags": {
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.count() instead.
-        "::count::pendingApartment::tags": {
-          url: urlBase + "/pendingApartments/:id/tags/count",
+        // INTERNAL. Use SubmittedApartment.tags.count() instead.
+        "::count::submittedApartment::tags": {
+          url: urlBase + "/submittedApartments/:id/tags/count",
           method: "GET"
         },
 
@@ -14121,62 +14121,62 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.findById() instead.
-        "::findById::pendingApartment::floorPlans": {
+        // INTERNAL. Use SubmittedApartment.floorPlans.findById() instead.
+        "::findById::submittedApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.destroyById() instead.
-        "::destroyById::pendingApartment::floorPlans": {
+        // INTERNAL. Use SubmittedApartment.floorPlans.destroyById() instead.
+        "::destroyById::submittedApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.updateById() instead.
-        "::updateById::pendingApartment::floorPlans": {
+        // INTERNAL. Use SubmittedApartment.floorPlans.updateById() instead.
+        "::updateById::submittedApartment::floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans() instead.
-        "::get::pendingApartment::floorPlans": {
+        // INTERNAL. Use SubmittedApartment.floorPlans() instead.
+        "::get::submittedApartment::floorPlans": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.create() instead.
-        "::create::pendingApartment::floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+        // INTERNAL. Use SubmittedApartment.floorPlans.create() instead.
+        "::create::submittedApartment::floorPlans": {
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.createMany() instead.
-        "::createMany::pendingApartment::floorPlans": {
+        // INTERNAL. Use SubmittedApartment.floorPlans.createMany() instead.
+        "::createMany::submittedApartment::floorPlans": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.destroyAll() instead.
-        "::delete::pendingApartment::floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+        // INTERNAL. Use SubmittedApartment.floorPlans.destroyAll() instead.
+        "::delete::submittedApartment::floorPlans": {
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.count() instead.
-        "::count::pendingApartment::floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans/count",
+        // INTERNAL. Use SubmittedApartment.floorPlans.count() instead.
+        "::count::submittedApartment::floorPlans": {
+          url: urlBase + "/submittedApartments/:id/floorPlans/count",
           method: "GET"
         },
 
@@ -17478,89 +17478,89 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities.findById() instead.
-        "::findById::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.findById() instead.
+        "::findById::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities.destroyById() instead.
-        "::destroyById::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.destroyById() instead.
+        "::destroyById::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.updateById() instead.
-        "::updateById::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.updateById() instead.
+        "::updateById::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.universities.link() instead.
-        "::link::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.link() instead.
+        "::link::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.universities.unlink() instead.
-        "::unlink::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.unlink() instead.
+        "::unlink::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.exists() instead.
-        "::exists::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.exists() instead.
+        "::exists::submittedApartment::universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.universities() instead.
-        "::get::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities() instead.
+        "::get::submittedApartment::universities": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/universities",
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities.create() instead.
-        "::create::pendingApartment::universities": {
-          url: urlBase + "/pendingApartments/:id/universities",
+        // INTERNAL. Use SubmittedApartment.universities.create() instead.
+        "::create::submittedApartment::universities": {
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.universities.createMany() instead.
-        "::createMany::pendingApartment::universities": {
+        // INTERNAL. Use SubmittedApartment.universities.createMany() instead.
+        "::createMany::submittedApartment::universities": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/universities",
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.universities.destroyAll() instead.
-        "::delete::pendingApartment::universities": {
-          url: urlBase + "/pendingApartments/:id/universities",
+        // INTERNAL. Use SubmittedApartment.universities.destroyAll() instead.
+        "::delete::submittedApartment::universities": {
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.count() instead.
-        "::count::pendingApartment::universities": {
-          url: urlBase + "/pendingApartments/:id/universities/count",
+        // INTERNAL. Use SubmittedApartment.universities.count() instead.
+        "::count::submittedApartment::universities": {
+          url: urlBase + "/submittedApartments/:id/universities/count",
           method: "GET"
         },
 
@@ -22575,13 +22575,13 @@ module.factory(
 
 /**
  * @ngdoc object
- * @name housingApiServices.PendingApartment
- * @header housingApiServices.PendingApartment
+ * @name housingApiServices.SubmittedApartment
+ * @header housingApiServices.SubmittedApartment
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `PendingApartment` model.
+ * A $resource object for interacting with the `SubmittedApartment` model.
  *
  * ## Example
  *
@@ -22591,628 +22591,628 @@ module.factory(
  *
  */
 module.factory(
-  "PendingApartment",
+  "SubmittedApartment",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/pendingApartments/:id",
+      urlBase + "/submittedApartments/:id",
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use PendingApartment.floorPlans.findById() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.findById() instead.
         "prototype$__findById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.destroyById() instead.
         "prototype$__destroyById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.updateById() instead.
         "prototype$__updateById__floorPlans": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/floorPlans/:fk",
+          url: urlBase + "/submittedApartments/:id/floorPlans/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.findById() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.findById() instead.
         "prototype$__findById__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.destroyById() instead.
         "prototype$__destroyById__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.updateById() instead.
         "prototype$__updateById__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.link() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.link() instead.
         "prototype$__link__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.unlink() instead.
         "prototype$__unlink__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.exists() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.exists() instead.
         "prototype$__exists__likeUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/likeUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/likeUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.findById() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.findById() instead.
         "prototype$__findById__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.destroyById() instead.
         "prototype$__destroyById__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.updateById() instead.
         "prototype$__updateById__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.link() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.link() instead.
         "prototype$__link__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.unlink() instead.
         "prototype$__unlink__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.exists() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.exists() instead.
         "prototype$__exists__couponUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/couponUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/couponUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.findById() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.findById() instead.
         "prototype$__findById__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.destroyById() instead.
         "prototype$__destroyById__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.updateById() instead.
         "prototype$__updateById__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.link() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.link() instead.
         "prototype$__link__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.unlink() instead.
         "prototype$__unlink__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.exists() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.exists() instead.
         "prototype$__exists__visitUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/visitUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/visitUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.findById() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.findById() instead.
         "prototype$__findById__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.destroyById() instead.
         "prototype$__destroyById__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.updateById() instead.
         "prototype$__updateById__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.link() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.link() instead.
         "prototype$__link__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.unlink() instead.
         "prototype$__unlink__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.exists() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.exists() instead.
         "prototype$__exists__redirectUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/redirectUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.tags.findById() instead.
+        // INTERNAL. Use SubmittedApartment.tags.findById() instead.
         "prototype$__findById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.tags.destroyById() instead.
         "prototype$__destroyById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.tags.updateById() instead.
         "prototype$__updateById__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.tags.link() instead.
+        // INTERNAL. Use SubmittedApartment.tags.link() instead.
         "prototype$__link__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.tags.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.tags.unlink() instead.
         "prototype$__unlink__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.exists() instead.
+        // INTERNAL. Use SubmittedApartment.tags.exists() instead.
         "prototype$__exists__tags": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/tags/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/tags/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.universities.findById() instead.
+        // INTERNAL. Use SubmittedApartment.universities.findById() instead.
         "prototype$__findById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.universities.destroyById() instead.
         "prototype$__destroyById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.universities.updateById() instead.
         "prototype$__updateById__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.universities.link() instead.
+        // INTERNAL. Use SubmittedApartment.universities.link() instead.
         "prototype$__link__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.universities.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.universities.unlink() instead.
         "prototype$__unlink__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.exists() instead.
+        // INTERNAL. Use SubmittedApartment.universities.exists() instead.
         "prototype$__exists__universities": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/universities/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/universities/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.prospectiveApartment() instead.
+        // INTERNAL. Use SubmittedApartment.prospectiveApartment() instead.
         "prototype$__get__prospectiveApartment": {
-          url: urlBase + "/pendingApartments/:id/prospectiveApartment",
+          url: urlBase + "/submittedApartments/:id/prospectiveApartment",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.findById() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.findById() instead.
         "prototype$__findById__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.destroyById() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.destroyById() instead.
         "prototype$__destroyById__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.updateById() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.updateById() instead.
         "prototype$__updateById__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.link() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.link() instead.
         "prototype$__link__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.unlink() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.unlink() instead.
         "prototype$__unlink__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.exists() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.exists() instead.
         "prototype$__exists__roommateUsers": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/pendingApartments/:id/roommateUsers/rel/:fk",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans() instead.
         "prototype$__get__floorPlans": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.create() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.create() instead.
         "prototype$__create__floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.destroyAll() instead.
         "prototype$__delete__floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans",
+          url: urlBase + "/submittedApartments/:id/floorPlans",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.floorPlans.count() instead.
+        // INTERNAL. Use SubmittedApartment.floorPlans.count() instead.
         "prototype$__count__floorPlans": {
-          url: urlBase + "/pendingApartments/:id/floorPlans/count",
+          url: urlBase + "/submittedApartments/:id/floorPlans/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers() instead.
         "prototype$__get__likeUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.create() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.create() instead.
         "prototype$__create__likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.destroyAll() instead.
         "prototype$__delete__likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers",
+          url: urlBase + "/submittedApartments/:id/likeUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.likeUsers.count() instead.
+        // INTERNAL. Use SubmittedApartment.likeUsers.count() instead.
         "prototype$__count__likeUsers": {
-          url: urlBase + "/pendingApartments/:id/likeUsers/count",
+          url: urlBase + "/submittedApartments/:id/likeUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers() instead.
         "prototype$__get__couponUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.create() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.create() instead.
         "prototype$__create__couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.destroyAll() instead.
         "prototype$__delete__couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers",
+          url: urlBase + "/submittedApartments/:id/couponUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.couponUsers.count() instead.
+        // INTERNAL. Use SubmittedApartment.couponUsers.count() instead.
         "prototype$__count__couponUsers": {
-          url: urlBase + "/pendingApartments/:id/couponUsers/count",
+          url: urlBase + "/submittedApartments/:id/couponUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers() instead.
         "prototype$__get__visitUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.create() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.create() instead.
         "prototype$__create__visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.destroyAll() instead.
         "prototype$__delete__visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers",
+          url: urlBase + "/submittedApartments/:id/visitUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.visitUsers.count() instead.
+        // INTERNAL. Use SubmittedApartment.visitUsers.count() instead.
         "prototype$__count__visitUsers": {
-          url: urlBase + "/pendingApartments/:id/visitUsers/count",
+          url: urlBase + "/submittedApartments/:id/visitUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers() instead.
         "prototype$__get__redirectUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.create() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.create() instead.
         "prototype$__create__redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.destroyAll() instead.
         "prototype$__delete__redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers",
+          url: urlBase + "/submittedApartments/:id/redirectUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.redirectUsers.count() instead.
+        // INTERNAL. Use SubmittedApartment.redirectUsers.count() instead.
         "prototype$__count__redirectUsers": {
-          url: urlBase + "/pendingApartments/:id/redirectUsers/count",
+          url: urlBase + "/submittedApartments/:id/redirectUsers/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags() instead.
+        // INTERNAL. Use SubmittedApartment.tags() instead.
         "prototype$__get__tags": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/tags",
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.tags.create() instead.
+        // INTERNAL. Use SubmittedApartment.tags.create() instead.
         "prototype$__create__tags": {
-          url: urlBase + "/pendingApartments/:id/tags",
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.tags.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.tags.destroyAll() instead.
         "prototype$__delete__tags": {
-          url: urlBase + "/pendingApartments/:id/tags",
+          url: urlBase + "/submittedApartments/:id/tags",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.tags.count() instead.
+        // INTERNAL. Use SubmittedApartment.tags.count() instead.
         "prototype$__count__tags": {
-          url: urlBase + "/pendingApartments/:id/tags/count",
+          url: urlBase + "/submittedApartments/:id/tags/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities() instead.
+        // INTERNAL. Use SubmittedApartment.universities() instead.
         "prototype$__get__universities": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/universities",
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.universities.create() instead.
+        // INTERNAL. Use SubmittedApartment.universities.create() instead.
         "prototype$__create__universities": {
-          url: urlBase + "/pendingApartments/:id/universities",
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.universities.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.universities.destroyAll() instead.
         "prototype$__delete__universities": {
-          url: urlBase + "/pendingApartments/:id/universities",
+          url: urlBase + "/submittedApartments/:id/universities",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.universities.count() instead.
+        // INTERNAL. Use SubmittedApartment.universities.count() instead.
         "prototype$__count__universities": {
-          url: urlBase + "/pendingApartments/:id/universities/count",
+          url: urlBase + "/submittedApartments/:id/universities/count",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers() instead.
         "prototype$__get__roommateUsers": {
           isArray: true,
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.create() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.create() instead.
         "prototype$__create__roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "POST"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.destroyAll() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.destroyAll() instead.
         "prototype$__delete__roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers",
+          url: urlBase + "/submittedApartments/:id/roommateUsers",
           method: "DELETE"
         },
 
-        // INTERNAL. Use PendingApartment.roommateUsers.count() instead.
+        // INTERNAL. Use SubmittedApartment.roommateUsers.count() instead.
         "prototype$__count__roommateUsers": {
-          url: urlBase + "/pendingApartments/:id/roommateUsers/count",
+          url: urlBase + "/submittedApartments/:id/roommateUsers/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#create
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#create
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23239,18 +23239,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "create": {
-          url: urlBase + "/pendingApartments",
+          url: urlBase + "/submittedApartments",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#createMany
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#createMany
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23277,19 +23277,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/pendingApartments",
+          url: urlBase + "/submittedApartments",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#upsert
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#upsert
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23316,18 +23316,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "upsert": {
-          url: urlBase + "/pendingApartments",
+          url: urlBase + "/submittedApartments",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#exists
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#exists
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23352,14 +23352,14 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/pendingApartments/:id/exists",
+          url: urlBase + "/submittedApartments/:id/exists",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#findById
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#findById
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23383,18 +23383,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "findById": {
-          url: urlBase + "/pendingApartments/:id",
+          url: urlBase + "/submittedApartments/:id",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#find
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#find
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23416,19 +23416,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "find": {
           isArray: true,
-          url: urlBase + "/pendingApartments",
+          url: urlBase + "/submittedApartments",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#findOne
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#findOne
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23450,18 +23450,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "findOne": {
-          url: urlBase + "/pendingApartments/findOne",
+          url: urlBase + "/submittedApartments/findOne",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#updateAll
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#updateAll
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23488,14 +23488,14 @@ module.factory(
          * The number of instances updated
          */
         "updateAll": {
-          url: urlBase + "/pendingApartments/update",
+          url: urlBase + "/submittedApartments/update",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#deleteById
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#deleteById
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23517,18 +23517,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "deleteById": {
-          url: urlBase + "/pendingApartments/:id",
+          url: urlBase + "/submittedApartments/:id",
           method: "DELETE"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#count
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#count
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23553,14 +23553,14 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/pendingApartments/count",
+          url: urlBase + "/submittedApartments/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#prototype$updateAttributes
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#prototype$updateAttributes
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23586,18 +23586,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/pendingApartments/:id",
+          url: urlBase + "/submittedApartments/:id",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#createChangeStream
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#createChangeStream
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23627,14 +23627,14 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/pendingApartments/change-stream",
+          url: urlBase + "/submittedApartments/change-stream",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#getPendingApartmentByUser
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#getSubmittedApartmentByUser
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23662,15 +23662,15 @@ module.factory(
          *
          *  - `pendingApartment` – `{object=}` - 
          */
-        "getPendingApartmentByUser": {
-          url: urlBase + "/pendingApartments/getPendingApartmentByUser",
+        "getSubmittedApartmentByUser": {
+          url: urlBase + "/submittedApartments/getSubmittedApartmentByUser",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#updatePendingApartmentByUser
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#updateSubmittedApartmentByUser
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23701,42 +23701,11 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `pendingApartment` – `{object=}` - 
+         *  - `submittedApartment` – `{object=}` - 
          */
-        "updatePendingApartmentByUser": {
-          url: urlBase + "/pendingApartments/updatePendingApartmentByUser",
+        "updateSubmittedApartmentByUser": {
+          url: urlBase + "/submittedApartments/updateSubmittedApartmentByUser",
           method: "POST"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
-        "::get::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
-        "::create::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.createMany() instead.
-        "::createMany::prospectiveApartment::pendingApartments": {
-          isArray: true,
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
-        "::update::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "PUT"
-        },
-
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
-        "::destroy::prospectiveApartment::pendingApartments": {
-          url: urlBase + "/prospectiveApartments/:id/pendingApartments",
-          method: "DELETE"
         },
       }
     );
@@ -23745,8 +23714,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#updateOrCreate
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#updateOrCreate
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23773,15 +23742,15 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         R["updateOrCreate"] = R["upsert"];
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#update
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#update
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23811,8 +23780,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#destroyById
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#destroyById
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23834,15 +23803,15 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         R["destroyById"] = R["deleteById"];
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#removeById
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#removeById
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -23864,7 +23833,7 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
+         * This usually means the response is a `SubmittedApartment` object.)
          * </em>
          */
         R["removeById"] = R["deleteById"];
@@ -23872,37 +23841,37 @@ module.factory(
 
     /**
     * @ngdoc property
-    * @name housingApiServices.PendingApartment#modelName
-    * @propertyOf housingApiServices.PendingApartment
+    * @name housingApiServices.SubmittedApartment#modelName
+    * @propertyOf housingApiServices.SubmittedApartment
     * @description
     * The name of the model represented by this $resource,
-    * i.e. `PendingApartment`.
+    * i.e. `SubmittedApartment`.
     */
-    R.modelName = "PendingApartment";
+    R.modelName = "SubmittedApartment";
 
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.floorPlans
-     * @header housingApiServices.PendingApartment.floorPlans
+     * @name housingApiServices.SubmittedApartment.floorPlans
+     * @header housingApiServices.SubmittedApartment.floorPlans
      * @object
      * @description
      *
-     * The object `PendingApartment.floorPlans` groups methods
-     * manipulating `FloorPlan` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.floorPlans` groups methods
+     * manipulating `FloorPlan` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#floorPlans PendingApartment.floorPlans()}
+     * Call {@link housingApiServices.SubmittedApartment#floorPlans SubmittedApartment.floorPlans()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#floorPlans
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#floorPlans
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries floorPlans of pendingApartment.
+         * Queries floorPlans of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -23927,18 +23896,18 @@ module.factory(
          */
         R.floorPlans = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::get::pendingApartment::floorPlans"];
+          var action = TargetResource["::get::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#count
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#count
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
-         * Counts floorPlans of pendingApartment.
+         * Counts floorPlans of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -23962,14 +23931,14 @@ module.factory(
          */
         R.floorPlans.count = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::count::pendingApartment::floorPlans"];
+          var action = TargetResource["::count::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#create
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#create
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24000,14 +23969,14 @@ module.factory(
          */
         R.floorPlans.create = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::create::pendingApartment::floorPlans"];
+          var action = TargetResource["::create::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#createMany
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#createMany
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24038,14 +24007,14 @@ module.factory(
          */
         R.floorPlans.createMany = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::createMany::pendingApartment::floorPlans"];
+          var action = TargetResource["::createMany::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#destroyAll
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24069,14 +24038,14 @@ module.factory(
          */
         R.floorPlans.destroyAll = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::delete::pendingApartment::floorPlans"];
+          var action = TargetResource["::delete::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#destroyById
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24102,14 +24071,14 @@ module.factory(
          */
         R.floorPlans.destroyById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::destroyById::pendingApartment::floorPlans"];
+          var action = TargetResource["::destroyById::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#findById
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#findById
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24138,14 +24107,14 @@ module.factory(
          */
         R.floorPlans.findById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::findById::pendingApartment::floorPlans"];
+          var action = TargetResource["::findById::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.floorPlans#updateById
-         * @methodOf housingApiServices.PendingApartment.floorPlans
+         * @name housingApiServices.SubmittedApartment.floorPlans#updateById
+         * @methodOf housingApiServices.SubmittedApartment.floorPlans
          *
          * @description
          *
@@ -24178,32 +24147,32 @@ module.factory(
          */
         R.floorPlans.updateById = function() {
           var TargetResource = $injector.get("FloorPlan");
-          var action = TargetResource["::updateById::pendingApartment::floorPlans"];
+          var action = TargetResource["::updateById::submittedApartment::floorPlans"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.likeUsers
-     * @header housingApiServices.PendingApartment.likeUsers
+     * @name housingApiServices.SubmittedApartment.likeUsers
+     * @header housingApiServices.SubmittedApartment.likeUsers
      * @object
      * @description
      *
-     * The object `PendingApartment.likeUsers` groups methods
-     * manipulating `User` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.likeUsers` groups methods
+     * manipulating `User` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#likeUsers PendingApartment.likeUsers()}
+     * Call {@link housingApiServices.SubmittedApartment#likeUsers SubmittedApartment.likeUsers()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#likeUsers
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#likeUsers
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries likeUsers of pendingApartment.
+         * Queries likeUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -24228,18 +24197,18 @@ module.factory(
          */
         R.likeUsers = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::get::pendingApartment::likeUsers"];
+          var action = TargetResource["::get::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#count
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#count
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
-         * Counts likeUsers of pendingApartment.
+         * Counts likeUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -24263,14 +24232,14 @@ module.factory(
          */
         R.likeUsers.count = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::count::pendingApartment::likeUsers"];
+          var action = TargetResource["::count::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#create
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#create
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24301,14 +24270,14 @@ module.factory(
          */
         R.likeUsers.create = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::create::pendingApartment::likeUsers"];
+          var action = TargetResource["::create::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#createMany
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#createMany
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24339,14 +24308,14 @@ module.factory(
          */
         R.likeUsers.createMany = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::createMany::pendingApartment::likeUsers"];
+          var action = TargetResource["::createMany::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#destroyAll
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24370,14 +24339,14 @@ module.factory(
          */
         R.likeUsers.destroyAll = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::delete::pendingApartment::likeUsers"];
+          var action = TargetResource["::delete::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#destroyById
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24403,14 +24372,14 @@ module.factory(
          */
         R.likeUsers.destroyById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::destroyById::pendingApartment::likeUsers"];
+          var action = TargetResource["::destroyById::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#exists
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#exists
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24439,14 +24408,14 @@ module.factory(
          */
         R.likeUsers.exists = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::exists::pendingApartment::likeUsers"];
+          var action = TargetResource["::exists::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#findById
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#findById
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24475,14 +24444,14 @@ module.factory(
          */
         R.likeUsers.findById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::findById::pendingApartment::likeUsers"];
+          var action = TargetResource["::findById::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#link
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#link
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24515,14 +24484,14 @@ module.factory(
          */
         R.likeUsers.link = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::link::pendingApartment::likeUsers"];
+          var action = TargetResource["::link::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#unlink
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#unlink
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24548,14 +24517,14 @@ module.factory(
          */
         R.likeUsers.unlink = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::unlink::pendingApartment::likeUsers"];
+          var action = TargetResource["::unlink::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.likeUsers#updateById
-         * @methodOf housingApiServices.PendingApartment.likeUsers
+         * @name housingApiServices.SubmittedApartment.likeUsers#updateById
+         * @methodOf housingApiServices.SubmittedApartment.likeUsers
          *
          * @description
          *
@@ -24588,32 +24557,32 @@ module.factory(
          */
         R.likeUsers.updateById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::updateById::pendingApartment::likeUsers"];
+          var action = TargetResource["::updateById::submittedApartment::likeUsers"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.couponUsers
-     * @header housingApiServices.PendingApartment.couponUsers
+     * @name housingApiServices.SubmittedApartment.couponUsers
+     * @header housingApiServices.SubmittedApartment.couponUsers
      * @object
      * @description
      *
-     * The object `PendingApartment.couponUsers` groups methods
-     * manipulating `User` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.couponUsers` groups methods
+     * manipulating `User` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#couponUsers PendingApartment.couponUsers()}
+     * Call {@link housingApiServices.SubmittedApartment#couponUsers SubmittedApartment.couponUsers()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#couponUsers
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#couponUsers
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries couponUsers of pendingApartment.
+         * Queries couponUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -24638,18 +24607,18 @@ module.factory(
          */
         R.couponUsers = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::get::pendingApartment::couponUsers"];
+          var action = TargetResource["::get::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#count
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#count
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
-         * Counts couponUsers of pendingApartment.
+         * Counts couponUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -24673,14 +24642,14 @@ module.factory(
          */
         R.couponUsers.count = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::count::pendingApartment::couponUsers"];
+          var action = TargetResource["::count::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#create
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#create
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24711,14 +24680,14 @@ module.factory(
          */
         R.couponUsers.create = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::create::pendingApartment::couponUsers"];
+          var action = TargetResource["::create::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#createMany
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#createMany
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24749,14 +24718,14 @@ module.factory(
          */
         R.couponUsers.createMany = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::createMany::pendingApartment::couponUsers"];
+          var action = TargetResource["::createMany::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#destroyAll
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24780,14 +24749,14 @@ module.factory(
          */
         R.couponUsers.destroyAll = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::delete::pendingApartment::couponUsers"];
+          var action = TargetResource["::delete::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#destroyById
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24813,14 +24782,14 @@ module.factory(
          */
         R.couponUsers.destroyById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::destroyById::pendingApartment::couponUsers"];
+          var action = TargetResource["::destroyById::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#exists
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#exists
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24849,14 +24818,14 @@ module.factory(
          */
         R.couponUsers.exists = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::exists::pendingApartment::couponUsers"];
+          var action = TargetResource["::exists::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#findById
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#findById
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24885,14 +24854,14 @@ module.factory(
          */
         R.couponUsers.findById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::findById::pendingApartment::couponUsers"];
+          var action = TargetResource["::findById::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#link
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#link
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24925,14 +24894,14 @@ module.factory(
          */
         R.couponUsers.link = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::link::pendingApartment::couponUsers"];
+          var action = TargetResource["::link::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#unlink
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#unlink
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24958,14 +24927,14 @@ module.factory(
          */
         R.couponUsers.unlink = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::unlink::pendingApartment::couponUsers"];
+          var action = TargetResource["::unlink::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.couponUsers#updateById
-         * @methodOf housingApiServices.PendingApartment.couponUsers
+         * @name housingApiServices.SubmittedApartment.couponUsers#updateById
+         * @methodOf housingApiServices.SubmittedApartment.couponUsers
          *
          * @description
          *
@@ -24998,32 +24967,32 @@ module.factory(
          */
         R.couponUsers.updateById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::updateById::pendingApartment::couponUsers"];
+          var action = TargetResource["::updateById::submittedApartment::couponUsers"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.visitUsers
-     * @header housingApiServices.PendingApartment.visitUsers
+     * @name housingApiServices.SubmittedApartment.visitUsers
+     * @header housingApiServices.SubmittedApartment.visitUsers
      * @object
      * @description
      *
-     * The object `PendingApartment.visitUsers` groups methods
-     * manipulating `User` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.visitUsers` groups methods
+     * manipulating `User` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#visitUsers PendingApartment.visitUsers()}
+     * Call {@link housingApiServices.SubmittedApartment#visitUsers SubmittedApartment.visitUsers()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#visitUsers
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#visitUsers
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries visitUsers of pendingApartment.
+         * Queries visitUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25048,18 +25017,18 @@ module.factory(
          */
         R.visitUsers = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::get::pendingApartment::visitUsers"];
+          var action = TargetResource["::get::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#count
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#count
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
-         * Counts visitUsers of pendingApartment.
+         * Counts visitUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25083,14 +25052,14 @@ module.factory(
          */
         R.visitUsers.count = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::count::pendingApartment::visitUsers"];
+          var action = TargetResource["::count::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#create
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#create
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25121,14 +25090,14 @@ module.factory(
          */
         R.visitUsers.create = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::create::pendingApartment::visitUsers"];
+          var action = TargetResource["::create::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#createMany
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#createMany
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25159,14 +25128,14 @@ module.factory(
          */
         R.visitUsers.createMany = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::createMany::pendingApartment::visitUsers"];
+          var action = TargetResource["::createMany::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#destroyAll
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25190,14 +25159,14 @@ module.factory(
          */
         R.visitUsers.destroyAll = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::delete::pendingApartment::visitUsers"];
+          var action = TargetResource["::delete::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#destroyById
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25223,14 +25192,14 @@ module.factory(
          */
         R.visitUsers.destroyById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::destroyById::pendingApartment::visitUsers"];
+          var action = TargetResource["::destroyById::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#exists
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#exists
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25259,14 +25228,14 @@ module.factory(
          */
         R.visitUsers.exists = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::exists::pendingApartment::visitUsers"];
+          var action = TargetResource["::exists::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#findById
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#findById
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25295,14 +25264,14 @@ module.factory(
          */
         R.visitUsers.findById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::findById::pendingApartment::visitUsers"];
+          var action = TargetResource["::findById::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#link
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#link
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25335,14 +25304,14 @@ module.factory(
          */
         R.visitUsers.link = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::link::pendingApartment::visitUsers"];
+          var action = TargetResource["::link::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#unlink
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#unlink
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25368,14 +25337,14 @@ module.factory(
          */
         R.visitUsers.unlink = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::unlink::pendingApartment::visitUsers"];
+          var action = TargetResource["::unlink::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.visitUsers#updateById
-         * @methodOf housingApiServices.PendingApartment.visitUsers
+         * @name housingApiServices.SubmittedApartment.visitUsers#updateById
+         * @methodOf housingApiServices.SubmittedApartment.visitUsers
          *
          * @description
          *
@@ -25408,32 +25377,32 @@ module.factory(
          */
         R.visitUsers.updateById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::updateById::pendingApartment::visitUsers"];
+          var action = TargetResource["::updateById::submittedApartment::visitUsers"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.redirectUsers
-     * @header housingApiServices.PendingApartment.redirectUsers
+     * @name housingApiServices.SubmittedApartment.redirectUsers
+     * @header housingApiServices.SubmittedApartment.redirectUsers
      * @object
      * @description
      *
-     * The object `PendingApartment.redirectUsers` groups methods
-     * manipulating `User` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.redirectUsers` groups methods
+     * manipulating `User` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#redirectUsers PendingApartment.redirectUsers()}
+     * Call {@link housingApiServices.SubmittedApartment#redirectUsers SubmittedApartment.redirectUsers()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#redirectUsers
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#redirectUsers
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries redirectUsers of pendingApartment.
+         * Queries redirectUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25458,18 +25427,18 @@ module.factory(
          */
         R.redirectUsers = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::get::pendingApartment::redirectUsers"];
+          var action = TargetResource["::get::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#count
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#count
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
-         * Counts redirectUsers of pendingApartment.
+         * Counts redirectUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25493,14 +25462,14 @@ module.factory(
          */
         R.redirectUsers.count = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::count::pendingApartment::redirectUsers"];
+          var action = TargetResource["::count::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#create
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#create
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25531,14 +25500,14 @@ module.factory(
          */
         R.redirectUsers.create = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::create::pendingApartment::redirectUsers"];
+          var action = TargetResource["::create::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#createMany
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#createMany
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25569,14 +25538,14 @@ module.factory(
          */
         R.redirectUsers.createMany = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::createMany::pendingApartment::redirectUsers"];
+          var action = TargetResource["::createMany::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#destroyAll
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25600,14 +25569,14 @@ module.factory(
          */
         R.redirectUsers.destroyAll = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::delete::pendingApartment::redirectUsers"];
+          var action = TargetResource["::delete::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#destroyById
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25633,14 +25602,14 @@ module.factory(
          */
         R.redirectUsers.destroyById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::destroyById::pendingApartment::redirectUsers"];
+          var action = TargetResource["::destroyById::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#exists
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#exists
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25669,14 +25638,14 @@ module.factory(
          */
         R.redirectUsers.exists = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::exists::pendingApartment::redirectUsers"];
+          var action = TargetResource["::exists::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#findById
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#findById
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25705,14 +25674,14 @@ module.factory(
          */
         R.redirectUsers.findById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::findById::pendingApartment::redirectUsers"];
+          var action = TargetResource["::findById::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#link
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#link
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25745,14 +25714,14 @@ module.factory(
          */
         R.redirectUsers.link = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::link::pendingApartment::redirectUsers"];
+          var action = TargetResource["::link::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#unlink
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#unlink
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25778,14 +25747,14 @@ module.factory(
          */
         R.redirectUsers.unlink = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::unlink::pendingApartment::redirectUsers"];
+          var action = TargetResource["::unlink::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.redirectUsers#updateById
-         * @methodOf housingApiServices.PendingApartment.redirectUsers
+         * @name housingApiServices.SubmittedApartment.redirectUsers#updateById
+         * @methodOf housingApiServices.SubmittedApartment.redirectUsers
          *
          * @description
          *
@@ -25818,32 +25787,32 @@ module.factory(
          */
         R.redirectUsers.updateById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::updateById::pendingApartment::redirectUsers"];
+          var action = TargetResource["::updateById::submittedApartment::redirectUsers"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.tags
-     * @header housingApiServices.PendingApartment.tags
+     * @name housingApiServices.SubmittedApartment.tags
+     * @header housingApiServices.SubmittedApartment.tags
      * @object
      * @description
      *
-     * The object `PendingApartment.tags` groups methods
-     * manipulating `Tag` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.tags` groups methods
+     * manipulating `Tag` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#tags PendingApartment.tags()}
+     * Call {@link housingApiServices.SubmittedApartment#tags SubmittedApartment.tags()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#tags
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#tags
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries tags of pendingApartment.
+         * Queries tags of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25868,18 +25837,18 @@ module.factory(
          */
         R.tags = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::get::pendingApartment::tags"];
+          var action = TargetResource["::get::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#count
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#count
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
-         * Counts tags of pendingApartment.
+         * Counts tags of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -25903,14 +25872,14 @@ module.factory(
          */
         R.tags.count = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::count::pendingApartment::tags"];
+          var action = TargetResource["::count::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#create
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#create
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -25941,14 +25910,14 @@ module.factory(
          */
         R.tags.create = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::create::pendingApartment::tags"];
+          var action = TargetResource["::create::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#createMany
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#createMany
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -25979,14 +25948,14 @@ module.factory(
          */
         R.tags.createMany = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::createMany::pendingApartment::tags"];
+          var action = TargetResource["::createMany::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#destroyAll
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26010,14 +25979,14 @@ module.factory(
          */
         R.tags.destroyAll = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::delete::pendingApartment::tags"];
+          var action = TargetResource["::delete::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#destroyById
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26043,14 +26012,14 @@ module.factory(
          */
         R.tags.destroyById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::destroyById::pendingApartment::tags"];
+          var action = TargetResource["::destroyById::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#exists
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#exists
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26079,14 +26048,14 @@ module.factory(
          */
         R.tags.exists = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::exists::pendingApartment::tags"];
+          var action = TargetResource["::exists::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#findById
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#findById
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26115,14 +26084,14 @@ module.factory(
          */
         R.tags.findById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::findById::pendingApartment::tags"];
+          var action = TargetResource["::findById::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#link
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#link
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26155,14 +26124,14 @@ module.factory(
          */
         R.tags.link = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::link::pendingApartment::tags"];
+          var action = TargetResource["::link::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#unlink
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#unlink
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26188,14 +26157,14 @@ module.factory(
          */
         R.tags.unlink = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::unlink::pendingApartment::tags"];
+          var action = TargetResource["::unlink::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.tags#updateById
-         * @methodOf housingApiServices.PendingApartment.tags
+         * @name housingApiServices.SubmittedApartment.tags#updateById
+         * @methodOf housingApiServices.SubmittedApartment.tags
          *
          * @description
          *
@@ -26228,32 +26197,32 @@ module.factory(
          */
         R.tags.updateById = function() {
           var TargetResource = $injector.get("Tag");
-          var action = TargetResource["::updateById::pendingApartment::tags"];
+          var action = TargetResource["::updateById::submittedApartment::tags"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.universities
-     * @header housingApiServices.PendingApartment.universities
+     * @name housingApiServices.SubmittedApartment.universities
+     * @header housingApiServices.SubmittedApartment.universities
      * @object
      * @description
      *
-     * The object `PendingApartment.universities` groups methods
-     * manipulating `University` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.universities` groups methods
+     * manipulating `University` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#universities PendingApartment.universities()}
+     * Call {@link housingApiServices.SubmittedApartment#universities SubmittedApartment.universities()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#universities
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#universities
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries universities of pendingApartment.
+         * Queries universities of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -26278,18 +26247,18 @@ module.factory(
          */
         R.universities = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::get::pendingApartment::universities"];
+          var action = TargetResource["::get::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#count
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#count
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
-         * Counts universities of pendingApartment.
+         * Counts universities of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -26313,14 +26282,14 @@ module.factory(
          */
         R.universities.count = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::count::pendingApartment::universities"];
+          var action = TargetResource["::count::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#create
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#create
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26351,14 +26320,14 @@ module.factory(
          */
         R.universities.create = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::create::pendingApartment::universities"];
+          var action = TargetResource["::create::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#createMany
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#createMany
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26389,14 +26358,14 @@ module.factory(
          */
         R.universities.createMany = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::createMany::pendingApartment::universities"];
+          var action = TargetResource["::createMany::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#destroyAll
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26420,14 +26389,14 @@ module.factory(
          */
         R.universities.destroyAll = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::delete::pendingApartment::universities"];
+          var action = TargetResource["::delete::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#destroyById
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26453,14 +26422,14 @@ module.factory(
          */
         R.universities.destroyById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::destroyById::pendingApartment::universities"];
+          var action = TargetResource["::destroyById::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#exists
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#exists
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26489,14 +26458,14 @@ module.factory(
          */
         R.universities.exists = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::exists::pendingApartment::universities"];
+          var action = TargetResource["::exists::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#findById
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#findById
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26525,14 +26494,14 @@ module.factory(
          */
         R.universities.findById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::findById::pendingApartment::universities"];
+          var action = TargetResource["::findById::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#link
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#link
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26565,14 +26534,14 @@ module.factory(
          */
         R.universities.link = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::link::pendingApartment::universities"];
+          var action = TargetResource["::link::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#unlink
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#unlink
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26598,14 +26567,14 @@ module.factory(
          */
         R.universities.unlink = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::unlink::pendingApartment::universities"];
+          var action = TargetResource["::unlink::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.universities#updateById
-         * @methodOf housingApiServices.PendingApartment.universities
+         * @name housingApiServices.SubmittedApartment.universities#updateById
+         * @methodOf housingApiServices.SubmittedApartment.universities
          *
          * @description
          *
@@ -26638,14 +26607,14 @@ module.factory(
          */
         R.universities.updateById = function() {
           var TargetResource = $injector.get("University");
-          var action = TargetResource["::updateById::pendingApartment::universities"];
+          var action = TargetResource["::updateById::submittedApartment::universities"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#prospectiveApartment
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#prospectiveApartment
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
@@ -26674,32 +26643,32 @@ module.factory(
          */
         R.prospectiveApartment = function() {
           var TargetResource = $injector.get("ProspectiveApartment");
-          var action = TargetResource["::get::pendingApartment::prospectiveApartment"];
+          var action = TargetResource["::get::submittedApartment::prospectiveApartment"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name housingApiServices.PendingApartment.roommateUsers
-     * @header housingApiServices.PendingApartment.roommateUsers
+     * @name housingApiServices.SubmittedApartment.roommateUsers
+     * @header housingApiServices.SubmittedApartment.roommateUsers
      * @object
      * @description
      *
-     * The object `PendingApartment.roommateUsers` groups methods
-     * manipulating `User` instances related to `PendingApartment`.
+     * The object `SubmittedApartment.roommateUsers` groups methods
+     * manipulating `User` instances related to `SubmittedApartment`.
      *
-     * Call {@link housingApiServices.PendingApartment#roommateUsers PendingApartment.roommateUsers()}
+     * Call {@link housingApiServices.SubmittedApartment#roommateUsers SubmittedApartment.roommateUsers()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment#roommateUsers
-         * @methodOf housingApiServices.PendingApartment
+         * @name housingApiServices.SubmittedApartment#roommateUsers
+         * @methodOf housingApiServices.SubmittedApartment
          *
          * @description
          *
-         * Queries roommateUsers of pendingApartment.
+         * Queries roommateUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -26724,18 +26693,18 @@ module.factory(
          */
         R.roommateUsers = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::get::pendingApartment::roommateUsers"];
+          var action = TargetResource["::get::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#count
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#count
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
-         * Counts roommateUsers of pendingApartment.
+         * Counts roommateUsers of submittedApartment.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -26759,14 +26728,14 @@ module.factory(
          */
         R.roommateUsers.count = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::count::pendingApartment::roommateUsers"];
+          var action = TargetResource["::count::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#create
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#create
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26797,14 +26766,14 @@ module.factory(
          */
         R.roommateUsers.create = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::create::pendingApartment::roommateUsers"];
+          var action = TargetResource["::create::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#createMany
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#createMany
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26835,14 +26804,14 @@ module.factory(
          */
         R.roommateUsers.createMany = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::createMany::pendingApartment::roommateUsers"];
+          var action = TargetResource["::createMany::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#destroyAll
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#destroyAll
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26866,14 +26835,14 @@ module.factory(
          */
         R.roommateUsers.destroyAll = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::delete::pendingApartment::roommateUsers"];
+          var action = TargetResource["::delete::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#destroyById
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#destroyById
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26899,14 +26868,14 @@ module.factory(
          */
         R.roommateUsers.destroyById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::destroyById::pendingApartment::roommateUsers"];
+          var action = TargetResource["::destroyById::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#exists
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#exists
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26935,14 +26904,14 @@ module.factory(
          */
         R.roommateUsers.exists = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::exists::pendingApartment::roommateUsers"];
+          var action = TargetResource["::exists::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#findById
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#findById
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -26971,14 +26940,14 @@ module.factory(
          */
         R.roommateUsers.findById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::findById::pendingApartment::roommateUsers"];
+          var action = TargetResource["::findById::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#link
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#link
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -27011,14 +26980,14 @@ module.factory(
          */
         R.roommateUsers.link = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::link::pendingApartment::roommateUsers"];
+          var action = TargetResource["::link::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#unlink
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#unlink
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -27044,14 +27013,14 @@ module.factory(
          */
         R.roommateUsers.unlink = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::unlink::pendingApartment::roommateUsers"];
+          var action = TargetResource["::unlink::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name housingApiServices.PendingApartment.roommateUsers#updateById
-         * @methodOf housingApiServices.PendingApartment.roommateUsers
+         * @name housingApiServices.SubmittedApartment.roommateUsers#updateById
+         * @methodOf housingApiServices.SubmittedApartment.roommateUsers
          *
          * @description
          *
@@ -27084,7 +27053,7 @@ module.factory(
          */
         R.roommateUsers.updateById = function() {
           var TargetResource = $injector.get("User");
-          var action = TargetResource["::updateById::pendingApartment::roommateUsers"];
+          var action = TargetResource["::updateById::submittedApartment::roommateUsers"];
           return action.apply(R, arguments);
         };
 
@@ -27359,25 +27328,140 @@ module.factory(
           method: "HEAD"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments() instead.
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#prototype$__get__pendingApartments
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Fetches hasOne relation pendingApartments.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ProspectiveApartment` object.)
+         * </em>
+         */
         "prototype$__get__pendingApartments": {
           url: urlBase + "/prospectiveApartments/:id/pendingApartments",
           method: "GET"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.create() instead.
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#prototype$__create__pendingApartments
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Creates a new instance in pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ProspectiveApartment` object.)
+         * </em>
+         */
         "prototype$__create__pendingApartments": {
           url: urlBase + "/prospectiveApartments/:id/pendingApartments",
           method: "POST"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.update() instead.
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#prototype$__update__pendingApartments
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Update pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ProspectiveApartment` object.)
+         * </em>
+         */
         "prototype$__update__pendingApartments": {
           url: urlBase + "/prospectiveApartments/:id/pendingApartments",
           method: "PUT"
         },
 
-        // INTERNAL. Use ProspectiveApartment.pendingApartments.destroy() instead.
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ProspectiveApartment#prototype$__destroy__pendingApartments
+         * @methodOf housingApiServices.ProspectiveApartment
+         *
+         * @description
+         *
+         * Deletes pendingApartments of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - apartment id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
         "prototype$__destroy__pendingApartments": {
           url: urlBase + "/prospectiveApartments/:id/pendingApartments",
           method: "DELETE"
@@ -28375,9 +28459,9 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use PendingApartment.prospectiveApartment() instead.
-        "::get::pendingApartment::prospectiveApartment": {
-          url: urlBase + "/pendingApartments/:id/prospectiveApartment",
+        // INTERNAL. Use SubmittedApartment.prospectiveApartment() instead.
+        "::get::submittedApartment::prospectiveApartment": {
+          url: urlBase + "/submittedApartments/:id/prospectiveApartment",
           method: "GET"
         },
       }
@@ -30461,201 +30545,6 @@ module.factory(
         R.redirectUsers.updateById = function() {
           var TargetResource = $injector.get("User");
           var action = TargetResource["::updateById::prospectiveApartment::redirectUsers"];
-          return action.apply(R, arguments);
-        };
-    /**
-     * @ngdoc object
-     * @name housingApiServices.ProspectiveApartment.pendingApartments
-     * @header housingApiServices.ProspectiveApartment.pendingApartments
-     * @object
-     * @description
-     *
-     * The object `ProspectiveApartment.pendingApartments` groups methods
-     * manipulating `PendingApartment` instances related to `ProspectiveApartment`.
-     *
-     * Call {@link housingApiServices.ProspectiveApartment#pendingApartments ProspectiveApartment.pendingApartments()}
-     * to query all related instances.
-     */
-
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment#pendingApartments
-         * @methodOf housingApiServices.ProspectiveApartment
-         *
-         * @description
-         *
-         * Fetches hasOne relation pendingApartments.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         *  - `refresh` – `{boolean=}` - 
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
-         * </em>
-         */
-        R.pendingApartments = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::get::prospectiveApartment::pendingApartments"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#create
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
-         *
-         * @description
-         *
-         * Creates a new instance in pendingApartments of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
-         * </em>
-         */
-        R.pendingApartments.create = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::create::prospectiveApartment::pendingApartments"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#createMany
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
-         *
-         * @description
-         *
-         * Creates a new instance in pendingApartments of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
-         * </em>
-         */
-        R.pendingApartments.createMany = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::createMany::prospectiveApartment::pendingApartments"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#destroy
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
-         *
-         * @description
-         *
-         * Deletes pendingApartments of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R.pendingApartments.destroy = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::destroy::prospectiveApartment::pendingApartments"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name housingApiServices.ProspectiveApartment.pendingApartments#update
-         * @methodOf housingApiServices.ProspectiveApartment.pendingApartments
-         *
-         * @description
-         *
-         * Update pendingApartments of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - apartment id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `PendingApartment` object.)
-         * </em>
-         */
-        R.pendingApartments.update = function() {
-          var TargetResource = $injector.get("PendingApartment");
-          var action = TargetResource["::update::prospectiveApartment::pendingApartments"];
           return action.apply(R, arguments);
         };
     /**
