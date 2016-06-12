@@ -42651,6 +42651,8 @@ module.factory(
          *
          *  - `to` – `{string}` - email to
          *
+         *  - `fileLink` – `{string}` - the link of file to send
+         *
          *  - `res` – `{object=}` - 
          *
          * @param {function(Object,Object)=} successCb
