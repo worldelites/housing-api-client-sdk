@@ -42629,6 +42629,40 @@ module.factory(
 
         /**
          * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#generateApplication
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `applicationId` – `{string}` - the id of application which will be generated
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "generateApplication": {
+          url: urlBase + "/applyForFloorPlans/generateApplication",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
          * @name housingApiServices.ApplyForFloorPlan#sendEmail
          * @methodOf housingApiServices.ApplyForFloorPlan
          *
@@ -42649,9 +42683,9 @@ module.factory(
          *
          *  - `applicationId` – `{string}` - application id
          *
-         *  - `to` – `{string}` - email to
+         *  - `to` – `{string=}` - email to
          *
-         *  - `fileLink` – `{string}` - the link of file to send
+         *  - `fileLink` – `{string=}` - the link of file to send
          *
          *  - `res` – `{object=}` - 
          *
