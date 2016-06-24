@@ -44112,6 +44112,8 @@ module.factory(
          *
          * @param {Object} postData Request data.
          *
+         *  - `payForApplicationId` – `{string}` - the id for pay for application
+         *
          *  - `stripeToken` – `{string}` - stripe token for pay for application
          *
          *  - `chargeAmount` – `{number}` - application id
