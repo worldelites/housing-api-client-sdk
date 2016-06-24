@@ -42112,6 +42112,33 @@ module.factory(
           method: "GET"
         },
 
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.findById() instead.
+        "prototype$__findById__payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.destroyById() instead.
+        "prototype$__destroyById__payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.updateById() instead.
+        "prototype$__updateById__payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "PUT"
+        },
+
         // INTERNAL. Use ApplyForFloorPlan.invitedRoommates.findById() instead.
         "prototype$__findById__invitedRoommates": {
           params: {
@@ -42137,6 +42164,31 @@ module.factory(
           },
           url: urlBase + "/applyForFloorPlans/:id/invitedRoommates/:fk",
           method: "PUT"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication() instead.
+        "prototype$__get__payForApplication": {
+          isArray: true,
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.create() instead.
+        "prototype$__create__payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.destroyAll() instead.
+        "prototype$__delete__payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.count() instead.
+        "prototype$__count__payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/count",
+          method: "GET"
         },
 
         // INTERNAL. Use ApplyForFloorPlan.invitedRoommates() instead.
@@ -42706,6 +42758,12 @@ module.factory(
           method: "POST"
         },
 
+        // INTERNAL. Use PayForApplication.applyForFloorPlan() instead.
+        "::get::payForApplication::applyForFloorPlan": {
+          url: urlBase + "/payForApplications/:id/applyForFloorPlan",
+          method: "GET"
+        },
+
         // INTERNAL. Use InvitedRoommate.applyForFloorPlan() instead.
         "::get::invitedRoommate::applyForFloorPlan": {
           url: urlBase + "/invitedRoommates/:id/applyForFloorPlan",
@@ -42923,6 +42981,307 @@ module.factory(
         R.user = function() {
           var TargetResource = $injector.get("User");
           var action = TargetResource["::get::applyForFloorPlan::user"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.ApplyForFloorPlan.payForApplication
+     * @header housingApiServices.ApplyForFloorPlan.payForApplication
+     * @object
+     * @description
+     *
+     * The object `ApplyForFloorPlan.payForApplication` groups methods
+     * manipulating `PayForApplication` instances related to `ApplyForFloorPlan`.
+     *
+     * Call {@link housingApiServices.ApplyForFloorPlan#payForApplication ApplyForFloorPlan.payForApplication()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan#payForApplication
+         * @methodOf housingApiServices.ApplyForFloorPlan
+         *
+         * @description
+         *
+         * Queries payForApplication of applyForFloorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::get::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#count
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Counts payForApplication of applyForFloorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.payForApplication.count = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::count::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#create
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Creates a new instance in payForApplication of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication.create = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::create::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#createMany
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Creates a new instance in payForApplication of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication.createMany = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::createMany::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#destroyAll
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Deletes all payForApplication of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.payForApplication.destroyAll = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::delete::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#destroyById
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Delete a related item by id for payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for payForApplication
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.payForApplication.destroyById = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::destroyById::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#findById
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Find a related item by id for payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for payForApplication
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication.findById = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::findById::applyForFloorPlan::payForApplication"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.ApplyForFloorPlan.payForApplication#updateById
+         * @methodOf housingApiServices.ApplyForFloorPlan.payForApplication
+         *
+         * @description
+         *
+         * Update a related item by id for payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for payForApplication
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication.updateById = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::updateById::applyForFloorPlan::payForApplication"];
           return action.apply(R, arguments);
         };
     /**
@@ -43224,6 +43583,1792 @@ module.factory(
         R.invitedRoommates.updateById = function() {
           var TargetResource = $injector.get("InvitedRoommate");
           var action = TargetResource["::updateById::applyForFloorPlan::invitedRoommates"];
+          return action.apply(R, arguments);
+        };
+
+    return R;
+  }]);
+
+/**
+ * @ngdoc object
+ * @name housingApiServices.PayForApplication
+ * @header housingApiServices.PayForApplication
+ * @object
+ *
+ * @description
+ *
+ * A $resource object for interacting with the `PayForApplication` model.
+ *
+ * ## Example
+ *
+ * See
+ * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
+ * for an example of using this object.
+ *
+ */
+module.factory(
+  "PayForApplication",
+  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
+    var R = Resource(
+      urlBase + "/payForApplications/:id",
+      { 'id': '@id' },
+      {
+
+        // INTERNAL. Use PayForApplication.applyForFloorPlan() instead.
+        "prototype$__get__applyForFloorPlan": {
+          url: urlBase + "/payForApplications/:id/applyForFloorPlan",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.findById() instead.
+        "prototype$__findById__transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.destroyById() instead.
+        "prototype$__destroyById__transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.updateById() instead.
+        "prototype$__updateById__transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction() instead.
+        "prototype$__get__transaction": {
+          isArray: true,
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.create() instead.
+        "prototype$__create__transaction": {
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.destroyAll() instead.
+        "prototype$__delete__transaction": {
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.count() instead.
+        "prototype$__count__transaction": {
+          url: urlBase + "/payForApplications/:id/transaction/count",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#create
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "create": {
+          url: urlBase + "/payForApplications",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#createMany
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "createMany": {
+          isArray: true,
+          url: urlBase + "/payForApplications",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#upsert
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "upsert": {
+          url: urlBase + "/payForApplications",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#exists
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Check whether a model instance exists in the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `exists` – `{boolean=}` - 
+         */
+        "exists": {
+          url: urlBase + "/payForApplications/:id/exists",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#findById
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Find a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         *  - `filter` – `{object=}` - Filter defining fields and include
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "findById": {
+          url: urlBase + "/payForApplications/:id",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#find
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Find all instances of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "find": {
+          isArray: true,
+          url: urlBase + "/payForApplications",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#findOne
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Find first instance of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "findOne": {
+          url: urlBase + "/payForApplications/findOne",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#updateAll
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        "updateAll": {
+          url: urlBase + "/payForApplications/update",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#deleteById
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "deleteById": {
+          url: urlBase + "/payForApplications/:id",
+          method: "DELETE"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#count
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Count instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        "count": {
+          url: urlBase + "/payForApplications/count",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#prototype$updateAttributes
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Update attributes for a model instance and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        "prototype$updateAttributes": {
+          url: urlBase + "/payForApplications/:id",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#createChangeStream
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Create a change stream.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `options` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `changes` – `{ReadableStream=}` - 
+         */
+        "createChangeStream": {
+          url: urlBase + "/payForApplications/change-stream",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#payWithStripe
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `stripeToken` – `{string}` - stripe token for pay for application
+         *
+         *  - `chargeAmount` – `{number}` - application id
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "payWithStripe": {
+          url: urlBase + "/payForApplications/payWithStripe",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.findById() instead.
+        "::findById::applyForFloorPlan::payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.destroyById() instead.
+        "::destroyById::applyForFloorPlan::payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.updateById() instead.
+        "::updateById::applyForFloorPlan::payForApplication": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication() instead.
+        "::get::applyForFloorPlan::payForApplication": {
+          isArray: true,
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.create() instead.
+        "::create::applyForFloorPlan::payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.createMany() instead.
+        "::createMany::applyForFloorPlan::payForApplication": {
+          isArray: true,
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "POST"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.destroyAll() instead.
+        "::delete::applyForFloorPlan::payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use ApplyForFloorPlan.payForApplication.count() instead.
+        "::count::applyForFloorPlan::payForApplication": {
+          url: urlBase + "/applyForFloorPlans/:id/payForApplication/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Transaction.payForApplication() instead.
+        "::get::transaction::payForApplication": {
+          url: urlBase + "/transactions/:id/payForApplication",
+          method: "GET"
+        },
+      }
+    );
+
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#updateOrCreate
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R["updateOrCreate"] = R["upsert"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#update
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        R["update"] = R["updateAll"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#destroyById
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R["destroyById"] = R["deleteById"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#removeById
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R["removeById"] = R["deleteById"];
+
+
+    /**
+    * @ngdoc property
+    * @name housingApiServices.PayForApplication#modelName
+    * @propertyOf housingApiServices.PayForApplication
+    * @description
+    * The name of the model represented by this $resource,
+    * i.e. `PayForApplication`.
+    */
+    R.modelName = "PayForApplication";
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#applyForFloorPlan
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Fetches belongsTo relation applyForFloorPlan.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `ApplyForFloorPlan` object.)
+         * </em>
+         */
+        R.applyForFloorPlan = function() {
+          var TargetResource = $injector.get("ApplyForFloorPlan");
+          var action = TargetResource["::get::payForApplication::applyForFloorPlan"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.PayForApplication.transaction
+     * @header housingApiServices.PayForApplication.transaction
+     * @object
+     * @description
+     *
+     * The object `PayForApplication.transaction` groups methods
+     * manipulating `Transaction` instances related to `PayForApplication`.
+     *
+     * Call {@link housingApiServices.PayForApplication#transaction PayForApplication.transaction()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#transaction
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * Queries transaction of payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R.transaction = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::get::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#count
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Counts transaction of payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.transaction.count = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::count::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#create
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Creates a new instance in transaction of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R.transaction.create = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::create::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#createMany
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Creates a new instance in transaction of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R.transaction.createMany = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::createMany::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#destroyAll
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Deletes all transaction of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.transaction.destroyAll = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::delete::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#destroyById
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Delete a related item by id for transaction.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for transaction
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.transaction.destroyById = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::destroyById::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#findById
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Find a related item by id for transaction.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for transaction
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R.transaction.findById = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::findById::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication.transaction#updateById
+         * @methodOf housingApiServices.PayForApplication.transaction
+         *
+         * @description
+         *
+         * Update a related item by id for transaction.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for transaction
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R.transaction.updateById = function() {
+          var TargetResource = $injector.get("Transaction");
+          var action = TargetResource["::updateById::payForApplication::transaction"];
+          return action.apply(R, arguments);
+        };
+
+    return R;
+  }]);
+
+/**
+ * @ngdoc object
+ * @name housingApiServices.Transaction
+ * @header housingApiServices.Transaction
+ * @object
+ *
+ * @description
+ *
+ * A $resource object for interacting with the `Transaction` model.
+ *
+ * ## Example
+ *
+ * See
+ * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
+ * for an example of using this object.
+ *
+ */
+module.factory(
+  "Transaction",
+  ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
+    var R = Resource(
+      urlBase + "/transactions/:id",
+      { 'id': '@id' },
+      {
+
+        // INTERNAL. Use Transaction.payForApplication() instead.
+        "prototype$__get__payForApplication": {
+          url: urlBase + "/transactions/:id/payForApplication",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#create
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "create": {
+          url: urlBase + "/transactions",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#createMany
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Create a new instance of the model and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "createMany": {
+          isArray: true,
+          url: urlBase + "/transactions",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#upsert
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "upsert": {
+          url: urlBase + "/transactions",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#exists
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Check whether a model instance exists in the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `exists` – `{boolean=}` - 
+         */
+        "exists": {
+          url: urlBase + "/transactions/:id/exists",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#findById
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Find a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         *  - `filter` – `{object=}` - Filter defining fields and include
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "findById": {
+          url: urlBase + "/transactions/:id",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#find
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Find all instances of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "find": {
+          isArray: true,
+          url: urlBase + "/transactions",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#findOne
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Find first instance of the model matched by filter from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "findOne": {
+          url: urlBase + "/transactions/findOne",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#updateAll
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        "updateAll": {
+          url: urlBase + "/transactions/update",
+          method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#deleteById
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "deleteById": {
+          url: urlBase + "/transactions/:id",
+          method: "DELETE"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#count
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Count instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        "count": {
+          url: urlBase + "/transactions/count",
+          method: "GET"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#prototype$updateAttributes
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Update attributes for a model instance and persist it into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        "prototype$updateAttributes": {
+          url: urlBase + "/transactions/:id",
+          method: "PUT"
+        },
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#createChangeStream
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Create a change stream.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `options` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `changes` – `{ReadableStream=}` - 
+         */
+        "createChangeStream": {
+          url: urlBase + "/transactions/change-stream",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.findById() instead.
+        "::findById::payForApplication::transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.destroyById() instead.
+        "::destroyById::payForApplication::transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.updateById() instead.
+        "::updateById::payForApplication::transaction": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/payForApplications/:id/transaction/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction() instead.
+        "::get::payForApplication::transaction": {
+          isArray: true,
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "GET"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.create() instead.
+        "::create::payForApplication::transaction": {
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.createMany() instead.
+        "::createMany::payForApplication::transaction": {
+          isArray: true,
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "POST"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.destroyAll() instead.
+        "::delete::payForApplication::transaction": {
+          url: urlBase + "/payForApplications/:id/transaction",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use PayForApplication.transaction.count() instead.
+        "::count::payForApplication::transaction": {
+          url: urlBase + "/payForApplications/:id/transaction/count",
+          method: "GET"
+        },
+      }
+    );
+
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#updateOrCreate
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Update an existing model instance or insert a new one into the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R["updateOrCreate"] = R["upsert"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#update
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Update instances of the model matched by where from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * The number of instances updated
+         */
+        R["update"] = R["updateAll"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#destroyById
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R["destroyById"] = R["deleteById"];
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#removeById
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Delete a model instance by id from the data source.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - Model id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Transaction` object.)
+         * </em>
+         */
+        R["removeById"] = R["deleteById"];
+
+
+    /**
+    * @ngdoc property
+    * @name housingApiServices.Transaction#modelName
+    * @propertyOf housingApiServices.Transaction
+    * @description
+    * The name of the model represented by this $resource,
+    * i.e. `Transaction`.
+    */
+    R.modelName = "Transaction";
+
+
+        /**
+         * @ngdoc method
+         * @name housingApiServices.Transaction#payForApplication
+         * @methodOf housingApiServices.Transaction
+         *
+         * @description
+         *
+         * Fetches belongsTo relation payForApplication.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `refresh` – `{boolean=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `PayForApplication` object.)
+         * </em>
+         */
+        R.payForApplication = function() {
+          var TargetResource = $injector.get("PayForApplication");
+          var action = TargetResource["::get::transaction::payForApplication"];
           return action.apply(R, arguments);
         };
 
