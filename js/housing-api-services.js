@@ -44114,6 +44114,8 @@ module.factory(
          *
          *  - `payForApplicationId` – `{string}` - the id for pay for application
          *
+         *  - `userId` – `{string}` - the user id of whom make this payment
+         *
          *  - `stripeToken` – `{string}` - stripe token for pay for application
          *
          *  - `chargeAmount` – `{number}` - application id
