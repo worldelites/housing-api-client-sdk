@@ -1030,7 +1030,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -1059,44 +1059,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/users",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.User#replaceOrCreate
-             * @methodOf housingApiServices.User
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `User` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/users/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -1138,7 +1100,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -1164,43 +1126,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/users/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.User#replaceById
-             * @methodOf housingApiServices.User
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `User` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/users/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -1277,7 +1202,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -1311,7 +1236,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -1376,7 +1301,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -1477,7 +1402,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * The response body contains properties of the AccessToken created on login.
              * Depending on the value of `include` parameter, the body may contain additional properties:
-             *   - `user` - `U+007BUserU+007D` - Data of the currently logged in user. (`include=user`)
+             *   - `user` - `{User}` - Data of the currently logged in user. (`include=user`)
              *
              */
             "login": {
@@ -4809,47 +4734,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.User#patchOrCreate
-             * @methodOf housingApiServices.User
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `User` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.User#updateOrCreate
              * @methodOf housingApiServices.User
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -4884,7 +4774,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -4915,7 +4805,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -4945,7 +4835,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -4967,40 +4857,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.User#patchAttributes
-             * @methodOf housingApiServices.User
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - User id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `User` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
         /**
          * @ngdoc method
@@ -9535,7 +9391,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -9564,44 +9420,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/apartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Apartment#replaceOrCreate
-             * @methodOf housingApiServices.Apartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Apartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/apartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -9643,7 +9461,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -9669,43 +9487,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/apartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Apartment#replaceById
-             * @methodOf housingApiServices.Apartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Apartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/apartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -9782,7 +9563,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -9816,7 +9597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -9881,7 +9662,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -11326,47 +11107,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Apartment#patchOrCreate
-             * @methodOf housingApiServices.Apartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Apartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Apartment#updateOrCreate
              * @methodOf housingApiServices.Apartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -11401,7 +11147,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -11432,7 +11178,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -11462,7 +11208,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -11484,40 +11230,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Apartment#patchAttributes
-             * @methodOf housingApiServices.Apartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Apartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -17392,7 +17104,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -17421,44 +17133,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/tags",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Tag#replaceOrCreate
-             * @methodOf housingApiServices.Tag
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Tag` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/tags/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -17500,7 +17174,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -17526,43 +17200,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/tags/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Tag#replaceById
-             * @methodOf housingApiServices.Tag
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Tag` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/tags/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -17639,7 +17276,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -17673,7 +17310,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -17738,7 +17375,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -18241,47 +17878,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Tag#patchOrCreate
-             * @methodOf housingApiServices.Tag
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Tag` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Tag#updateOrCreate
              * @methodOf housingApiServices.Tag
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -18316,7 +17918,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -18347,7 +17949,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -18377,7 +17979,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -18399,40 +18001,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Tag#patchAttributes
-             * @methodOf housingApiServices.Tag
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Tag` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -19050,7 +18618,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19079,44 +18647,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/features",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Feature#replaceOrCreate
-             * @methodOf housingApiServices.Feature
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Feature` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/features/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -19158,7 +18688,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19184,43 +18714,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/features/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Feature#replaceById
-             * @methodOf housingApiServices.Feature
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Feature` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/features/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -19297,7 +18790,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19331,7 +18824,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19396,7 +18889,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19899,47 +19392,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Feature#patchOrCreate
-             * @methodOf housingApiServices.Feature
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Feature` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Feature#updateOrCreate
              * @methodOf housingApiServices.Feature
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -19974,7 +19432,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20005,7 +19463,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20035,7 +19493,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20057,40 +19515,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Feature#patchAttributes
-             * @methodOf housingApiServices.Feature
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Feature` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -20708,7 +20132,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20737,44 +20161,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/amenities",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Amenity#replaceOrCreate
-             * @methodOf housingApiServices.Amenity
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Amenity` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/amenities/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -20816,7 +20202,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20842,43 +20228,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/amenities/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Amenity#replaceById
-             * @methodOf housingApiServices.Amenity
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Amenity` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/amenities/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -20955,7 +20304,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -20989,7 +20338,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21054,7 +20403,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21557,47 +20906,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Amenity#patchOrCreate
-             * @methodOf housingApiServices.Amenity
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Amenity` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Amenity#updateOrCreate
              * @methodOf housingApiServices.Amenity
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21632,7 +20946,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21663,7 +20977,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21693,7 +21007,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -21715,40 +21029,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Amenity#patchAttributes
-             * @methodOf housingApiServices.Amenity
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Amenity` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -22366,7 +21646,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -22395,44 +21675,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/safety",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Safety#replaceOrCreate
-             * @methodOf housingApiServices.Safety
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Safety` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/safety/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -22474,7 +21716,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -22500,43 +21742,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/safety/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Safety#replaceById
-             * @methodOf housingApiServices.Safety
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Safety` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/safety/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -22613,7 +21818,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -22647,7 +21852,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -22712,7 +21917,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -23215,47 +22420,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Safety#patchOrCreate
-             * @methodOf housingApiServices.Safety
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Safety` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Safety#updateOrCreate
              * @methodOf housingApiServices.Safety
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -23290,7 +22460,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -23321,7 +22491,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -23351,7 +22521,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -23373,40 +22543,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Safety#patchAttributes
-             * @methodOf housingApiServices.Safety
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Safety` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -24024,7 +23160,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24053,44 +23189,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/utilities",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Utility#replaceOrCreate
-             * @methodOf housingApiServices.Utility
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Utility` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/utilities/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -24132,7 +23230,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24158,43 +23256,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/utilities/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Utility#replaceById
-             * @methodOf housingApiServices.Utility
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Utility` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/utilities/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -24271,7 +23332,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24305,7 +23366,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24370,7 +23431,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24873,47 +23934,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Utility#patchOrCreate
-             * @methodOf housingApiServices.Utility
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Utility` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Utility#updateOrCreate
              * @methodOf housingApiServices.Utility
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24948,7 +23974,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -24979,7 +24005,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -25009,7 +24035,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -25031,40 +24057,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Utility#patchAttributes
-             * @methodOf housingApiServices.Utility
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Utility` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -25767,7 +24759,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -25796,44 +24788,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/floorPlans",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.FloorPlan#replaceOrCreate
-             * @methodOf housingApiServices.FloorPlan
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `FloorPlan` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/floorPlans/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -25875,7 +24829,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -25901,43 +24855,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/floorPlans/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.FloorPlan#replaceById
-             * @methodOf housingApiServices.FloorPlan
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `FloorPlan` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/floorPlans/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -26014,7 +24931,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26048,7 +24965,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26113,7 +25030,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26579,47 +25496,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.FloorPlan#patchOrCreate
-             * @methodOf housingApiServices.FloorPlan
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `FloorPlan` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.FloorPlan#updateOrCreate
              * @methodOf housingApiServices.FloorPlan
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26654,7 +25536,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26685,7 +25567,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26715,7 +25597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -26737,40 +25619,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.FloorPlan#patchAttributes
-             * @methodOf housingApiServices.FloorPlan
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `FloorPlan` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -27767,7 +26615,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -27796,44 +26644,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/visitApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.VisitApartment#replaceOrCreate
-             * @methodOf housingApiServices.VisitApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `VisitApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/visitApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -27875,7 +26685,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -27901,43 +26711,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/visitApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.VisitApartment#replaceById
-             * @methodOf housingApiServices.VisitApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `VisitApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/visitApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -28014,7 +26787,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28048,7 +26821,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28113,7 +26886,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28186,47 +26959,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.VisitApartment#patchOrCreate
-             * @methodOf housingApiServices.VisitApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `VisitApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.VisitApartment#updateOrCreate
              * @methodOf housingApiServices.VisitApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28261,7 +26999,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28292,7 +27030,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28322,7 +27060,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28344,40 +27082,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.VisitApartment#patchAttributes
-             * @methodOf housingApiServices.VisitApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `VisitApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -28590,7 +27294,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28619,44 +27323,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/redirectApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.RedirectApartment#replaceOrCreate
-             * @methodOf housingApiServices.RedirectApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `RedirectApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/redirectApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -28698,7 +27364,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28724,43 +27390,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/redirectApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.RedirectApartment#replaceById
-             * @methodOf housingApiServices.RedirectApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `RedirectApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/redirectApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -28837,7 +27466,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28871,7 +27500,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -28936,7 +27565,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29009,47 +27638,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.RedirectApartment#patchOrCreate
-             * @methodOf housingApiServices.RedirectApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `RedirectApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.RedirectApartment#updateOrCreate
              * @methodOf housingApiServices.RedirectApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29084,7 +27678,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29115,7 +27709,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29145,7 +27739,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29167,40 +27761,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.RedirectApartment#patchAttributes
-             * @methodOf housingApiServices.RedirectApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `RedirectApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -29401,7 +27961,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29430,44 +27990,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/emailTemplates",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.EmailTemplate#replaceOrCreate
-             * @methodOf housingApiServices.EmailTemplate
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `EmailTemplate` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/emailTemplates/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -29509,7 +28031,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29535,43 +28057,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/emailTemplates/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.EmailTemplate#replaceById
-             * @methodOf housingApiServices.EmailTemplate
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `EmailTemplate` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/emailTemplates/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -29648,7 +28133,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29682,7 +28167,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29747,7 +28232,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29820,47 +28305,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.EmailTemplate#patchOrCreate
-             * @methodOf housingApiServices.EmailTemplate
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `EmailTemplate` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.EmailTemplate#updateOrCreate
              * @methodOf housingApiServices.EmailTemplate
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29895,7 +28345,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29926,7 +28376,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29956,7 +28406,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -29978,40 +28428,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.EmailTemplate#patchAttributes
-             * @methodOf housingApiServices.EmailTemplate
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `EmailTemplate` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -30219,7 +28635,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -30248,44 +28664,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/universities",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.University#replaceOrCreate
-             * @methodOf housingApiServices.University
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `University` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/universities/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -30327,7 +28705,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -30353,43 +28731,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/universities/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.University#replaceById
-             * @methodOf housingApiServices.University
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `University` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/universities/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -30466,7 +28807,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -30500,7 +28841,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -30565,7 +28906,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31068,47 +29409,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.University#patchOrCreate
-             * @methodOf housingApiServices.University
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `University` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.University#updateOrCreate
              * @methodOf housingApiServices.University
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31143,7 +29449,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31174,7 +29480,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31204,7 +29510,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31226,40 +29532,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.University#patchAttributes
-             * @methodOf housingApiServices.University
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `University` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -31877,7 +30149,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -31906,44 +30178,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/cities",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.City#replaceOrCreate
-             * @methodOf housingApiServices.City
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `City` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/cities/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -31985,7 +30219,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32011,43 +30245,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/cities/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.City#replaceById
-             * @methodOf housingApiServices.City
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `City` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/cities/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -32124,7 +30321,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32158,7 +30355,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32223,7 +30420,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32726,47 +30923,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.City#patchOrCreate
-             * @methodOf housingApiServices.City
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `City` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.City#updateOrCreate
              * @methodOf housingApiServices.City
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32801,7 +30963,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32832,7 +30994,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32862,7 +31024,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -32884,40 +31046,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.City#patchAttributes
-             * @methodOf housingApiServices.City
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `City` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -34541,7 +32669,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -34570,44 +32698,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/crawledApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.CrawledApartment#replaceOrCreate
-             * @methodOf housingApiServices.CrawledApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `CrawledApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/crawledApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -34649,7 +32739,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -34675,43 +32765,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/crawledApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.CrawledApartment#replaceById
-             * @methodOf housingApiServices.CrawledApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `CrawledApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/crawledApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -34788,7 +32841,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -34822,7 +32875,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -34887,7 +32940,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -34960,47 +33013,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.CrawledApartment#patchOrCreate
-             * @methodOf housingApiServices.CrawledApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `CrawledApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.CrawledApartment#updateOrCreate
              * @methodOf housingApiServices.CrawledApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -35035,7 +33053,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -35066,7 +33084,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -35096,7 +33114,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -35118,40 +33136,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.CrawledApartment#patchAttributes
-             * @methodOf housingApiServices.CrawledApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - apartment id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `CrawledApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -42032,7 +40016,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42061,44 +40045,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/pendingApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PendingApartment#replaceOrCreate
-             * @methodOf housingApiServices.PendingApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PendingApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/pendingApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -42140,7 +40086,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42166,43 +40112,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/pendingApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PendingApartment#replaceById
-             * @methodOf housingApiServices.PendingApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PendingApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/pendingApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -42279,7 +40188,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42313,7 +40222,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42378,7 +40287,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42451,47 +40360,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.PendingApartment#patchOrCreate
-             * @methodOf housingApiServices.PendingApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PendingApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.PendingApartment#updateOrCreate
              * @methodOf housingApiServices.PendingApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42526,7 +40400,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42557,7 +40431,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42587,7 +40461,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -42609,40 +40483,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PendingApartment#patchAttributes
-             * @methodOf housingApiServices.PendingApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - apartment id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PendingApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -49529,7 +47369,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -49558,44 +47398,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/submittedApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.SubmittedApartment#replaceOrCreate
-             * @methodOf housingApiServices.SubmittedApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `SubmittedApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/submittedApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -49637,7 +47439,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -49663,43 +47465,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/submittedApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.SubmittedApartment#replaceById
-             * @methodOf housingApiServices.SubmittedApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `SubmittedApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/submittedApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -49776,7 +47541,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -49810,7 +47575,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -49875,7 +47640,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -50125,47 +47890,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.SubmittedApartment#patchOrCreate
-             * @methodOf housingApiServices.SubmittedApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `SubmittedApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.SubmittedApartment#updateOrCreate
              * @methodOf housingApiServices.SubmittedApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -50200,7 +47930,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -50231,7 +47961,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -50261,7 +47991,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -50283,40 +48013,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.SubmittedApartment#patchAttributes
-             * @methodOf housingApiServices.SubmittedApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - apartment id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `SubmittedApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -57336,7 +55032,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57365,44 +55061,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/prospectiveApartments",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ProspectiveApartment#replaceOrCreate
-             * @methodOf housingApiServices.ProspectiveApartment
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ProspectiveApartment` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/prospectiveApartments/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -57444,7 +55102,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57470,43 +55128,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/prospectiveApartments/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ProspectiveApartment#replaceById
-             * @methodOf housingApiServices.ProspectiveApartment
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ProspectiveApartment` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/prospectiveApartments/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -57583,7 +55204,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57617,7 +55238,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57682,7 +55303,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57890,47 +55511,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.ProspectiveApartment#patchOrCreate
-             * @methodOf housingApiServices.ProspectiveApartment
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ProspectiveApartment` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.ProspectiveApartment#updateOrCreate
              * @methodOf housingApiServices.ProspectiveApartment
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57965,7 +55551,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -57996,7 +55582,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -58026,7 +55612,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -58048,40 +55634,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ProspectiveApartment#patchAttributes
-             * @methodOf housingApiServices.ProspectiveApartment
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - apartment id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ProspectiveApartment` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -65026,7 +62578,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65055,44 +62607,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/applyForFloorPlans",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ApplyForFloorPlan#replaceOrCreate
-             * @methodOf housingApiServices.ApplyForFloorPlan
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ApplyForFloorPlan` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/applyForFloorPlans/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -65134,7 +62648,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65160,43 +62674,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/applyForFloorPlans/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ApplyForFloorPlan#replaceById
-             * @methodOf housingApiServices.ApplyForFloorPlan
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ApplyForFloorPlan` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/applyForFloorPlans/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -65273,7 +62750,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65307,7 +62784,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65372,7 +62849,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65577,47 +63054,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.ApplyForFloorPlan#patchOrCreate
-             * @methodOf housingApiServices.ApplyForFloorPlan
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ApplyForFloorPlan` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.ApplyForFloorPlan#updateOrCreate
              * @methodOf housingApiServices.ApplyForFloorPlan
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65652,7 +63094,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65683,7 +63125,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65713,7 +63155,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -65735,40 +63177,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ApplyForFloorPlan#patchAttributes
-             * @methodOf housingApiServices.ApplyForFloorPlan
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `ApplyForFloorPlan` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -66629,7 +64037,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -66658,44 +64066,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/payForApplications",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PayForApplication#replaceOrCreate
-             * @methodOf housingApiServices.PayForApplication
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PayForApplication` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/payForApplications/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -66737,7 +64107,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -66763,43 +64133,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/payForApplications/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PayForApplication#replaceById
-             * @methodOf housingApiServices.PayForApplication
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PayForApplication` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/payForApplications/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -66876,7 +64209,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -66910,7 +64243,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -66975,7 +64308,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67160,47 +64493,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.PayForApplication#patchOrCreate
-             * @methodOf housingApiServices.PayForApplication
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PayForApplication` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.PayForApplication#updateOrCreate
              * @methodOf housingApiServices.PayForApplication
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67235,7 +64533,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67266,7 +64564,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67296,7 +64594,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67318,40 +64616,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.PayForApplication#patchAttributes
-             * @methodOf housingApiServices.PayForApplication
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `PayForApplication` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -67823,7 +65087,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67852,44 +65116,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/transactions",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Transaction#replaceOrCreate
-             * @methodOf housingApiServices.Transaction
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Transaction` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/transactions/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -67931,7 +65157,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -67957,43 +65183,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/transactions/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Transaction#replaceById
-             * @methodOf housingApiServices.Transaction
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Transaction` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/transactions/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -68070,7 +65259,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68104,7 +65293,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68169,7 +65358,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68301,47 +65490,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.Transaction#patchOrCreate
-             * @methodOf housingApiServices.Transaction
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Transaction` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.Transaction#updateOrCreate
              * @methodOf housingApiServices.Transaction
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68376,7 +65530,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68407,7 +65561,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68437,7 +65591,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68459,40 +65613,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.Transaction#patchAttributes
-             * @methodOf housingApiServices.Transaction
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Transaction` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -68663,7 +65783,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68692,44 +65812,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/invitedRoommates",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.InvitedRoommate#replaceOrCreate
-             * @methodOf housingApiServices.InvitedRoommate
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `InvitedRoommate` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/invitedRoommates/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -68771,7 +65853,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68797,43 +65879,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/invitedRoommates/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.InvitedRoommate#replaceById
-             * @methodOf housingApiServices.InvitedRoommate
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `InvitedRoommate` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/invitedRoommates/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -68910,7 +65955,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -68944,7 +65989,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69009,7 +66054,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69141,47 +66186,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.InvitedRoommate#patchOrCreate
-             * @methodOf housingApiServices.InvitedRoommate
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `InvitedRoommate` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.InvitedRoommate#updateOrCreate
              * @methodOf housingApiServices.InvitedRoommate
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69216,7 +66226,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69247,7 +66257,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69277,7 +66287,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69299,40 +66309,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.InvitedRoommate#patchAttributes
-             * @methodOf housingApiServices.InvitedRoommate
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `InvitedRoommate` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
@@ -69515,7 +66491,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69544,44 +66520,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "upsert": {
               url: urlBase + "/wishLists",
               method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.WishList#replaceOrCreate
-             * @methodOf housingApiServices.WishList
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `WishList` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/wishLists/replaceOrCreate",
-              method: "POST",
             },
 
             /**
@@ -69623,7 +66561,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Find a model instance by {{id}} from the data source.
+             * Find a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69649,43 +66587,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             "findById": {
               url: urlBase + "/wishLists/:id",
               method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.WishList#replaceById
-             * @methodOf housingApiServices.WishList
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `WishList` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/wishLists/:id/replace",
-              method: "POST",
             },
 
             /**
@@ -69762,7 +66663,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69796,7 +66697,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69861,7 +66762,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Patch attributes for a model instance and persist it into the data source.
+             * Update attributes for a model instance and persist it into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -69934,47 +66835,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.WishList#patchOrCreate
-             * @methodOf housingApiServices.WishList
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `WishList` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
              * @name housingApiServices.WishList#updateOrCreate
              * @methodOf housingApiServices.WishList
              *
              * @description
              *
-             * Patch an existing model instance or insert a new one into the data source.
+             * Update an existing model instance or insert a new one into the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -70009,7 +66875,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Update instances of the model matched by {{where}} from the data source.
+             * Update instances of the model matched by where from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -70040,7 +66906,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -70070,7 +66936,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @description
              *
-             * Delete a model instance by {{id}} from the data source.
+             * Delete a model instance by id from the data source.
              *
              * @param {Object=} parameters Request parameters.
              *
@@ -70092,40 +66958,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * </em>
              */
         R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.WishList#patchAttributes
-             * @methodOf housingApiServices.WishList
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - PersistedModel id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `WishList` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
 
 
         /**
