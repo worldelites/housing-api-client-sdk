@@ -8519,6 +8519,60 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "HEAD",
             },
 
+            // INTERNAL. Use Apartment.similarListings.findById() instead.
+            "prototype$__findById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.destroyById() instead.
+            "prototype$__destroyById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.updateById() instead.
+            "prototype$__updateById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.link() instead.
+            "prototype$__link__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.unlink() instead.
+            "prototype$__unlink__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.exists() instead.
+            "prototype$__exists__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
             // INTERNAL. Use Apartment.likeUsers.findById() instead.
             "prototype$__findById__likeUsers": {
               params: {
@@ -9104,6 +9158,31 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use Apartment.utilities.count() instead.
             "prototype$__count__utilities": {
               url: urlBase + "/apartments/:id/utilities/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use Apartment.similarListings() instead.
+            "prototype$__get__similarListings": {
+              isArray: true,
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.create() instead.
+            "prototype$__create__similarListings": {
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.destroyAll() instead.
+            "prototype$__delete__similarListings": {
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.count() instead.
+            "prototype$__count__similarListings": {
+              url: urlBase + "/apartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -10475,6 +10554,92 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "GET",
             },
 
+            // INTERNAL. Use Apartment.similarListings.findById() instead.
+            "::findById::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.destroyById() instead.
+            "::destroyById::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.updateById() instead.
+            "::updateById::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.link() instead.
+            "::link::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.unlink() instead.
+            "::unlink::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.exists() instead.
+            "::exists::Apartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/apartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
+            // INTERNAL. Use Apartment.similarListings() instead.
+            "::get::Apartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.create() instead.
+            "::create::Apartment::similarListings": {
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.createMany() instead.
+            "::createMany::Apartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.destroyAll() instead.
+            "::delete::Apartment::similarListings": {
+              url: urlBase + "/apartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use Apartment.similarListings.count() instead.
+            "::count::Apartment::similarListings": {
+              url: urlBase + "/apartments/:id/similarListings/count",
+              method: "GET",
+            },
+
             // INTERNAL. Use Tag.apartments.findById() instead.
             "::findById::Tag::apartments": {
               params: {
@@ -11092,6 +11257,350 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use City.apartments.count() instead.
             "::count::City::apartments": {
               url: urlBase + "/cities/:id/apartments/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.findById() instead.
+            "::findById::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.destroyById() instead.
+            "::destroyById::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.updateById() instead.
+            "::updateById::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.link() instead.
+            "::link::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.unlink() instead.
+            "::unlink::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.exists() instead.
+            "::exists::CrawledApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings() instead.
+            "::get::CrawledApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.create() instead.
+            "::create::CrawledApartment::similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.createMany() instead.
+            "::createMany::CrawledApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.destroyAll() instead.
+            "::delete::CrawledApartment::similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.count() instead.
+            "::count::CrawledApartment::similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.findById() instead.
+            "::findById::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.destroyById() instead.
+            "::destroyById::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.updateById() instead.
+            "::updateById::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.link() instead.
+            "::link::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.unlink() instead.
+            "::unlink::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.exists() instead.
+            "::exists::PendingApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings() instead.
+            "::get::PendingApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.create() instead.
+            "::create::PendingApartment::similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.createMany() instead.
+            "::createMany::PendingApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.destroyAll() instead.
+            "::delete::PendingApartment::similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.count() instead.
+            "::count::PendingApartment::similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.findById() instead.
+            "::findById::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.destroyById() instead.
+            "::destroyById::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.updateById() instead.
+            "::updateById::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.link() instead.
+            "::link::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.unlink() instead.
+            "::unlink::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.exists() instead.
+            "::exists::SubmittedApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings() instead.
+            "::get::SubmittedApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.create() instead.
+            "::create::SubmittedApartment::similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.createMany() instead.
+            "::createMany::SubmittedApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.destroyAll() instead.
+            "::delete::SubmittedApartment::similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.count() instead.
+            "::count::SubmittedApartment::similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.findById() instead.
+            "::findById::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.destroyById() instead.
+            "::destroyById::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.updateById() instead.
+            "::updateById::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.link() instead.
+            "::link::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.unlink() instead.
+            "::unlink::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.exists() instead.
+            "::exists::ProspectiveApartment::similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings() instead.
+            "::get::ProspectiveApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.create() instead.
+            "::create::ProspectiveApartment::similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.createMany() instead.
+            "::createMany::ProspectiveApartment::similarListings": {
+              isArray: true,
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.destroyAll() instead.
+            "::delete::ProspectiveApartment::similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.count() instead.
+            "::count::ProspectiveApartment::similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -13591,6 +14100,416 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
         R.utilities.updateById = function() {
           var TargetResource = $injector.get("Utility");
           var action = TargetResource["::updateById::Apartment::utilities"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.Apartment.similarListings
+     * @header housingApiServices.Apartment.similarListings
+     * @object
+     * @description
+     *
+     * The object `Apartment.similarListings` groups methods
+     * manipulating `Apartment` instances related to `Apartment`.
+     *
+     * Call {@link housingApiServices.Apartment#similarListings Apartment.similarListings()}
+     * to query all related instances.
+     */
+
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment#similarListings
+             * @methodOf housingApiServices.Apartment
+             *
+             * @description
+             *
+             * Queries similarListings of apartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `filter` – `{object=}` -
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#count
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Counts similarListings of apartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `where` – `{object=}` - Criteria to match model instances
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `count` – `{number=}` -
+             */
+        R.similarListings.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#create
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#createMany
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#destroyAll
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Deletes all similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#destroyById
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Delete a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#exists
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Check the existence of similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#findById
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Find a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#link
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Add a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#unlink
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Remove the similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::Apartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment.similarListings#updateById
+             * @methodOf housingApiServices.Apartment.similarListings
+             *
+             * @description
+             *
+             * Update a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - PersistedModel id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::Apartment::similarListings"];
           return action.apply(R, arguments);
         };
     /**
@@ -31770,6 +32689,60 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "HEAD",
             },
 
+            // INTERNAL. Use CrawledApartment.similarListings.findById() instead.
+            "prototype$__findById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.destroyById() instead.
+            "prototype$__destroyById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.updateById() instead.
+            "prototype$__updateById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.link() instead.
+            "prototype$__link__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.unlink() instead.
+            "prototype$__unlink__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.exists() instead.
+            "prototype$__exists__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/crawledApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
             // INTERNAL. Use CrawledApartment.floorPlans.findById() instead.
             "prototype$__findById__floorPlans": {
               params: {
@@ -32357,6 +33330,31 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use CrawledApartment.safeties.count() instead.
             "prototype$__count__safeties": {
               url: urlBase + "/crawledApartments/:id/safeties/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings() instead.
+            "prototype$__get__similarListings": {
+              isArray: true,
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.create() instead.
+            "prototype$__create__similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.destroyAll() instead.
+            "prototype$__delete__similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use CrawledApartment.similarListings.count() instead.
+            "prototype$__count__similarListings": {
+              url: urlBase + "/crawledApartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -35196,6 +36194,416 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
         R.safeties.updateById = function() {
           var TargetResource = $injector.get("Safety");
           var action = TargetResource["::updateById::CrawledApartment::safeties"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.CrawledApartment.similarListings
+     * @header housingApiServices.CrawledApartment.similarListings
+     * @object
+     * @description
+     *
+     * The object `CrawledApartment.similarListings` groups methods
+     * manipulating `Apartment` instances related to `CrawledApartment`.
+     *
+     * Call {@link housingApiServices.CrawledApartment#similarListings CrawledApartment.similarListings()}
+     * to query all related instances.
+     */
+
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment#similarListings
+             * @methodOf housingApiServices.CrawledApartment
+             *
+             * @description
+             *
+             * Queries similarListings of crawledApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `filter` – `{object=}` -
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#count
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Counts similarListings of crawledApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` - Criteria to match model instances
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `count` – `{number=}` -
+             */
+        R.similarListings.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#create
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#createMany
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#destroyAll
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Deletes all similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#destroyById
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Delete a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#exists
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Check the existence of similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#findById
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Find a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#link
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Add a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#unlink
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Remove the similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::CrawledApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.CrawledApartment.similarListings#updateById
+             * @methodOf housingApiServices.CrawledApartment.similarListings
+             *
+             * @description
+             *
+             * Update a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::CrawledApartment::similarListings"];
           return action.apply(R, arguments);
         };
     /**
@@ -39117,6 +40525,60 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "HEAD",
             },
 
+            // INTERNAL. Use PendingApartment.similarListings.findById() instead.
+            "prototype$__findById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.destroyById() instead.
+            "prototype$__destroyById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.updateById() instead.
+            "prototype$__updateById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.link() instead.
+            "prototype$__link__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.unlink() instead.
+            "prototype$__unlink__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.exists() instead.
+            "prototype$__exists__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/pendingApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
             // INTERNAL. Use PendingApartment.floorPlans.findById() instead.
             "prototype$__findById__floorPlans": {
               params: {
@@ -39704,6 +41166,31 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use PendingApartment.safeties.count() instead.
             "prototype$__count__safeties": {
               url: urlBase + "/pendingApartments/:id/safeties/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings() instead.
+            "prototype$__get__similarListings": {
+              isArray: true,
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.create() instead.
+            "prototype$__create__similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.destroyAll() instead.
+            "prototype$__delete__similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use PendingApartment.similarListings.count() instead.
+            "prototype$__count__similarListings": {
+              url: urlBase + "/pendingApartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -42543,6 +44030,416 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
         R.safeties.updateById = function() {
           var TargetResource = $injector.get("Safety");
           var action = TargetResource["::updateById::PendingApartment::safeties"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.PendingApartment.similarListings
+     * @header housingApiServices.PendingApartment.similarListings
+     * @object
+     * @description
+     *
+     * The object `PendingApartment.similarListings` groups methods
+     * manipulating `Apartment` instances related to `PendingApartment`.
+     *
+     * Call {@link housingApiServices.PendingApartment#similarListings PendingApartment.similarListings()}
+     * to query all related instances.
+     */
+
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment#similarListings
+             * @methodOf housingApiServices.PendingApartment
+             *
+             * @description
+             *
+             * Queries similarListings of pendingApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `filter` – `{object=}` -
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#count
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Counts similarListings of pendingApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` - Criteria to match model instances
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `count` – `{number=}` -
+             */
+        R.similarListings.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#create
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#createMany
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#destroyAll
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Deletes all similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#destroyById
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Delete a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#exists
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Check the existence of similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#findById
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Find a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#link
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Add a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#unlink
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Remove the similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::PendingApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PendingApartment.similarListings#updateById
+             * @methodOf housingApiServices.PendingApartment.similarListings
+             *
+             * @description
+             *
+             * Update a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::PendingApartment::similarListings"];
           return action.apply(R, arguments);
         };
     /**
@@ -46464,6 +48361,60 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "HEAD",
             },
 
+            // INTERNAL. Use SubmittedApartment.similarListings.findById() instead.
+            "prototype$__findById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.destroyById() instead.
+            "prototype$__destroyById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.updateById() instead.
+            "prototype$__updateById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.link() instead.
+            "prototype$__link__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.unlink() instead.
+            "prototype$__unlink__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.exists() instead.
+            "prototype$__exists__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/submittedApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
             // INTERNAL. Use SubmittedApartment.floorPlans.findById() instead.
             "prototype$__findById__floorPlans": {
               params: {
@@ -47057,6 +49008,31 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use SubmittedApartment.safeties.count() instead.
             "prototype$__count__safeties": {
               url: urlBase + "/submittedApartments/:id/safeties/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings() instead.
+            "prototype$__get__similarListings": {
+              isArray: true,
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.create() instead.
+            "prototype$__create__similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.destroyAll() instead.
+            "prototype$__delete__similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use SubmittedApartment.similarListings.count() instead.
+            "prototype$__count__similarListings": {
+              url: urlBase + "/submittedApartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -50073,6 +52049,416 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
         R.safeties.updateById = function() {
           var TargetResource = $injector.get("Safety");
           var action = TargetResource["::updateById::SubmittedApartment::safeties"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.SubmittedApartment.similarListings
+     * @header housingApiServices.SubmittedApartment.similarListings
+     * @object
+     * @description
+     *
+     * The object `SubmittedApartment.similarListings` groups methods
+     * manipulating `Apartment` instances related to `SubmittedApartment`.
+     *
+     * Call {@link housingApiServices.SubmittedApartment#similarListings SubmittedApartment.similarListings()}
+     * to query all related instances.
+     */
+
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment#similarListings
+             * @methodOf housingApiServices.SubmittedApartment
+             *
+             * @description
+             *
+             * Queries similarListings of submittedApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `filter` – `{object=}` -
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#count
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Counts similarListings of submittedApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` - Criteria to match model instances
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `count` – `{number=}` -
+             */
+        R.similarListings.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#create
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#createMany
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#destroyAll
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Deletes all similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#destroyById
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Delete a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#exists
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Check the existence of similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#findById
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Find a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#link
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Add a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#unlink
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Remove the similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::SubmittedApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.SubmittedApartment.similarListings#updateById
+             * @methodOf housingApiServices.SubmittedApartment.similarListings
+             *
+             * @description
+             *
+             * Update a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::SubmittedApartment::similarListings"];
           return action.apply(R, arguments);
         };
     /**
@@ -54030,6 +56416,60 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "HEAD",
             },
 
+            // INTERNAL. Use ProspectiveApartment.similarListings.findById() instead.
+            "prototype$__findById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.destroyById() instead.
+            "prototype$__destroyById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.updateById() instead.
+            "prototype$__updateById__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.link() instead.
+            "prototype$__link__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "PUT",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.unlink() instead.
+            "prototype$__unlink__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.exists() instead.
+            "prototype$__exists__similarListings": {
+              params: {
+                'fk': '@fk',
+              },
+              url: urlBase + "/prospectiveApartments/:id/similarListings/rel/:fk",
+              method: "HEAD",
+            },
+
             // INTERNAL. Use ProspectiveApartment.floorPlans.findById() instead.
             "prototype$__findById__floorPlans": {
               params: {
@@ -54695,6 +57135,31 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
             // INTERNAL. Use ProspectiveApartment.safeties.count() instead.
             "prototype$__count__safeties": {
               url: urlBase + "/prospectiveApartments/:id/safeties/count",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings() instead.
+            "prototype$__get__similarListings": {
+              isArray: true,
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "GET",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.create() instead.
+            "prototype$__create__similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "POST",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.destroyAll() instead.
+            "prototype$__delete__similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings",
+              method: "DELETE",
+            },
+
+            // INTERNAL. Use ProspectiveApartment.similarListings.count() instead.
+            "prototype$__count__similarListings": {
+              url: urlBase + "/prospectiveApartments/:id/similarListings/count",
               method: "GET",
             },
 
@@ -57694,6 +60159,416 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
         R.safeties.updateById = function() {
           var TargetResource = $injector.get("Safety");
           var action = TargetResource["::updateById::ProspectiveApartment::safeties"];
+          return action.apply(R, arguments);
+        };
+    /**
+     * @ngdoc object
+     * @name housingApiServices.ProspectiveApartment.similarListings
+     * @header housingApiServices.ProspectiveApartment.similarListings
+     * @object
+     * @description
+     *
+     * The object `ProspectiveApartment.similarListings` groups methods
+     * manipulating `Apartment` instances related to `ProspectiveApartment`.
+     *
+     * Call {@link housingApiServices.ProspectiveApartment#similarListings ProspectiveApartment.similarListings()}
+     * to query all related instances.
+     */
+
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment#similarListings
+             * @methodOf housingApiServices.ProspectiveApartment
+             *
+             * @description
+             *
+             * Queries similarListings of prospectiveApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `filter` – `{object=}` -
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::get::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#count
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Counts similarListings of prospectiveApartment.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` - Criteria to match model instances
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `count` – `{number=}` -
+             */
+        R.similarListings.count = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::count::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#create
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.create = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::create::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#createMany
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Creates a new instance in similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Array.<Object>,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Array.<Object>} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.createMany = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::createMany::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#destroyAll
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Deletes all similarListings of this model.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyAll = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::delete::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#destroyById
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Delete a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.destroyById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::destroyById::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#exists
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Check the existence of similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.exists = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::exists::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#findById
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Find a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.findById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::findById::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#link
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Add a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.link = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::link::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#unlink
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Remove the similarListings relation to an item by id.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+        R.similarListings.unlink = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::unlink::ProspectiveApartment::similarListings"];
+          return action.apply(R, arguments);
+        };
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ProspectiveApartment.similarListings#updateById
+             * @methodOf housingApiServices.ProspectiveApartment.similarListings
+             *
+             * @description
+             *
+             * Update a related item by id for similarListings.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `fk` – `{*}` - Foreign key for similarListings
+             *
+             * @param {Object} postData Request data.
+             *
+             * This method expects a subset of model properties as request parameters.
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `Apartment` object.)
+             * </em>
+             */
+        R.similarListings.updateById = function() {
+          var TargetResource = $injector.get("Apartment");
+          var action = TargetResource["::updateById::ProspectiveApartment::similarListings"];
           return action.apply(R, arguments);
         };
     /**
