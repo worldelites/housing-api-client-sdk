@@ -1770,7 +1770,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *   populated with the actual data once the response is returned
              *   from the server.
              *
-             * This method returns no data.
+             * Data properties:
+             *
+             *  - `data` – `{object=}` -
              */
             "createAccount": {
               url: urlBase + "/users/create-account",
@@ -1798,6 +1800,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `req` – `{object=}` -
              *
              *  - `res` – `{object=}` -
+             *
+             *  - `data` – `{object=}` - stateName and stateParams information
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
