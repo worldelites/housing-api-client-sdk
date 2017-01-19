@@ -73,7 +73,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -111,7 +111,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -146,7 +146,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -620,7 +620,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -656,7 +656,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -693,7 +693,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -723,7 +725,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -1417,7 +1419,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5100,7 +5102,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5201,7 +5203,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -5237,7 +5239,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -5272,7 +5274,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5310,7 +5312,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5348,7 +5350,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -5379,7 +5383,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5412,7 +5416,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5448,7 +5452,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5484,7 +5488,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5524,7 +5528,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5557,7 +5561,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for likeApartments
              *
@@ -5611,7 +5615,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -5647,7 +5651,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -5682,7 +5686,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5720,7 +5724,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -5758,7 +5762,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -5789,7 +5795,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -5822,7 +5828,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -5858,7 +5864,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -5894,7 +5900,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -5934,7 +5940,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -5967,7 +5973,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for couponApartments
              *
@@ -6021,7 +6027,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -6057,7 +6063,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -6092,7 +6098,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6130,7 +6136,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6168,7 +6174,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -6199,7 +6207,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6232,7 +6240,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6268,7 +6276,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6304,7 +6312,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6344,7 +6352,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6377,7 +6385,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for visitApartments
              *
@@ -6431,7 +6439,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -6467,7 +6475,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -6502,7 +6510,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6540,7 +6548,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6578,7 +6586,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -6609,7 +6619,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6642,7 +6652,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6678,7 +6688,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6714,7 +6724,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6754,7 +6764,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6787,7 +6797,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for redirectApartments
              *
@@ -6841,7 +6851,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -6877,7 +6887,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -6912,7 +6922,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6950,7 +6960,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -6988,7 +6998,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -7019,7 +7031,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7052,7 +7064,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7088,7 +7100,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7124,7 +7136,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7164,7 +7176,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7197,7 +7209,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for manageProspectiveApartments
              *
@@ -7251,7 +7263,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -7287,7 +7299,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -7322,7 +7334,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -7360,7 +7372,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -7398,7 +7410,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -7429,7 +7443,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7462,7 +7476,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7498,7 +7512,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7534,7 +7548,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7574,7 +7588,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7607,7 +7621,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for roommateApartments
              *
@@ -7661,7 +7675,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -7697,7 +7711,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -7732,7 +7746,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -7770,7 +7784,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -7808,7 +7822,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -7839,7 +7855,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -7872,7 +7888,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -7908,7 +7924,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -7944,7 +7960,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -7984,7 +8000,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -8017,7 +8033,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for applyFloorPlans
              *
@@ -8071,7 +8087,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `filter` – `{object=}` -
              *
@@ -8107,7 +8123,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -8142,7 +8158,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -8180,7 +8196,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              * @param {Object} postData Request data.
              *
@@ -8218,7 +8234,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -8249,7 +8267,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8282,7 +8300,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8318,7 +8336,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8354,7 +8372,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8394,7 +8412,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8427,7 +8445,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - User id
+             *  - `id` – `{*}` - user id
              *
              *  - `fk` – `{*}` - Foreign key for wishedApartments
              *
@@ -8795,7 +8813,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -8833,7 +8851,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -8868,7 +8886,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -8910,7 +8928,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -8948,7 +8966,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -8983,7 +9001,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -9025,7 +9043,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9063,7 +9081,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9098,7 +9116,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9140,7 +9158,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9182,7 +9200,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9217,7 +9235,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -9843,7 +9861,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -9879,7 +9897,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -9916,7 +9934,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -9946,7 +9966,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -9980,7 +10000,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -10016,7 +10036,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -10053,7 +10073,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -10083,7 +10105,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -10117,7 +10139,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -10153,7 +10175,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -10190,7 +10212,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -10220,7 +10244,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -10914,7 +10938,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -12559,7 +12583,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -12619,7 +12643,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -12655,7 +12679,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -12690,7 +12714,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -12728,7 +12752,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -12766,7 +12790,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -12797,7 +12823,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -12830,7 +12856,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -12866,7 +12892,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -12920,7 +12946,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -12956,7 +12982,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -12991,7 +13017,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13029,7 +13055,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13067,7 +13093,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -13098,7 +13126,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13131,7 +13159,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13167,7 +13195,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13203,7 +13231,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13243,7 +13271,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13276,7 +13304,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -13330,7 +13358,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -13366,7 +13394,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -13401,7 +13429,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13439,7 +13467,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13477,7 +13505,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -13508,7 +13538,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13541,7 +13571,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13577,7 +13607,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13613,7 +13643,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13653,7 +13683,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13686,7 +13716,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -13740,7 +13770,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -13776,7 +13806,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -13811,7 +13841,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13849,7 +13879,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -13887,7 +13917,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -13918,7 +13950,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -13951,7 +13983,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -13987,7 +14019,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -14023,7 +14055,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -14063,7 +14095,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -14096,7 +14128,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -14150,7 +14182,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -14186,7 +14218,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -14221,7 +14253,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -14259,7 +14291,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -14297,7 +14329,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -14328,7 +14362,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14361,7 +14395,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14397,7 +14431,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14433,7 +14467,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14473,7 +14507,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14506,7 +14540,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -14560,7 +14594,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -14596,7 +14630,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -14631,7 +14665,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -14669,7 +14703,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -14707,7 +14741,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -14738,7 +14774,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14771,7 +14807,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14807,7 +14843,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14843,7 +14879,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14883,7 +14919,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14916,7 +14952,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -14970,7 +15006,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -15006,7 +15042,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -15041,7 +15077,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15079,7 +15115,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15117,7 +15153,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -15148,7 +15186,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15181,7 +15219,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15217,7 +15255,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15253,7 +15291,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15293,7 +15331,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15326,7 +15364,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -15380,7 +15418,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -15416,7 +15454,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -15451,7 +15489,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15489,7 +15527,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15527,7 +15565,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -15558,7 +15598,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15591,7 +15631,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15627,7 +15667,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15663,7 +15703,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15703,7 +15743,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15736,7 +15776,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -15790,7 +15830,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -15826,7 +15866,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -15861,7 +15901,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15899,7 +15939,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -15937,7 +15977,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -15968,7 +16010,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16001,7 +16043,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16037,7 +16079,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16073,7 +16115,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16113,7 +16155,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16146,7 +16188,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -16200,7 +16242,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -16236,7 +16278,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -16271,7 +16313,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -16309,7 +16351,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -16347,7 +16389,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -16378,7 +16422,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16411,7 +16455,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16447,7 +16491,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16483,7 +16527,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16523,7 +16567,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16556,7 +16600,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -16610,7 +16654,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -16646,7 +16690,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -16681,7 +16725,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -16719,7 +16763,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -16757,7 +16801,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -16788,7 +16834,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -16821,7 +16867,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -16857,7 +16903,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -16893,7 +16939,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -16933,7 +16979,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -16966,7 +17012,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -17020,7 +17066,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -17056,7 +17102,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -17091,7 +17137,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -17129,7 +17175,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -17167,7 +17213,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -17198,7 +17246,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17231,7 +17279,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17267,7 +17315,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17303,7 +17351,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17343,7 +17391,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17376,7 +17424,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -17416,7 +17464,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -17466,7 +17514,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -17502,7 +17550,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -17537,7 +17585,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -17575,7 +17623,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -17613,7 +17661,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -17644,7 +17694,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17677,7 +17727,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17713,7 +17763,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17749,7 +17799,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17789,7 +17839,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17822,7 +17872,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -17876,7 +17926,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -17912,7 +17962,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -17947,7 +17997,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -17985,7 +18035,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              * @param {Object} postData Request data.
              *
@@ -18023,7 +18073,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -18054,7 +18106,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18087,7 +18139,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18123,7 +18175,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18159,7 +18211,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18199,7 +18251,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18232,7 +18284,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - apartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -18842,7 +18894,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              * @param {Object} postData Request data.
              *
@@ -19545,7 +19597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              * @param {Object} postData Request data.
              *
@@ -19605,7 +19657,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `filter` – `{object=}` -
              *
@@ -19641,7 +19693,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -19676,7 +19728,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              * @param {Object} postData Request data.
              *
@@ -19714,7 +19766,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              * @param {Object} postData Request data.
              *
@@ -19752,7 +19804,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -19783,7 +19837,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -19816,7 +19870,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -19852,7 +19906,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -19888,7 +19942,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -19928,7 +19982,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -19961,7 +20015,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - tag id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -20571,7 +20625,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              * @param {Object} postData Request data.
              *
@@ -21274,7 +21328,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              * @param {Object} postData Request data.
              *
@@ -21334,7 +21388,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `filter` – `{object=}` -
              *
@@ -21370,7 +21424,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -21405,7 +21459,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              * @param {Object} postData Request data.
              *
@@ -21443,7 +21497,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              * @param {Object} postData Request data.
              *
@@ -21481,7 +21535,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -21512,7 +21568,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -21545,7 +21601,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -21581,7 +21637,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -21617,7 +21673,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -21657,7 +21713,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -21690,7 +21746,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - feature id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -22300,7 +22356,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              * @param {Object} postData Request data.
              *
@@ -23003,7 +23059,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              * @param {Object} postData Request data.
              *
@@ -23063,7 +23119,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `filter` – `{object=}` -
              *
@@ -23099,7 +23155,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -23134,7 +23190,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              * @param {Object} postData Request data.
              *
@@ -23172,7 +23228,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              * @param {Object} postData Request data.
              *
@@ -23210,7 +23266,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -23241,7 +23299,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -23274,7 +23332,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -23310,7 +23368,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -23346,7 +23404,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -23386,7 +23444,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -23419,7 +23477,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - amenity id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -24029,7 +24087,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              * @param {Object} postData Request data.
              *
@@ -24732,7 +24790,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              * @param {Object} postData Request data.
              *
@@ -24792,7 +24850,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `filter` – `{object=}` -
              *
@@ -24828,7 +24886,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -24863,7 +24921,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              * @param {Object} postData Request data.
              *
@@ -24901,7 +24959,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              * @param {Object} postData Request data.
              *
@@ -24939,7 +24997,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -24970,7 +25030,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25003,7 +25063,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25039,7 +25099,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25075,7 +25135,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25115,7 +25175,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25148,7 +25208,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - safety id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -25758,7 +25818,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              * @param {Object} postData Request data.
              *
@@ -26461,7 +26521,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              * @param {Object} postData Request data.
              *
@@ -26521,7 +26581,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `filter` – `{object=}` -
              *
@@ -26557,7 +26617,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -26592,7 +26652,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              * @param {Object} postData Request data.
              *
@@ -26630,7 +26690,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              * @param {Object} postData Request data.
              *
@@ -26668,7 +26728,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -26699,7 +26761,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -26732,7 +26794,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -26768,7 +26830,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -26804,7 +26866,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -26844,7 +26906,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -26877,7 +26939,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - utility id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -27572,7 +27634,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28238,7 +28300,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28284,7 +28346,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -28334,7 +28396,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `filter` – `{object=}` -
              *
@@ -28370,7 +28432,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -28405,7 +28467,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28443,7 +28505,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28481,7 +28543,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -28512,7 +28576,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28545,7 +28609,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28581,7 +28645,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28617,7 +28681,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28657,7 +28721,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28690,7 +28754,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlanApplicants
              *
@@ -28744,7 +28808,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `filter` – `{object=}` -
              *
@@ -28780,7 +28844,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -28815,7 +28879,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28853,7 +28917,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -28891,7 +28955,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -28922,7 +28988,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -28955,7 +29021,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -28991,7 +29057,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -29027,7 +29093,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -29067,7 +29133,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -29100,7 +29166,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - floorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for wishFloorPlanUsers
              *
@@ -29643,7 +29709,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - visitApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -29916,7 +29982,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - visitApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -29962,7 +30028,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - visitApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -29998,7 +30064,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - visitApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -30537,7 +30603,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - redirectApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -30810,7 +30876,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - redirectApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -30856,7 +30922,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - redirectApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -30892,7 +30958,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - redirectApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -31419,7 +31485,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - emailTemplate id
              *
              * @param {Object} postData Request data.
              *
@@ -31692,7 +31758,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - emailTemplate id
              *
              * @param {Object} postData Request data.
              *
@@ -32308,7 +32374,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              * @param {Object} postData Request data.
              *
@@ -33011,7 +33077,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              * @param {Object} postData Request data.
              *
@@ -33071,7 +33137,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `filter` – `{object=}` -
              *
@@ -33107,7 +33173,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -33142,7 +33208,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              * @param {Object} postData Request data.
              *
@@ -33180,7 +33246,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              * @param {Object} postData Request data.
              *
@@ -33218,7 +33284,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -33249,7 +33317,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -33282,7 +33350,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -33318,7 +33386,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -33354,7 +33422,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -33394,7 +33462,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -33427,7 +33495,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - university id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -34037,7 +34105,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              * @param {Object} postData Request data.
              *
@@ -34740,7 +34808,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              * @param {Object} postData Request data.
              *
@@ -34800,7 +34868,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `filter` – `{object=}` -
              *
@@ -34836,7 +34904,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -34871,7 +34939,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              * @param {Object} postData Request data.
              *
@@ -34909,7 +34977,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              * @param {Object} postData Request data.
              *
@@ -34947,7 +35015,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -34978,7 +35048,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35011,7 +35081,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35047,7 +35117,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35083,7 +35153,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35123,7 +35193,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35156,7 +35226,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - city id
              *
              *  - `fk` – `{*}` - Foreign key for apartments
              *
@@ -35227,7 +35297,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -35265,7 +35335,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -35300,7 +35370,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -35342,7 +35412,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -35380,7 +35450,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -35415,7 +35485,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -35727,7 +35797,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -35765,7 +35835,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -35800,7 +35870,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -35842,7 +35912,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -35884,7 +35954,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -35919,7 +35989,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -36422,7 +36492,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -36458,7 +36528,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -36495,7 +36565,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -36525,7 +36597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -36559,7 +36631,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -36595,7 +36667,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -36632,7 +36704,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -36662,7 +36736,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -36821,7 +36895,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -36857,7 +36931,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -36894,7 +36968,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -36924,7 +37000,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -37643,7 +37719,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -37916,7 +37992,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -37976,7 +38052,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -38012,7 +38088,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -38047,7 +38123,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38085,7 +38161,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38123,7 +38199,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -38154,7 +38232,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38187,7 +38265,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38223,7 +38301,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38259,7 +38337,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38299,7 +38377,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38332,7 +38410,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -38386,7 +38464,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -38422,7 +38500,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -38457,7 +38535,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38495,7 +38573,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38533,7 +38611,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -38564,7 +38644,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38597,7 +38677,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38633,7 +38713,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38669,7 +38749,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38709,7 +38789,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38742,7 +38822,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -38796,7 +38876,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -38832,7 +38912,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -38867,7 +38947,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38905,7 +38985,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -38943,7 +39023,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -38974,7 +39056,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39007,7 +39089,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39043,7 +39125,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39079,7 +39161,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39119,7 +39201,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39152,7 +39234,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -39206,7 +39288,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -39242,7 +39324,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -39277,7 +39359,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -39315,7 +39397,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -39353,7 +39435,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -39384,7 +39468,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39417,7 +39501,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39453,7 +39537,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39489,7 +39573,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39529,7 +39613,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39562,7 +39646,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -39616,7 +39700,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -39652,7 +39736,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -39687,7 +39771,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -39725,7 +39809,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -39763,7 +39847,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -39794,7 +39880,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -39827,7 +39913,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -39863,7 +39949,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -39899,7 +39985,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -39939,7 +40025,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -39972,7 +40058,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -40026,7 +40112,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -40062,7 +40148,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -40097,7 +40183,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40135,7 +40221,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40173,7 +40259,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -40204,7 +40292,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -40237,7 +40325,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -40273,7 +40361,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -40327,7 +40415,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -40363,7 +40451,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -40398,7 +40486,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40436,7 +40524,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40474,7 +40562,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -40505,7 +40595,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40538,7 +40628,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40574,7 +40664,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40610,7 +40700,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40650,7 +40740,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40683,7 +40773,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -40737,7 +40827,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -40773,7 +40863,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -40808,7 +40898,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40846,7 +40936,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -40884,7 +40974,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -40915,7 +41007,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -40948,7 +41040,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -40984,7 +41076,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -41020,7 +41112,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -41060,7 +41152,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -41093,7 +41185,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -41147,7 +41239,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -41183,7 +41275,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -41218,7 +41310,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -41256,7 +41348,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -41294,7 +41386,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -41325,7 +41419,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41358,7 +41452,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41394,7 +41488,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41430,7 +41524,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41470,7 +41564,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41503,7 +41597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -41557,7 +41651,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -41593,7 +41687,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -41628,7 +41722,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -41666,7 +41760,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -41704,7 +41798,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -41735,7 +41831,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41768,7 +41864,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41804,7 +41900,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41840,7 +41936,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41880,7 +41976,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41913,7 +42009,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -41967,7 +42063,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -42003,7 +42099,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -42038,7 +42134,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42076,7 +42172,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42114,7 +42210,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -42145,7 +42243,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42178,7 +42276,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42214,7 +42312,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42250,7 +42348,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42290,7 +42388,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42323,7 +42421,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -42377,7 +42475,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -42413,7 +42511,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -42448,7 +42546,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42486,7 +42584,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42524,7 +42622,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -42555,7 +42655,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42588,7 +42688,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42624,7 +42724,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42660,7 +42760,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42700,7 +42800,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42733,7 +42833,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -42773,7 +42873,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -42823,7 +42923,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -42859,7 +42959,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -42894,7 +42994,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42932,7 +43032,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -42970,7 +43070,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -43001,7 +43103,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43034,7 +43136,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43070,7 +43172,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43106,7 +43208,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43146,7 +43248,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43179,7 +43281,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -43233,7 +43335,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -43269,7 +43371,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -43304,7 +43406,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -43342,7 +43444,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -43380,7 +43482,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -43411,7 +43515,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43444,7 +43548,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43480,7 +43584,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43516,7 +43620,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43556,7 +43660,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43589,7 +43693,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - crawledApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -43660,7 +43764,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -43698,7 +43802,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -43733,7 +43837,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -43775,7 +43879,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -43813,7 +43917,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -43848,7 +43952,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -44160,7 +44264,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44198,7 +44302,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44233,7 +44337,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44275,7 +44379,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44317,7 +44421,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44352,7 +44456,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -44855,7 +44959,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -44891,7 +44995,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -44928,7 +45032,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -44958,7 +45064,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -44992,7 +45098,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -45028,7 +45134,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -45065,7 +45171,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -45095,7 +45203,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -45254,7 +45362,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -45290,7 +45398,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -45327,7 +45435,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -45357,7 +45467,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -46076,7 +46186,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46349,7 +46459,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46409,7 +46519,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -46445,7 +46555,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -46480,7 +46590,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46518,7 +46628,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46556,7 +46666,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -46587,7 +46699,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46620,7 +46732,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46656,7 +46768,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46692,7 +46804,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46732,7 +46844,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46765,7 +46877,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -46819,7 +46931,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -46855,7 +46967,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -46890,7 +47002,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46928,7 +47040,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -46966,7 +47078,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -46997,7 +47111,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47030,7 +47144,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47066,7 +47180,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47102,7 +47216,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47142,7 +47256,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47175,7 +47289,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -47229,7 +47343,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -47265,7 +47379,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -47300,7 +47414,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -47338,7 +47452,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -47376,7 +47490,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -47407,7 +47523,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47440,7 +47556,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47476,7 +47592,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47512,7 +47628,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47552,7 +47668,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47585,7 +47701,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -47639,7 +47755,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -47675,7 +47791,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -47710,7 +47826,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -47748,7 +47864,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -47786,7 +47902,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -47817,7 +47935,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -47850,7 +47968,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -47886,7 +48004,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -47922,7 +48040,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -47962,7 +48080,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -47995,7 +48113,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -48049,7 +48167,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -48085,7 +48203,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -48120,7 +48238,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48158,7 +48276,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48196,7 +48314,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -48227,7 +48347,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48260,7 +48380,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48296,7 +48416,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48332,7 +48452,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48372,7 +48492,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48405,7 +48525,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -48459,7 +48579,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -48495,7 +48615,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -48530,7 +48650,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48568,7 +48688,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48606,7 +48726,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -48637,7 +48759,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -48670,7 +48792,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -48706,7 +48828,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -48760,7 +48882,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -48796,7 +48918,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -48831,7 +48953,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48869,7 +48991,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -48907,7 +49029,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -48938,7 +49062,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -48971,7 +49095,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -49007,7 +49131,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -49043,7 +49167,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -49083,7 +49207,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -49116,7 +49240,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -49170,7 +49294,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -49206,7 +49330,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -49241,7 +49365,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -49279,7 +49403,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -49317,7 +49441,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -49348,7 +49474,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49381,7 +49507,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49417,7 +49543,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49453,7 +49579,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49493,7 +49619,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49526,7 +49652,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -49580,7 +49706,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -49616,7 +49742,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -49651,7 +49777,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -49689,7 +49815,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -49727,7 +49853,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -49758,7 +49886,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49791,7 +49919,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49827,7 +49955,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49863,7 +49991,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49903,7 +50031,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49936,7 +50064,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -49990,7 +50118,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -50026,7 +50154,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -50061,7 +50189,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50099,7 +50227,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50137,7 +50265,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -50168,7 +50298,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50201,7 +50331,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50237,7 +50367,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50273,7 +50403,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50313,7 +50443,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50346,7 +50476,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -50400,7 +50530,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -50436,7 +50566,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -50471,7 +50601,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50509,7 +50639,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50547,7 +50677,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -50578,7 +50710,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50611,7 +50743,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50647,7 +50779,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50683,7 +50815,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50723,7 +50855,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50756,7 +50888,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -50810,7 +50942,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -50846,7 +50978,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -50881,7 +51013,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50919,7 +51051,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -50957,7 +51089,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -50988,7 +51122,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51021,7 +51155,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51057,7 +51191,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51093,7 +51227,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51133,7 +51267,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51166,7 +51300,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -51206,7 +51340,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -51256,7 +51390,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -51292,7 +51426,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -51327,7 +51461,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -51365,7 +51499,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -51403,7 +51537,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -51434,7 +51570,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51467,7 +51603,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51503,7 +51639,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51539,7 +51675,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51579,7 +51715,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51612,7 +51748,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -51666,7 +51802,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -51702,7 +51838,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -51737,7 +51873,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -51775,7 +51911,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -51813,7 +51949,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -51844,7 +51982,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -51877,7 +52015,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -51913,7 +52051,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -51949,7 +52087,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -51989,7 +52127,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -52022,7 +52160,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - pendingApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -52093,7 +52231,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -52131,7 +52269,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -52166,7 +52304,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -52208,7 +52346,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -52246,7 +52384,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -52281,7 +52419,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -52593,7 +52731,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -52631,7 +52769,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -52666,7 +52804,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -52708,7 +52846,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -52750,7 +52888,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -52785,7 +52923,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -53294,7 +53432,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -53330,7 +53468,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -53367,7 +53505,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -53397,7 +53537,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -53431,7 +53571,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -53467,7 +53607,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -53504,7 +53644,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -53534,7 +53676,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -53693,7 +53835,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -53729,7 +53871,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -53766,7 +53908,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -53796,7 +53940,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -54515,7 +54659,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -54965,7 +55109,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55025,7 +55169,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -55061,7 +55205,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -55096,7 +55240,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55134,7 +55278,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55172,7 +55316,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -55203,7 +55349,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55236,7 +55382,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55272,7 +55418,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55308,7 +55454,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55348,7 +55494,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55381,7 +55527,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -55435,7 +55581,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -55471,7 +55617,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -55506,7 +55652,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55544,7 +55690,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55582,7 +55728,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -55613,7 +55761,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55646,7 +55794,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55682,7 +55830,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55718,7 +55866,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55758,7 +55906,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55791,7 +55939,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -55845,7 +55993,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -55881,7 +56029,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -55916,7 +56064,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55954,7 +56102,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -55992,7 +56140,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -56023,7 +56173,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56056,7 +56206,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56092,7 +56242,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56128,7 +56278,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56168,7 +56318,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56201,7 +56351,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -56255,7 +56405,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -56291,7 +56441,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -56326,7 +56476,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -56364,7 +56514,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -56402,7 +56552,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -56433,7 +56585,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56466,7 +56618,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56502,7 +56654,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56538,7 +56690,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56578,7 +56730,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56611,7 +56763,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -56665,7 +56817,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -56701,7 +56853,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -56736,7 +56888,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -56774,7 +56926,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -56812,7 +56964,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -56843,7 +56997,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -56876,7 +57030,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -56912,7 +57066,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -56948,7 +57102,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -56988,7 +57142,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -57021,7 +57175,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -57075,7 +57229,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -57111,7 +57265,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -57146,7 +57300,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57184,7 +57338,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57222,7 +57376,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -57253,7 +57409,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -57286,7 +57442,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -57322,7 +57478,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -57376,7 +57532,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -57412,7 +57568,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -57447,7 +57603,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57485,7 +57641,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57523,7 +57679,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -57554,7 +57712,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57587,7 +57745,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57623,7 +57781,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57659,7 +57817,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57699,7 +57857,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57732,7 +57890,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -57786,7 +57944,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -57822,7 +57980,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -57857,7 +58015,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57895,7 +58053,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -57933,7 +58091,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -57964,7 +58124,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -57997,7 +58157,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -58033,7 +58193,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -58069,7 +58229,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -58109,7 +58269,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -58142,7 +58302,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -58196,7 +58356,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -58232,7 +58392,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -58267,7 +58427,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -58305,7 +58465,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -58343,7 +58503,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -58374,7 +58536,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58407,7 +58569,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58443,7 +58605,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58479,7 +58641,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58519,7 +58681,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58552,7 +58714,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -58606,7 +58768,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -58642,7 +58804,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -58677,7 +58839,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -58715,7 +58877,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -58753,7 +58915,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -58784,7 +58948,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -58817,7 +58981,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -58853,7 +59017,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -58889,7 +59053,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -58929,7 +59093,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -58962,7 +59126,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -59002,7 +59166,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -59052,7 +59216,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -59088,7 +59252,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -59123,7 +59287,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -59161,7 +59325,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -59199,7 +59363,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -59230,7 +59396,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59263,7 +59429,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59299,7 +59465,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59335,7 +59501,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59375,7 +59541,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59408,7 +59574,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -59462,7 +59628,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -59498,7 +59664,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -59533,7 +59699,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -59571,7 +59737,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -59609,7 +59775,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -59640,7 +59808,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59673,7 +59841,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59709,7 +59877,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59745,7 +59913,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59785,7 +59953,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59818,7 +59986,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -59858,7 +60026,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -59908,7 +60076,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -59944,7 +60112,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -59979,7 +60147,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -60017,7 +60185,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -60055,7 +60223,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -60086,7 +60256,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60119,7 +60289,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60155,7 +60325,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60191,7 +60361,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60231,7 +60401,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60264,7 +60434,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -60318,7 +60488,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -60354,7 +60524,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -60389,7 +60559,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -60427,7 +60597,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -60465,7 +60635,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -60496,7 +60668,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60529,7 +60701,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60565,7 +60737,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60601,7 +60773,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60641,7 +60813,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60674,7 +60846,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - submittedApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -60745,7 +60917,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -60783,7 +60955,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -60818,7 +60990,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2City
              *
@@ -60860,7 +61032,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -60898,7 +61070,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -60933,7 +61105,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for distance2Campus
              *
@@ -61245,7 +61417,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -61283,7 +61455,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -61318,7 +61490,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -61360,7 +61532,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -61402,7 +61574,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -61437,7 +61609,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for similarListings
              *
@@ -62018,7 +62190,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -62054,7 +62226,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -62091,7 +62263,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -62121,7 +62295,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -62155,7 +62329,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -62191,7 +62365,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -62228,7 +62402,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -62258,7 +62434,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -62417,7 +62593,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -62453,7 +62629,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -62490,7 +62666,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -62520,7 +62698,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -63264,7 +63442,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -63672,7 +63850,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -63732,7 +63910,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -63768,7 +63946,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -63803,7 +63981,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -63841,7 +64019,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -63879,7 +64057,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -63910,7 +64090,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -63943,7 +64123,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -63979,7 +64159,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -64015,7 +64195,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -64055,7 +64235,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -64088,7 +64268,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for cities
              *
@@ -64142,7 +64322,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -64178,7 +64358,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -64213,7 +64393,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -64251,7 +64431,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -64289,7 +64469,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -64320,7 +64502,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64353,7 +64535,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64389,7 +64571,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64425,7 +64607,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64465,7 +64647,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64498,7 +64680,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for features
              *
@@ -64552,7 +64734,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -64588,7 +64770,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -64623,7 +64805,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -64661,7 +64843,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -64699,7 +64881,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -64730,7 +64914,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64763,7 +64947,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64799,7 +64983,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64835,7 +65019,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64875,7 +65059,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64908,7 +65092,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for amenities
              *
@@ -64962,7 +65146,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -64998,7 +65182,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -65033,7 +65217,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65071,7 +65255,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65109,7 +65293,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -65140,7 +65326,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65173,7 +65359,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65209,7 +65395,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65245,7 +65431,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65285,7 +65471,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65318,7 +65504,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for utilities
              *
@@ -65372,7 +65558,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -65408,7 +65594,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -65443,7 +65629,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65481,7 +65667,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65519,7 +65705,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -65550,7 +65738,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65583,7 +65771,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65619,7 +65807,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65655,7 +65843,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65695,7 +65883,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65728,7 +65916,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for safeties
              *
@@ -65782,7 +65970,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -65818,7 +66006,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -65853,7 +66041,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65891,7 +66079,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -65929,7 +66117,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -65960,7 +66150,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -65993,7 +66183,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -66029,7 +66219,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for floorPlans
              *
@@ -66083,7 +66273,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -66119,7 +66309,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -66154,7 +66344,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -66192,7 +66382,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -66230,7 +66420,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -66261,7 +66453,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66294,7 +66486,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66330,7 +66522,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66366,7 +66558,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66406,7 +66598,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66439,7 +66631,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for likeUsers
              *
@@ -66493,7 +66685,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -66529,7 +66721,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -66564,7 +66756,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -66602,7 +66794,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -66640,7 +66832,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -66671,7 +66865,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66704,7 +66898,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66740,7 +66934,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66776,7 +66970,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66816,7 +67010,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66849,7 +67043,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for couponUsers
              *
@@ -66903,7 +67097,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -66939,7 +67133,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -66974,7 +67168,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67012,7 +67206,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67050,7 +67244,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -67081,7 +67277,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67114,7 +67310,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67150,7 +67346,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67186,7 +67382,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67226,7 +67422,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67259,7 +67455,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for visitUsers
              *
@@ -67313,7 +67509,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -67349,7 +67545,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -67384,7 +67580,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67422,7 +67618,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67460,7 +67656,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -67491,7 +67689,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67524,7 +67722,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67560,7 +67758,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67596,7 +67794,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67636,7 +67834,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67669,7 +67867,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for redirectUsers
              *
@@ -67709,7 +67907,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -67759,7 +67957,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -67795,7 +67993,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67833,7 +68031,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67871,7 +68069,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -67902,7 +68100,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -67954,7 +68152,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -67990,7 +68188,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -68025,7 +68223,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68063,7 +68261,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68101,7 +68299,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -68132,7 +68332,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68165,7 +68365,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68201,7 +68401,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68237,7 +68437,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68277,7 +68477,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68310,7 +68510,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for tags
              *
@@ -68364,7 +68564,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -68400,7 +68600,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -68435,7 +68635,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68473,7 +68673,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68511,7 +68711,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -68542,7 +68744,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68575,7 +68777,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68611,7 +68813,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68647,7 +68849,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68687,7 +68889,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68720,7 +68922,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for universities
              *
@@ -68774,7 +68976,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -68810,7 +69012,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -68845,7 +69047,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68883,7 +69085,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -68921,7 +69123,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -68952,7 +69156,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -68985,7 +69189,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -69021,7 +69225,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -69057,7 +69261,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -69097,7 +69301,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -69130,7 +69334,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for manageUsers
              *
@@ -69184,7 +69388,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -69220,7 +69424,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -69255,7 +69459,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -69293,7 +69497,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -69331,7 +69535,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -69362,7 +69568,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69395,7 +69601,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69431,7 +69637,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69467,7 +69673,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69507,7 +69713,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69540,7 +69746,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for roommateUsers
              *
@@ -69594,7 +69800,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `filter` – `{object=}` -
              *
@@ -69630,7 +69836,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -69665,7 +69871,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -69703,7 +69909,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              * @param {Object} postData Request data.
              *
@@ -69741,7 +69947,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -69772,7 +69980,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -69805,7 +70013,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -69841,7 +70049,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -69877,7 +70085,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -69917,7 +70125,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -69950,7 +70158,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - apartment id
+             *  - `id` – `{*}` - prospectiveApartment id
              *
              *  - `fk` – `{*}` - Foreign key for wishApartmentUsers
              *
@@ -71025,7 +71233,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -71430,7 +71638,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -71476,7 +71684,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -71512,7 +71720,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -71562,7 +71770,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `filter` – `{object=}` -
              *
@@ -71598,7 +71806,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -71633,7 +71841,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -71671,7 +71879,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -71709,7 +71917,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -71740,7 +71950,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for payForApplication
              *
@@ -71773,7 +71983,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for payForApplication
              *
@@ -71809,7 +72019,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for payForApplication
              *
@@ -71863,7 +72073,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `filter` – `{object=}` -
              *
@@ -71899,7 +72109,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -71934,7 +72144,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -71972,7 +72182,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              * @param {Object} postData Request data.
              *
@@ -72010,7 +72220,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -72041,7 +72253,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for invitedRoommates
              *
@@ -72074,7 +72286,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for invitedRoommates
              *
@@ -72110,7 +72322,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - applyForFloorPlan id
              *
              *  - `fk` – `{*}` - Foreign key for invitedRoommates
              *
@@ -72699,7 +72911,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              * @param {Object} postData Request data.
              *
@@ -73084,7 +73296,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              * @param {Object} postData Request data.
              *
@@ -73130,7 +73342,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -73180,7 +73392,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `filter` – `{object=}` -
              *
@@ -73216,7 +73428,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -73251,7 +73463,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              * @param {Object} postData Request data.
              *
@@ -73289,7 +73501,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              * @param {Object} postData Request data.
              *
@@ -73327,7 +73539,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
+             *
+             *  - `where` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
              *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -73358,7 +73572,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `fk` – `{*}` - Foreign key for transaction
              *
@@ -73391,7 +73605,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `fk` – `{*}` - Foreign key for transaction
              *
@@ -73427,7 +73641,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - payForApplication id
              *
              *  - `fk` – `{*}` - Foreign key for transaction
              *
@@ -73964,7 +74178,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - transaction id
              *
              * @param {Object} postData Request data.
              *
@@ -74296,7 +74510,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - transaction id
              *
              * @param {Object} postData Request data.
              *
@@ -74342,7 +74556,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - transaction id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -74875,7 +75089,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - invitedRoommate id
              *
              * @param {Object} postData Request data.
              *
@@ -75207,7 +75421,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - invitedRoommate id
              *
              * @param {Object} postData Request data.
              *
@@ -75253,7 +75467,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - invitedRoommate id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -75798,7 +76012,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - wishList id
              *
              * @param {Object} postData Request data.
              *
@@ -76071,7 +76285,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - wishList id
              *
              * @param {Object} postData Request data.
              *
@@ -76117,7 +76331,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - wishList id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -76153,7 +76367,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - wishList id
              *
              *  - `refresh` – `{boolean=}` -
              *
@@ -76189,7 +76403,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - PersistedModel id
+             *  - `id` – `{*}` - wishList id
              *
              *  - `refresh` – `{boolean=}` -
              *
