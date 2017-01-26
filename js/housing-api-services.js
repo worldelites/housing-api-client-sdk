@@ -10827,6 +10827,81 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "GET",
             },
 
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment#getCouponSubscribeNum
+             * @methodOf housingApiServices.Apartment
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `id` – `{string}` - the apartment id
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+            "getCouponSubscribeNum": {
+              url: urlBase + "/apartments/:id/get-couponSubscribeNum",
+              method: "GET",
+            },
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.Apartment#sendCouponSubscribeNotification
+             * @methodOf housingApiServices.Apartment
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `id` – `{string}` - the apartment id
+             *
+             *  - `name` – `{string}` - the apartment name
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+            "sendCouponSubscribeNotification": {
+              url: urlBase + "/apartments/:id/send-couponSubscribeNotification",
+              method: "POST",
+            },
+
             // INTERNAL. Use User.likeApartments.findById() instead.
             "::findById::User::likeApartments": {
               params: {
