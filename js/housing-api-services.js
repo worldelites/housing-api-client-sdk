@@ -78274,7 +78274,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `charge_message` – `{string=}` - 
+         *  - `qr_link` – `{string=}` - 
          */
         "payWithCitcon": {
           url: urlBase + "/payForApplications/payWithCitcon",
