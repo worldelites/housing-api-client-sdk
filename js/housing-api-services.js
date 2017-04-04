@@ -78325,7 +78325,9 @@ module.factory(
          *   populated with the actual data once the response is returned
          *   from the server.
          *
-         * This method returns no data.
+         * Data properties:
+         *
+         *  - `received` – `{string=}` - 
          */
         "listenCitconIpn": {
           url: urlBase + "/payForApplications/payWithCitconIpn",
