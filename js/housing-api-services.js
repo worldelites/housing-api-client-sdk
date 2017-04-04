@@ -78328,7 +78328,7 @@ module.factory(
          * This method returns no data.
          */
         "listenCitconIpn": {
-          url: urlBase + "/payForApplications/payWithCitcon/ipn",
+          url: urlBase + "/payForApplications/payWithCitconIpn",
           method: "POST"
         },
 
