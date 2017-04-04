@@ -78281,6 +78281,57 @@ module.factory(
           method: "POST"
         },
 
+        /**
+         * @ngdoc method
+         * @name housingApiServices.PayForApplication#listenCitconIpn
+         * @methodOf housingApiServices.PayForApplication
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
+         *
+         * @param {Object} postData Request data.
+         *
+         *  - `id` – `{string=}` - Citcon Notification -- qr id
+         *
+         *  - `amount` – `{string}` - Citcon Notification -- amount
+         *
+         *  - `status` – `{string}` - Citcon Notification -- status
+         *
+         *  - `currency` – `{string}` - Citcon Notification -- currency
+         *
+         *  - `time` – `{string}` - Citcon Notification -- time
+         *
+         *  - `reference` – `{string}` - Citcon Notification -- reference(payForApplicationId)
+         *
+         *  - `notify_id` – `{string=}` - Citcon Notification -- notify_id
+         *
+         *  - `res` – `{object=}` - 
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        "listenCitconIpn": {
+          url: urlBase + "/payForApplications/payWithCitcon/ipn",
+          method: "POST"
+        },
+
         // INTERNAL. Use ApplyForFloorPlan.payForApplication.findById() instead.
         "::findById::applyForFloorPlan::payForApplication": {
           params: {
