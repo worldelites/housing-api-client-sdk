@@ -78877,6 +78877,55 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "POST",
             },
 
+            /**
+             * @ngdoc method
+             * @name housingApiServices.PayForApplication#payWithCitconRefund
+             * @methodOf housingApiServices.PayForApplication
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `payForApplicationId` – `{string}` - id -- pay for application
+             *
+             *  - `userId` – `{string}` - user id -- who should make this payment
+             *
+             *  - `refundAmount` – `{number}` - refundAmount -- refund amount
+             *
+             *  - `transactionId` – `{string}` - transactionId - store in citcon DB and our DB as chargeId
+             *
+             *  - `refundReason` – `{string}` - refundReason - reason for making this refund
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `qr_link` – `{string=}` -
+             */
+            "payWithCitconRefund": {
+              url: urlBase + "/payForApplications/payWithCitconRefund",
+              method: "POST",
+            },
+
             // INTERNAL. Use ApplyForFloorPlan.payForApplication.findById() instead.
             "::findById::ApplyForFloorPlan::payForApplication": {
               params: {
