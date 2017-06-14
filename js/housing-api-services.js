@@ -19623,6 +19623,47 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               url: urlBase + "/eSearches/all",
               method: "POST",
             },
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.ESearch#searchCityId
+             * @methodOf housingApiServices.ESearch
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `city_id` – `{string}` - search by city_id
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `result_list` – `{string=}` -
+             */
+            "searchCityId": {
+              url: urlBase + "/eSearches/byCityId",
+              method: "POST",
+            },
           }
         );
 
