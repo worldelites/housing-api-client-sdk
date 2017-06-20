@@ -19687,6 +19687,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              *  - `city_id` – `{string}` - search by city_id
              *
+             *  - `distance_min` – `{number}` - distance2City more than this number
+             *
              *  - `distance_max` – `{number}` - distance2City less than this number
              *
              *  - `rate_max` – `{number}` - rate must lower than this number
@@ -19755,6 +19757,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * @param {Object} postData Request data.
              *
              *  - `university_id` – `{string}` - search by university_id
+             *
+             *  - `distance_min` – `{number}` - distance2City more than this number
              *
              *  - `distance_max` – `{number}` - distance2City less than this number
              *
