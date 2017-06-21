@@ -19669,7 +19669,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.ESearch#searchCityId
+             * @name housingApiServices.ESearch#searchById
              * @methodOf housingApiServices.ESearch
              *
              * @description
@@ -19685,7 +19685,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object} postData Request data.
              *
-             *  - `city_id` – `{string}` - search by city_id
+             *  - `type` – `{string}` - search in: city/university
+             *
+             *  - `id` – `{string}` - search by id
              *
              *  - `distance_min` – `{number}` - distance2City more than this number
              *
@@ -19733,79 +19735,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              *  - `result_list` – `{string=}` -
              */
-            "searchCityId": {
-              url: urlBase + "/eSearches/byCityId",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name housingApiServices.ESearch#searchUniversityId
-             * @methodOf housingApiServices.ESearch
-             *
-             * @description
-             *
-             * <em>
-             * (The remote method definition does not provide any description.)
-             * </em>
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             *  - `university_id` – `{string}` - search by university_id
-             *
-             *  - `distance_min` – `{number}` - distance2City more than this number
-             *
-             *  - `distance_max` – `{number}` - distance2City less than this number
-             *
-             *  - `rate_max` – `{number}` - rate must lower than this number
-             *
-             *  - `availability_flag` – `{boolean}` - availability_flag: true or false
-             *
-             *  - `zeroBed_flag` – `{boolean}` - zeroBed_flag: true or false
-             *
-             *  - `oneBed_flag` – `{boolean}` - oneBed_flag: true or false
-             *
-             *  - `twoBed_flag` – `{boolean}` - twoBed_flag: true or false
-             *
-             *  - `threeBed_flag` – `{boolean}` - threeBed_flag: true or false
-             *
-             *  - `fourBed_flag` – `{boolean}` - fourBed_flag: true or false
-             *
-             *  - `moreBed_flag` – `{boolean}` - moreBed_flag: true or false
-             *
-             *  - `privateBed_flag` – `{boolean}` - privateBed_flag: true or false
-             *
-             *  - `privateBath_flag` – `{boolean}` - privateBath_flag: true or false
-             *
-             *  - `furnished_flag` – `{boolean}` - furnished_flag: true or false
-             *
-             *  - `leaseTermShort_flag` – `{boolean}` - leaseTermShort_flag: true or false
-             *
-             *  - `leaseTermLong_flag` – `{boolean}` - leaseTermLong_flag: true or false
-             *
-             *  - `res` – `{object=}` -
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Data properties:
-             *
-             *  - `result_list` – `{string=}` -
-             */
-            "searchUniversityId": {
-              url: urlBase + "/eSearches/byUniversityId",
+            "searchById": {
+              url: urlBase + "/eSearches/byId",
               method: "POST",
             },
           }
