@@ -2038,6 +2038,49 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               method: "POST",
             },
 
+            /**
+             * @ngdoc method
+             * @name housingApiServices.User#generate-canvas
+             * @methodOf housingApiServices.User
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `userId` – `{string}` - the user id
+             *
+             *  - `apartmentId` – `{string}` - the apartment id
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `dataUrl` – `{string=}` -
+             */
+            "generate-canvas": {
+              url: urlBase + "/users/generate-canvas",
+              method: "POST",
+            },
+
             // INTERNAL. Use Apartment.likeUsers.findById() instead.
             "::findById::Apartment::likeUsers": {
               params: {
