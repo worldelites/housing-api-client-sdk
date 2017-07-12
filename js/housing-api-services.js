@@ -2040,7 +2040,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name housingApiServices.User#generate-canvas
+             * @name housingApiServices.User#generateReferImage
              * @methodOf housingApiServices.User
              *
              * @description
@@ -2076,8 +2076,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              *  - `dataUrl` – `{string=}` -
              */
-            "generate-canvas": {
-              url: urlBase + "/users/generate-canvas",
+            "generateReferImage": {
+              url: urlBase + "/users/generateReferImage",
               method: "POST",
             },
 
