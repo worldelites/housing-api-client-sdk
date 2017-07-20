@@ -19719,6 +19719,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              *  - `leaseTermLong_flag` – `{boolean=}` - leaseTermLong_flag: true or false
              *
+             *  - `sort_by` – `{string=}` - sort_by: key - string
+             *
              *  - `res` – `{object=}` -
              *
              * @param {function(Object,Object)=} successCb
