@@ -1876,6 +1876,40 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
+             * @name housingApiServices.User#confirm
+             * @methodOf housingApiServices.User
+             *
+             * @description
+             *
+             * Confirm a user registration with email verification token.
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *  - `uid` – `{string}` -
+             *
+             *  - `token` – `{string}` -
+             *
+             *  - `redirect` – `{string=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * This method returns no data.
+             */
+            "confirm": {
+              url: urlBase + "/users/confirm",
+              method: "GET",
+            },
+
+            /**
+             * @ngdoc method
              * @name housingApiServices.User#sendEmail
              * @methodOf housingApiServices.User
              *
@@ -2035,6 +2069,51 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              */
             "track": {
               url: urlBase + "/users/track",
+              method: "POST",
+            },
+
+            /**
+             * @ngdoc method
+             * @name housingApiServices.User#generateReferImage
+             * @methodOf housingApiServices.User
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `userId` – `{string}` - the user id
+             *
+             *  - `apartmentId` – `{string}` - the apartment id
+             *
+             *  - `req` – `{object=}` -
+             *
+             *  - `res` – `{object=}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * Data properties:
+             *
+             *  - `dataUrl` – `{string=}` -
+             */
+            "generateReferImage": {
+              url: urlBase + "/users/generateReferImage",
               method: "POST",
             },
 
@@ -19685,6 +19764,10 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object} postData Request data.
              *
+             *  - `skip` – `{number}` - from/offset: start with
+             *
+             *  - `limit` – `{number}` - size/limit: records get each time
+             *
              *  - `type` – `{string}` - search in: city/university
              *
              *  - `id` – `{string}` - search by id
@@ -19736,6 +19819,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * Data properties:
              *
              *  - `result_list` – `{string=}` -
+             *
+             *  - `total` – `{number=}` -
              */
             "searchById": {
               url: urlBase + "/eSearches/byId",
